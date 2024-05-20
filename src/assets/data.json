@@ -1,0 +1,187 @@
+{
+    "competences": [
+
+    ],
+
+    "sae": [
+        {
+            "code": "L'Annuaire",
+            "title": "Implémentation d'un besoin client",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est de répondre au besoin d'une entreprise fictive, qui souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
+                "L'application L'Annuaire permet d'afficher les données du fichier CSV, mais également de vérifier quelles données sont valides par rapport aux contraintes spécifiées, d'ajouter, de supprimer, de modifier des informations, de repérer quels sont les clients à qui il manque des données, et de filtrer sur un ou deux champs."
+            ],
+            "technos": ["C", "Git", "GitLab"],
+            "skills": [
+                "Développement d'une application en C",
+                "Optimisation du programme et allocation dynamique",
+                "Réponse à des besoins clients définis"
+            ]
+        },
+        {
+            "code": "Analyse de tris",
+            "title": "Comparaison d'approches algorithmiques",
+            "size": "small",
+            "description": [
+                "L'objectif du projet est d'analyser trois algorithmes de tri envoyés au hasard par notre enseignant.",
+                "Notre rôle est de vérifier que ces trois algorithmes trient bien leur tableau, et de les corriger sinon. Ensuite, un calcul de la complexité de ces tris est réalisé pour déterminer lequel des trois est le plus rapide, à l'aide de Python et en particulier de la librairie Matplotlib.",
+                "Nous devons également écrire notre propre algorithme, différent des trois fournis, sans forcément qu'il soit plus performant."
+            ],
+            "technos": ["Python"],
+            "skills": [
+                "Analyse et identification d'algorithmes de tri",
+                "Utilisation de Matplotlib",
+                "Calcul de complexités"
+            ]
+        },
+        {
+            "code": "Notices",
+            "title": "Choix et configuration d'un poste pour le développement",
+            "size": "small",
+            "description": [
+                "L'objectif du projet se sépare en trois parties :",
+                "1°) Réaliser une notice de configuration d'un poste informatique sous Windows 10 : utilisateurs, droits associés...",
+                "2°) Réaliser une notice technique recensant des configurations d'ordinateur selon le profil et le budget",
+                "3°) Réaliser une machine virtuelle pour un étudiant en informatique."
+            ],
+            "technos": ["Bash", "VMware"],
+            "skills": [
+                "Rédaction de notices explicatives",
+                "Création et configuration de machines virtuelles"
+            ]
+        },
+        {
+            "code": "Le jardin de Charlotte",
+            "title": "Conception et création d'une base de données",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est d'analyser les besoins d'une fleuriste en matière de stockage des données de sa boutique, et de proposer une base de données adaptée, cohérente et bien structurée."
+            ],
+            "technos": ["MCD", "SQL", "Oracle"],
+            "skills": [
+                "Conception d'une base de données suite à l'analyse de besoins client",
+                "Ecriture de requêtes SQL"
+            ]
+        },
+        {
+            "code": "CSShoes",
+            "title": "Recueil des besoins",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est de concevoir un site web statique (HTML/CSS) à partir de l'analyse des besoins du public concerné.",
+                "Dans notre cas, le site obtenu est un site vitrine d'une boutique de baskets.",
+                "Le recueil des besoins se fait via un formulaire rempli par le plus de personnes possibles. À partir des réponses de ce formulaire (dont les questions touchent à tous les éléments graphiques ainsi qu'au contenu retrouvable sur le site), des maquettes sont réalisées, et on peut passer au développement."
+            ],
+            "technos": ["HTML", "CSS", "Git", "GitLab"],
+            "skills": [
+                "Recueil des besoins",
+                "Analyse des besoins recueillis",
+                "Maquettage (wireframes)",
+                "Développement web statique"
+            ]
+        },
+        {
+            "code": "Etude et RSE",
+            "title": "Découverte de l'environnement économique et écologique",
+            "size": "small",
+            "description": [
+                "L'objectif du projet est à choisir parmi les 2 scénarios suivants :",
+                "Réaliser une analyse de l'empreinte carbone du numérique d'une entreprise",
+                "Réaliser une analyse de l'application de la RSE dans une entreprise du numérique.",
+                "L'accent est à mettre sur l'éventuelle présence de contradictions dans la politique de l'entreprise sélectionnée, ainsi que de greenwashing. Ce rapport requiert donc beaucoup de recherche et d'analyse."
+            ],
+            "technos": [],
+            "skills": [
+                "Rédaction d'un document de recherche",
+                "Communication : rédaction d'une bibliographie structurée et d'un réseau de titres adéquat",
+                "Renforcement de la culture générale sur les entreprises du numérique"
+            ]
+        },
+        {
+            "code": "GraphMap Analysis",
+            "title": "Développement d'une application avec traitement algorithmique et gestion de projet",
+            "size": "big",
+            "description": [
+                "L'objectif du projet est de développer une application Java pour une organisation souhaitant relier ses dispensaires de santé dans une zone géographique sans réelles infrastructures logistiques.",
+                "L'application doit permettre de déterminer le chemin le plus court entre deux dispensaires : elle peut donner d'autres informations (voisins d'un dispensaire à 1 ou 2 niveaux, quel dispensaire est le plus connecté à d'autres dispensaires d'un certain type...)",
+                "Ce projet doit être géré selon les méthodes vues en cours de gestion de projet informatique (Gantt, matrice RACI, découpage WBS.",
+                "Il doit également respecter les conventions étudiées en cours de qualité de développement."
+            ],
+            "technos": ["Java", "Swing", "JUnit", "Git", "GitLab", "SourceTree"],
+            "skills": [
+                "Programmation orientée objet",
+                "Réponse à des besoins clients définis",
+                "Développement d'interfaces logicielles",
+                "Gestion de projet",
+                "Application de méthodes de développement de qualité : GitFlow, classes de test, Javadoc"
+            ]
+        },
+        {
+            "code": "PourquoiCaMarchePas",
+            "title": "Installation de services réseaux",
+            "size": "small",
+            "description": [
+                "L'objectif du projet se sépare en deux parties :",
+                "Créer un serveur web local pour y héberger un des sites web d'une ancienne SAE",
+                "Relier ce serveur à un réseau complet, et le configurer pour que toutes les machines du réseau y aient accès."
+            ],
+            "technos": ["Bash", "VMware", "Apache2", "Routage", "Protocole IP"],
+            "skills": [
+                "Configuration d'un réseau local",
+                "Déploiement de sites web en ligne"
+            ]
+        },
+        {
+            "code": "BD",
+            "title": "Exploitation d'une base de données",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est de réaliser un tableau de reporting à partir d'une base de données existante.",
+                "Les diagrammes doivent être choisis selon leur pertinence, et les données représentées doivent être présentées de manière à ce que l'organisation à qui appartiennent ces données puisse facilement prendre des décisions stratégiques."
+            ],
+            "technos": ["SQL", "Oracle", "PowerBI"],
+            "skills": [
+                "Analyse de données",
+                "Génération de visuels adaptés",
+                "Aide à la décision"
+            ]
+        },
+        {
+            "code": "Le Poster",
+            "title": "Travail en équipe",
+            "size": "small",
+            "description": [
+                "L'objectif du projet est de se renseigner sur un sujet lié à l'informatique et de designer un poster.",
+                "Ce poster, en plus d'être esthétique et pertinent, doit refléter le travail d'équipe du groupe qui l'a créé."
+            ],
+            "technos": ["Canva"],
+            "skills": [
+                "Création d'une charte d'équipe",
+                "Travail et mise en commun",
+                "Création graphique"
+            ]
+        },
+        {
+            "code": "VroumVroum",
+            "title": "Développement d'une application",
+            "size": "big",
+            "description": [
+                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre",
+                "À partir du sujet choisi, l'équipe projet doit analyser les besoins fictifs et doit en tirer une structure d'application cohérente avec les langages et méthodologies vus en cours.",
+                "Cette application doit accueillir une base de données, et doit à terme être hébergée en ligne.",
+                "De plus, une documentation technique complète est demandée : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
+                "Ce projet doit utiliser une méthode Agile."
+            ],
+            "technos": ["HTML", "CSS", "JavaScript", "NodeJS", "TypeScript", "SQL", "MySQL", "UML", "Trello", "Canva", "Git", "GitLab"],
+            "skills": [
+                "Analyse des besoins",
+                "Conception d'une application",
+                "Gestion de projet Agile",
+                "Travail en équipe",
+                "Développement web avancé",
+                "Rédaction d'une documentation technique"
+            ]
+        }
+    ]
+}
