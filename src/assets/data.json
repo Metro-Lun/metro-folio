@@ -1,6 +1,29 @@
 {
-    "competences": [
-
+    "skills": [
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        },
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        },
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        },
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        },
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        },
+        {
+            "title": "Réaliser",
+            "professionnal_situations": ["aa", "bb", "cc"]
+        }
     ],
 
     "sae": [
