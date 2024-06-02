@@ -12,13 +12,6 @@
         skillIndex.value = skillIndex.value ? i : -1 ;
     }
 
-    // <section class="explain-section">
-    //     <div v-for="(i, index) in interests" :key="i.id" class="explain-div">
-    //         <h2 :class="index % 2 == 0 ? '' : 'explain-title-right'" @click="(evt) => updateClickTabOnId(index)">{{i.interestName}}</h2>
-    //         <p>{{i.interestExplanation}}</p>
-    //     </div>
-    // </section>
-
 
 
 </script>

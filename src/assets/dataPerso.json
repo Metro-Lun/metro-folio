@@ -1,0 +1,35 @@
+{
+    "interests": [
+        {
+            "name": "Monde associatif",
+            "explanation": [
+                "J'ai découvert le monde associatif en arrivant à l'IUT, au travers de mon BDE.",
+                "Puisque l'objectif d'une association étudiante est d'apporter des éléments à ces derniers pour qu'ils profitent au mieux de leurs études, j'ai décidé de mettre la main à la pâte.",
+                "L'associatif m'aura permis de vivre de fantastiques moments que je n'oublierai jamais, mais également des belles rencontres, et des compétences que je peux transposer sur mon parcours professionnel."
+            ],
+            "images" : [
+
+            ]
+        },
+        {
+            "name": "Photographie",
+            "explanation": [
+                "Il y a peu, j'ai commencé à prendre des photos avec un véritable appareil photo, et pas seulement avec mon téléphone.",
+                "Je suis débutant, mais je suis plutôt fier du résultat !"
+            ],
+            "images": [
+
+            ]
+        },
+        {
+            "name": "Etude des transports",
+            "explanation": [
+                "C'est un intérêt assez compliqué à définir.",
+                "Les transports en commun ont toute leur place dans la ville : ils sont le fruit de recherches et de discussions à la fois politiques, scientifiques et sociales, et comprendre comment ils fonctionnent et pourquoi ils sont faits ainsi est selon moi très intéressant."
+            ],
+            "images": [
+                
+            ]
+        }
+    ]
+}

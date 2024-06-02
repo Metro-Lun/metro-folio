@@ -1,5 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,8 +20,13 @@ const router = createRouter({
       path: '/professional-journey',
       name: 'pro',
       component: () => import('../views/ProView.vue')
+    },
+    {
+      path: '/my-projects',
+      name: 'projs',
+      component: () => import ('../views/ProjectsView.vue')
     }
   ]
-})
+});
 
-export default router
+export default router;

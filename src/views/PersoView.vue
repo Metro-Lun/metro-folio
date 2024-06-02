@@ -1,55 +1,31 @@
 <script setup>
     import { ref } from 'vue';
-    const interests = [
-        {
-            "interestName": "Monde associatif",
-            "interestExplanation": "J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.Le principe des BDE m'a directement sédurhuqhgkt-jmjaeiougyyr ygrgureygureyg ureyugyery geuyguyeuyhds jgkljreml kjmhk grzjhgr ngt gnr fr  grf rg r rgrgr  gr rg rgit. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.Le principe des BDE m'a directement sédurhuqhgkt-jmjaeiougyyr ygrgureygureyg ureyugyery geuyguyeuyhds jgkljreml kjmhk grzjhgr ngt gnr fr  grf rg r rgrgr  gr rg rgit. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.Le principe des BDE m'a directement sédurhuqhgkt-jmjaeiougyyr ygrgureygureyg ureyugyery geuyguyeuyhds jgkljreml kjmhk grzjhgr ngt gnr fr  grf rg r rgrgr  gr rg rgit. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT.J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT. J'ai découvert le monde associatif en arrivant à l'IUT.Le principe des BDE m'a directement sédurhuqhgkt-jmjaeiougyyr ygrgureygureyg ureyugyery geuyguyeuyhds jgkljreml kjmhk grzjhgr ngt gnr fr  grf rg r rgrgr  gr rg rgit."
-        },
-        {
-            "interestName": "Photographie",
-            "interestExplanation": "J'ai découvert le monde associatif en arrivant à l'IUT. Le principe des BDE m'a directement séduit."
-        },
-        {
-            "interestName": "Etude des transports",
-            "interestExplanation": "J'ai découvert le monde associatif en arrivant à l'IUT. Le principe des BDE m'a directement séduit."
-        }
-    ];
-
-    function initClickTab() {
-        const tab = [];
-        for(let i = 0; i < interests.length; i++) {
-            tab.push(false);
-        }
-
-        return tab;
-    }
-
-    const clickTab = ref(initClickTab());
-
-    function updateClickTabOnId(id) {
-        clickTab.value[id] = clickTab.value[id] ? false : true;
-    }
-
+    import i from '@/assets/dataPerso.json'
+    const interests = i.interests;
 </script>
 
 <template>
-    <h1 class="title">À propos de moi</h1>
+    <h1 class="title">Qui suis-je ?</h1>
 
-    <img src="" alt="Photo de moi-même" />
+    <section id="intro">
+        <img id="face-img" src="../assets/images/face.jpg" alt="Photo de moi-même" />
 
-    <div>
-        <p>Je travaille beaucoup, mais j'ai quand même des centres d'intérêt, et pas des moindres.</p>
-        <p>Certes, je ne suis pas sportif, mais soit</p>
-    </div>
+        <div>
+            <p>Je m'appelle Mehdi Bourbon (le machin sur la photo au-dessus, là). Je suis un étudiant en BUT informatique à Lyon, et j'adore le développement !</p>
+            <p>Cependant, je ne fais pas que coder, même si je suis un gros bosseur :)</p>
+            <p>En-dehors de mes heures de cours, je fais quand même des trucs.</p>
+        </div>
+    </section>
 
-    <p>beaucoup de texte sur moi, logos du BDE Info, de la Student Club, des photos, les comptes insta</p>
+    
 
-    <section class="interest-section">
-        <div v-for="(i, index) in interests" :key="i.id" class="interest-div">
-            <h2 :class="index % 2 == 0 ? '' : 'interest-title-right'" @click="(evt) => updateClickTabOnId(index)">{{i.interestName}}</h2>
-            <Transition>
-                <p v-if="clickTab[index]">{{i.interestExplanation}}</p>
-            </Transition>
+    <section class="explain-section">
+        <div v-for="(i, index) in interests" :key="i.id" class="explain-div">
+            <h2 :class="index % 2 == 0 ? '' : 'explain-title-right'">{{i.name}}</h2>
+            <div>
+                <p v-for="e in i.explanation" :key="e.id">{{e}}</p>
+            </div>
+            
         </div>
     </section>
     
@@ -57,31 +33,25 @@
 </template>
 
 <style scoped>
-    .interest-section{
+    #intro {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 95em;
-        margin: auto;
-        gap: 20px;
+        gap: 5em;
     }
 
-    .interest-div h2 {
-        background-color: grey;
-        border-radius: 24px 24px 0px 0px;
-        margin: 0px;
-        padding: 10px 20px;
+    #face-img {
+        border-radius: 50%;
+        width: 200px;
+        animation: tourne 3s infinite;
     }
 
-    .interest-div p {
-        margin: 0;
-        border-radius: 0px 0px 24px 24px;
-        padding: 10px;
-        background-color: blue;
-    }
+    /* ROTATION DE L'IMAGE */
 
-    .interest-title-right {
-        text-align: right;
-    }
-
+    @keyframes tourne {
+        0% {
+            transform: rotate( 0deg );
+        }
+        100% {
+            transform: rotate( -360deg );
+        }
+    };
 </style>

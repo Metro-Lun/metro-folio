@@ -1,31 +1,4 @@
 {
-    "skills": [
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        },
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        },
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        },
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        },
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        },
-        {
-            "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
-        }
-    ],
-
     "sae": [
         {
             "code": "L'Annuaire",
@@ -40,7 +13,8 @@
                 "Développement d'une application en C",
                 "Optimisation du programme et allocation dynamique",
                 "Réponse à des besoins clients définis"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "Analyse de tris",
@@ -56,7 +30,8 @@
                 "Analyse et identification d'algorithmes de tri",
                 "Utilisation de Matplotlib",
                 "Calcul de complexités"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "Notices",
@@ -72,7 +47,8 @@
             "skills": [
                 "Rédaction de notices explicatives",
                 "Création et configuration de machines virtuelles"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "Le jardin de Charlotte",
@@ -85,7 +61,8 @@
             "skills": [
                 "Conception d'une base de données suite à l'analyse de besoins client",
                 "Ecriture de requêtes SQL"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "CSShoes",
@@ -102,7 +79,8 @@
                 "Analyse des besoins recueillis",
                 "Maquettage (wireframes)",
                 "Développement web statique"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "Etude et RSE",
@@ -119,7 +97,8 @@
                 "Rédaction d'un document de recherche",
                 "Communication : rédaction d'une bibliographie structurée et d'un réseau de titres adéquat",
                 "Renforcement de la culture générale sur les entreprises du numérique"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "GraphMap Analysis",
@@ -138,7 +117,8 @@
                 "Développement d'interfaces logicielles",
                 "Gestion de projet",
                 "Application de méthodes de développement de qualité : GitFlow, classes de test, Javadoc"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "PourquoiCaMarchePas",
@@ -153,7 +133,8 @@
             "skills": [
                 "Configuration d'un réseau local",
                 "Déploiement de sites web en ligne"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "BD",
@@ -168,7 +149,8 @@
                 "Analyse de données",
                 "Génération de visuels adaptés",
                 "Aide à la décision"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "Le Poster",
@@ -183,7 +165,8 @@
                 "Création d'une charte d'équipe",
                 "Travail et mise en commun",
                 "Création graphique"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         },
         {
             "code": "VroumVroum",
@@ -204,7 +187,8 @@
                 "Travail en équipe",
                 "Développement web avancé",
                 "Rédaction d'une documentation technique"
-            ]
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
         }
     ]
 }
