@@ -50,4 +50,8 @@
   }
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('../assets/proxima-nova.ttf');
+}
 

@@ -24,7 +24,7 @@
         left: 0;
         right: 0;
         margin-top: 0;
-        margin-bottom: 5em;
+        margin-bottom: 2em;
         padding: 6px 20px;
         background: #1f2c79;
         color: white;

@@ -2,7 +2,27 @@
     "skills": [
         {
             "title": "Réaliser",
-            "professionnal_situations": ["aa", "bb", "cc"]
+            "description": [
+                "Pour maîtriser la compétence Réaliser, il faut être capable de développer un outil informatique qui répond à un besoin client.",
+                "Le processus du développement passe par la conception du produit, mais également par le code, les tests, et le déploiement / l'intégration, et enfin par la maintenance de ce dernier.",
+                "Une bonne application respecte les besoins décrits par le client, à l'aide de code et d'algorithmes bien écrits et bien structurés, et assez documentés pour être facilement améliorés dans le futur.",
+                "Il faut également savoir choisir les bonnes technologies."
+            ],
+            "levels": [
+                {
+                    "name": "Développer des applications informatiques simples",
+                    "info": "Concevoir et développer des interfaces simples d'utilisation au vu des spécifications fournies"
+                },
+                {
+                    "name": "Partir des exigences et aller jusqu'à une application complète",
+                    "info": "Développer des applications accessibles, ergonomiques et robustes (à l'aide de tests) au vu des spécifications définies à partir du besoin du client"
+                },
+                {
+                    "name": "Adapter des applications sur un ensemble de supports",
+                    "info": "Choisir les bonnes technologies, intégrer des applications dans des environnements de production et savoir les maintenir en état"
+                }
+            ],
+            "professional_situations": ["Élaboration d'une une application informatique", "Évolution des applications", "Maintenance d'une application informatique en conditions opérationnelles"]
         },
         {
             "title": "Réaliser",

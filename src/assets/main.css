@@ -1,6 +1,7 @@
 @import './base.css';
 
 body {
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }

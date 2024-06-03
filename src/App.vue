@@ -17,12 +17,22 @@
     h1 {
         display: flex;
         justify-content: center;
-        margin-bottom: 3em;
+        margin-bottom: 1.2em;
+        font-size: 80px;
     }
 
     main {
         max-width: 100em;
         margin: auto;
+    }
+
+    header {
+        display: grid;
+        grid-template: auto / 1fr 2fr;
+    }
+
+    p {
+        font-size: 20px;
     }
 
     /* EXPLAIN SECTION */
@@ -55,7 +65,7 @@
     }
 
     .v-enter-active, .v-leave-active {
-        transition: all 2s ease;
+        transition: all 0.5s ease;
     }
 
     .v-enter-from, .v-leave-to {
@@ -70,8 +80,5 @@
         transform: translateY(0);
     }
 
-    header {
-        display: grid;
-        grid-template: auto / 1fr 3fr;
-    }
+    
 </style>
