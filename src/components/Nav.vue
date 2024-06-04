@@ -5,16 +5,17 @@
 
 <template>
     <nav>
-        <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
-        <RouterLink :to="{name: 'perso'}">Qui suis-je ?</RouterLink>
-        <RouterLink :to="{name: 'pro'}">Parcours professionnel</RouterLink>
-        <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
-    </nav>
-
-    <nav>
         <a href="https://github.com/Metro-Lun" id='pfp'>
             <img src='../assets/images/pfp.png' />
         </a>
+    </nav>
+
+    <nav>
+        <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
+        <RouterLink :to="{name: 'perso'}">Qui suis-je ?</RouterLink>
+        <RouterLink :to="{name: 'pro'}">Parcours professionnel</RouterLink>
+        <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
+        <RouterLink :to="{name: 'projs'}">Mes projets</RouterLink>
     </nav>
 </template>
 
@@ -26,21 +27,26 @@
         margin-top: 0;
         margin-bottom: 2em;
         padding: 6px 20px;
-        background: #1f2c79;
-        color: white;
+        background: #063387;
+        color: rgb(208, 14, 212);
         display: flex;
         align-items: center;
-        border-bottom: 5px solid #ada4ff;
         z-index: 2;
     }
 
-    nav a {
+    nav a, nav p {
         display: inline-block;
         margin-right: 20px;
         opacity: 0.7;
         text-decoration: none;
         font-weight: bold;
-        color: #ada4ff;
+        font-size: 20px;
+        color: #a8b5ff;
+    }
+
+    nav p {
+        font-size: 30px;
+        margin: 0;
     }
 
     header nav:nth-child(2) {
@@ -49,7 +55,12 @@
     }
 
     #pfp {
+        display: flex;
         opacity: 1;
+    }
+
+    #pfp:hover{
+        animation: tourne 2s infinite;
     }
 
     #pfp img {
@@ -63,6 +74,17 @@
     }
 
     .router-link-active, .router-link-exact-active, .active {
-        color: #b71dff;
+        color: #ff44cd;
     }
+
+    /* ROTATION DE L'IMAGE */
+
+    @keyframes tourne {
+        0% {
+            transform: rotate( 0deg );
+        }
+        100% {
+            transform: rotate( -360deg );
+        }
+    };
 </style>

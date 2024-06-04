@@ -14,71 +14,7 @@
 </template>
 
 <style>
-    h1 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1.2em;
-        font-size: 80px;
-    }
 
-    main {
-        max-width: 100em;
-        margin: auto;
-    }
-
-    header {
-        display: grid;
-        grid-template: auto / 1fr 2fr;
-    }
-
-    p {
-        font-size: 20px;
-    }
-
-    /* EXPLAIN SECTION */
-
-    .explain-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100em;
-        margin: 5em auto;
-        gap: 20px;
-    }
-
-    .explain-div h2 {
-        background-color: grey;
-        border-radius: 24px 24px 0px 0px;
-        margin: 0px;
-        padding: 10px 20px;
-    }
-
-    .explain-div div {
-        margin: 0;
-        border-radius: 0px 0px 24px 24px;
-        padding: 10px;
-        background-color: rgb(107, 107, 253);
-    }
-
-    .explain-title-right {
-        text-align: right;
-    }
-
-    .v-enter-active, .v-leave-active {
-        transition: all 0.5s ease;
-    }
-
-    .v-enter-from, .v-leave-to {
-        max-height: 0;
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    .v-enter-to, .v-leave-from {
-        max-height: 1000px;
-        opacity: 1;
-        transform: translateY(0);
-    }
 
     
 </style>
