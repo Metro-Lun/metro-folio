@@ -61,32 +61,37 @@
         </Transition>
     </section>
 
-
-
     <section id="sae-vs-skills">
-        <p>Voici une liste des projets que j'ai réalisés, selon leur lien avec les compétences.</p>
-        <p>N'hésitez pas à cliquer sur les images pour en savoir plus !</p>
+        <p>Voici une liste des projets universitaires en lien avec mon projet professionnel que j'ai réalisés, selon leur lien avec les compétences.</p>
+        <p>N'hésitez pas à cliquer dessus pour en savoir plus !</p>
 
         <section class="sae-table">
             <div>
                 <p id="empty"></p>
-                <p v-for="(s, index) in skills" :key="s.id">C{{index + 1}}</p>
+                <p v-for="(s, index) in skills" :key="s.id" class="comp-header">C{{index + 1}}</p>
             </div>
 
             <div v-for="sae in saes" :key="sae.id" id="not-top-line">
-                <div class="sae-tile">
-                    <p>title</p>
-                </div>
+                <RouterLink :to="{name: 'projs'}">
+                    <div class="sae-tile">
+                        <p>{{sae.code}}</p>
+                        <img :src="`/src/assets/images/sae/${sae.image}`" />
+                    </div>
+                </RouterLink>
+                
                 
                 <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
-                    <span >{{l}}</span>
+                    <span :style="`font-size: ${70 * parseInt(l)}px`">o</span>
                 </p>
             </div>
         </section>
     </section>
-
-    
 </template>
+
+
+
+
+
 
 <style scoped>
     /* TABS */
@@ -181,7 +186,6 @@
     .sae-table {
         display: grid;
         grid-template: 1fr / 1fr;
-        background-color: rgb(231, 231, 231);
         border-radius: 0px 50px 50px 50px;
     }
 
@@ -225,13 +229,21 @@
         transform: translateY(-50%);
     }
 
-    #not-top-line p:first-child, .sae-table p:first-child {
-        border-right: 1px solid black;
-    }
-
-    .sae-table p {
+    .sae-table p:not(.sae-tile p) {
         margin: 0;
         font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comp-header {
+        font-size: 15px;
+        border: 1px solid black;
+        background-color: rgb(231, 231, 231);
+        border-radius: 24px;
+        margin: auto 1em;
+        padding: 2px;
     }
 
     .sae-table > div:first-child p:not(#empty) {
@@ -241,7 +253,32 @@
     /* MINI DIVS SAE */
 
     .sae-tile {
-        padding: 1em 0;
+        font-size: 10px;
+        margin: 3em 0;
+        border: 1px solid black;
+        background-color: rgb(231, 231, 231);
+        border-radius: 24px;
+        padding-bottom: 3em;
+        width: 100%;
+        position: relative;
+        z-index: 1000;
+
+        transition: scale 0.2s ease;
+    }
+
+    .sae-tile:hover {
+        scale: 1.1;
+    }
+
+    .sae-tile img {
+        width: 80%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
     }
 
 

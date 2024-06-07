@@ -3,6 +3,7 @@
         {
             "code": "L'Annuaire",
             "title": "Implémentation d'un besoin client",
+            "image": "sae_c.png",
             "size": "medium",
             "description": [
                 "L'objectif du projet est de répondre au besoin d'une entreprise fictive, qui souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
@@ -17,56 +18,9 @@
             "links": [1, 2, 3, 1, 2, 3]
         },
         {
-            "code": "Analyse de tris",
-            "title": "Comparaison d'approches algorithmiques",
-            "size": "small",
-            "description": [
-                "L'objectif du projet est d'analyser trois algorithmes de tri envoyés au hasard par notre enseignant.",
-                "Notre rôle est de vérifier que ces trois algorithmes trient bien leur tableau, et de les corriger sinon. Ensuite, un calcul de la complexité de ces tris est réalisé pour déterminer lequel des trois est le plus rapide, à l'aide de Python et en particulier de la librairie Matplotlib.",
-                "Nous devons également écrire notre propre algorithme, différent des trois fournis, sans forcément qu'il soit plus performant."
-            ],
-            "technos": ["Python"],
-            "skills": [
-                "Analyse et identification d'algorithmes de tri",
-                "Utilisation de Matplotlib",
-                "Calcul de complexités"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
-            "code": "Notices",
-            "title": "Choix et configuration d'un poste pour le développement",
-            "size": "small",
-            "description": [
-                "L'objectif du projet se sépare en trois parties :",
-                "1°) Réaliser une notice de configuration d'un poste informatique sous Windows 10 : utilisateurs, droits associés...",
-                "2°) Réaliser une notice technique recensant des configurations d'ordinateur selon le profil et le budget",
-                "3°) Réaliser une machine virtuelle pour un étudiant en informatique."
-            ],
-            "technos": ["Bash", "VMware"],
-            "skills": [
-                "Rédaction de notices explicatives",
-                "Création et configuration de machines virtuelles"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
-            "code": "Le jardin de Charlotte",
-            "title": "Conception et création d'une base de données",
-            "size": "medium",
-            "description": [
-                "L'objectif du projet est d'analyser les besoins d'une fleuriste en matière de stockage des données de sa boutique, et de proposer une base de données adaptée, cohérente et bien structurée."
-            ],
-            "technos": ["MCD", "SQL", "Oracle"],
-            "skills": [
-                "Conception d'une base de données suite à l'analyse de besoins client",
-                "Ecriture de requêtes SQL"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
             "code": "CSShoes",
             "title": "Recueil des besoins",
+            "image": "sae_web.png",
             "size": "medium",
             "description": [
                 "L'objectif du projet est de concevoir un site web statique (HTML/CSS) à partir de l'analyse des besoins du public concerné.",
@@ -83,26 +37,9 @@
             "links": [1, 2, 3, 1, 2, 3]
         },
         {
-            "code": "Etude et RSE",
-            "title": "Découverte de l'environnement économique et écologique",
-            "size": "small",
-            "description": [
-                "L'objectif du projet est à choisir parmi les 2 scénarios suivants :",
-                "Réaliser une analyse de l'empreinte carbone du numérique d'une entreprise",
-                "Réaliser une analyse de l'application de la RSE dans une entreprise du numérique.",
-                "L'accent est à mettre sur l'éventuelle présence de contradictions dans la politique de l'entreprise sélectionnée, ainsi que de greenwashing. Ce rapport requiert donc beaucoup de recherche et d'analyse."
-            ],
-            "technos": [],
-            "skills": [
-                "Rédaction d'un document de recherche",
-                "Communication : rédaction d'une bibliographie structurée et d'un réseau de titres adéquat",
-                "Renforcement de la culture générale sur les entreprises du numérique"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
             "code": "GraphMap Analysis",
             "title": "Développement d'une application avec traitement algorithmique et gestion de projet",
+            "image": "sae_java.png",
             "size": "big",
             "description": [
                 "L'objectif du projet est de développer une application Java pour une organisation souhaitant relier ses dispensaires de santé dans une zone géographique sans réelles infrastructures logistiques.",
@@ -121,40 +58,9 @@
             "links": [1, 2, 3, 1, 2, 3]
         },
         {
-            "code": "PourquoiCaMarchePas",
-            "title": "Installation de services réseaux",
-            "size": "small",
-            "description": [
-                "L'objectif du projet se sépare en deux parties :",
-                "Créer un serveur web local pour y héberger un des sites web d'une ancienne SAE",
-                "Relier ce serveur à un réseau complet, et le configurer pour que toutes les machines du réseau y aient accès."
-            ],
-            "technos": ["Bash", "VMware", "Apache2", "Routage", "Protocole IP"],
-            "skills": [
-                "Configuration d'un réseau local",
-                "Déploiement de sites web en ligne"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
-            "code": "BD",
-            "title": "Exploitation d'une base de données",
-            "size": "medium",
-            "description": [
-                "L'objectif du projet est de réaliser un tableau de reporting à partir d'une base de données existante.",
-                "Les diagrammes doivent être choisis selon leur pertinence, et les données représentées doivent être présentées de manière à ce que l'organisation à qui appartiennent ces données puisse facilement prendre des décisions stratégiques."
-            ],
-            "technos": ["SQL", "Oracle", "PowerBI"],
-            "skills": [
-                "Analyse de données",
-                "Génération de visuels adaptés",
-                "Aide à la décision"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
-        {
             "code": "Le Poster",
             "title": "Travail en équipe",
+            "image": "sae_poster.png",
             "size": "small",
             "description": [
                 "L'objectif du projet est de se renseigner sur un sujet lié à l'informatique et de designer un poster.",
@@ -171,6 +77,7 @@
         {
             "code": "VroumVroum",
             "title": "Développement d'une application",
+            "image": "sae_vroumvroum.png",
             "size": "big",
             "description": [
                 "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre",

@@ -1,6 +1,6 @@
 <script setup>
     import { RouterView } from 'vue-router'
-    import Nav from '@/components/Nav.vue'
+    import Nav from '@/components/PortNav.vue'
 </script>
 
 <template>
