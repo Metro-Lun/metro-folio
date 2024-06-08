@@ -6,14 +6,11 @@
     const skills = sk.skills;
     const saes = sa.sae;
 
-    const skill = ref(null);
-    const skillIndex = ref(-1);
+    const skill = ref(skills[0]);
+    const skillIndex = ref(0);
 
     function handleClick(i) {
-        if(skillIndex.value === i) {
-            skill.value = null;
-            skillIndex.value = null;
-        } else {
+        if(skillIndex.value !== i) {
             skill.value = skills[i];
             skillIndex.value = i;
         }
@@ -24,7 +21,7 @@
 </script>
 
 <template>
-    <h1>Compétences à l'IUT</h1>
+    <div id="titles"><h1>Compétences à l'IUT</h1></div>
     <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
 
     <p>Il est composé de six compétences :</p>

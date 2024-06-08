@@ -4,6 +4,7 @@ body {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 227, 227);
 }
 
 h1 {
@@ -19,8 +20,12 @@ main {
 }
 
 header {
+    top: 0;
+    position: fixed;
     display: grid;
     grid-template: auto / 1fr 1fr;
+    width: 100%;
+    z-index: 2000;
 }
 
 p {
@@ -39,7 +44,7 @@ p {
 }
 
 .explain-div h2 {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(228, 228, 228);
     border-radius: 24px 24px 0px 0px;
     margin: 0px;
     padding: 10px 20px;
@@ -50,7 +55,7 @@ p {
     margin: 0;
     border-radius: 0px 0px 24px 24px;
     padding: 10px;
-    background-color: rgb(183, 183, 255);
+    background-color: rgb(255, 183, 183);
 }
 
 .explain-title-right {
@@ -71,4 +76,11 @@ p {
     max-height: 1000px;
     opacity: 1;
     transform: translateY(0);
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em auto;
 }

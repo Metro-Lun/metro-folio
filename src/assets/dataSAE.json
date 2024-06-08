@@ -1,41 +1,29 @@
 {
     "sae": [
         {
-            "code": "L'Annuaire",
-            "title": "Implémentation d'un besoin client",
-            "image": "sae_c.png",
-            "size": "medium",
+            "code": "VroumVroum",
+            "title": "Développement d'une application",
+            "image": "sae_vroumvroum.png",
+            "size": "big",
             "description": [
-                "L'objectif du projet est de répondre au besoin d'une entreprise fictive, qui souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
-                "L'application L'Annuaire permet d'afficher les données du fichier CSV, mais également de vérifier quelles données sont valides par rapport aux contraintes spécifiées, d'ajouter, de supprimer, de modifier des informations, de repérer quels sont les clients à qui il manque des données, et de filtrer sur un ou deux champs."
+                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre",
+                "À partir du sujet choisi, l'équipe projet doit analyser les besoins fictifs et doit en tirer une structure d'application cohérente avec les langages et méthodologies vus en cours.",
+                "Cette application doit accueillir une base de données, et doit à terme être hébergée en ligne.",
+                "De plus, une documentation technique complète est demandée : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
+                "Ce projet doit utiliser une méthode Agile."
             ],
-            "technos": ["C", "Git", "GitLab"],
+            "technos": ["HTML", "CSS", "JavaScript", "NodeJS", "TypeScript", "SQL", "MySQL", "UML", "Trello", "Canva", "Git", "GitLab"],
             "skills": [
-                "Développement d'une application en C",
-                "Optimisation du programme et allocation dynamique",
-                "Réponse à des besoins clients définis"
+                "Analyse des besoins",
+                "Conception d'une application",
+                "Gestion de projet Agile",
+                "Travail en équipe",
+                "Développement web avancé",
+                "Rédaction d'une documentation technique"
             ],
             "links": [1, 2, 3, 1, 2, 3]
         },
-        {
-            "code": "CSShoes",
-            "title": "Recueil des besoins",
-            "image": "sae_web.png",
-            "size": "medium",
-            "description": [
-                "L'objectif du projet est de concevoir un site web statique (HTML/CSS) à partir de l'analyse des besoins du public concerné.",
-                "Dans notre cas, le site obtenu est un site vitrine d'une boutique de baskets.",
-                "Le recueil des besoins se fait via un formulaire rempli par le plus de personnes possibles. À partir des réponses de ce formulaire (dont les questions touchent à tous les éléments graphiques ainsi qu'au contenu retrouvable sur le site), des maquettes sont réalisées, et on peut passer au développement."
-            ],
-            "technos": ["HTML", "CSS", "Git", "GitLab"],
-            "skills": [
-                "Recueil des besoins",
-                "Analyse des besoins recueillis",
-                "Maquettage (wireframes)",
-                "Développement web statique"
-            ],
-            "links": [1, 2, 3, 1, 2, 3]
-        },
+        
         {
             "code": "GraphMap Analysis",
             "title": "Développement d'une application avec traitement algorithmique et gestion de projet",
@@ -57,6 +45,26 @@
             ],
             "links": [1, 2, 3, 1, 2, 3]
         },
+        
+        {
+            "code": "CSShoes",
+            "title": "Recueil des besoins",
+            "image": "sae_web.png",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est de concevoir un site web statique (HTML/CSS) à partir de l'analyse des besoins du public concerné.",
+                "Dans notre cas, le site obtenu est un site vitrine d'une boutique de baskets.",
+                "Le recueil des besoins se fait via un formulaire rempli par le plus de personnes possibles. À partir des réponses de ce formulaire (dont les questions touchent à tous les éléments graphiques ainsi qu'au contenu retrouvable sur le site), des maquettes sont réalisées, et on peut passer au développement."
+            ],
+            "technos": ["HTML", "CSS", "Git", "GitLab"],
+            "skills": [
+                "Recueil des besoins",
+                "Analyse des besoins recueillis",
+                "Maquettage (wireframes)",
+                "Développement web statique"
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
+        },
         {
             "code": "Le Poster",
             "title": "Travail en équipe",
@@ -75,25 +83,19 @@
             "links": [1, 2, 3, 1, 2, 3]
         },
         {
-            "code": "VroumVroum",
-            "title": "Développement d'une application",
-            "image": "sae_vroumvroum.png",
-            "size": "big",
+            "code": "L'Annuaire",
+            "title": "Implémentation d'un besoin client",
+            "image": "sae_c.png",
+            "size": "medium",
             "description": [
-                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre",
-                "À partir du sujet choisi, l'équipe projet doit analyser les besoins fictifs et doit en tirer une structure d'application cohérente avec les langages et méthodologies vus en cours.",
-                "Cette application doit accueillir une base de données, et doit à terme être hébergée en ligne.",
-                "De plus, une documentation technique complète est demandée : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
-                "Ce projet doit utiliser une méthode Agile."
+                "L'objectif du projet est de répondre au besoin d'une entreprise fictive, qui souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
+                "L'application L'Annuaire permet d'afficher les données du fichier CSV, mais également de vérifier quelles données sont valides par rapport aux contraintes spécifiées, d'ajouter, de supprimer, de modifier des informations, de repérer quels sont les clients à qui il manque des données, et de filtrer sur un ou deux champs."
             ],
-            "technos": ["HTML", "CSS", "JavaScript", "NodeJS", "TypeScript", "SQL", "MySQL", "UML", "Trello", "Canva", "Git", "GitLab"],
+            "technos": ["C", "Git", "GitLab"],
             "skills": [
-                "Analyse des besoins",
-                "Conception d'une application",
-                "Gestion de projet Agile",
-                "Travail en équipe",
-                "Développement web avancé",
-                "Rédaction d'une documentation technique"
+                "Développement d'une application en C",
+                "Optimisation du programme et allocation dynamique",
+                "Réponse à des besoins clients définis"
             ],
             "links": [1, 2, 3, 1, 2, 3]
         }

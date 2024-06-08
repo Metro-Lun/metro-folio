@@ -1,11 +1,10 @@
 <script setup>
-    import { ref } from 'vue';
     import i from '@/assets/dataPerso.json'
     const interests = i.interests;
 </script>
 
 <template>
-    <h1 class="title">Qui suis-je ?</h1>
+    <div id="titles"><h1>Qui suis-je ?</h1></div>
 
     <section id="intro">
         <img id="face-img" src="../assets/images/face.jpg" alt="Photo de moi-même" />
@@ -26,7 +25,7 @@
             <div>
                 <p v-for="e in i.explanation" :key="e.id">{{e}}</p>
             </div>
-            
+
         </div>
     </section>
     
@@ -45,10 +44,8 @@
     }
 
     #perso-path {
-        background-image: url('../assets/images/anon1d10.jpg');
+        background-image: url('../assets/images/curved-dotted-line-png-19.png');
         background-repeat: no-repeat;
         background-position: center center;
     }
-
-
 </style>

@@ -27,8 +27,7 @@
         margin-top: 0;
         margin-bottom: 2em;
         padding: 6px 20px;
-        background: #063387;
-        color: rgb(208, 14, 212);
+        background-color: #4d0000;
         display: flex;
         align-items: center;
         z-index: 2;
@@ -41,7 +40,7 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 20px;
-        color: #a8b5ff;
+        color: #ffffff;
     }
 
     nav p {
