@@ -68,7 +68,7 @@
                 <p v-for="(s, index) in skills" :key="s.id" class="comp-header">C{{index + 1}}</p>
             </div>
 
-            <div v-for="sae in saes" :key="sae.id" id="not-top-line">
+            <div v-for="sae in saes" :key="sae.id">
                 <RouterLink :to="{name: 'projs'}">
                     <div class="sae-tile">
                         <p>{{sae.code}}</p>
@@ -146,7 +146,8 @@
     /* SKILL DESCRIPTION */
 
     .skill-desc {
-        background-color: rgb(231, 231, 231);
+        background: rgb(240, 180, 180);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         border-radius: 0px 50px 50px 50px;
         flex-direction: column;
         padding: 2em 10em 2em 2em;
@@ -192,13 +193,6 @@
         text-align: center;
     }
 
-    .sae-table > div:first-child p {
-        font-weight: bolder;
-        font-size: 40px;
-        padding: 0.5em;
-        margin: 0;
-    }
-
     .vertical-line {
         position: relative;
     }
@@ -214,7 +208,6 @@
         transform: translateX(-50%);
     }
 
-
     .vertical-line::after {
         content: "";
         position: absolute;
@@ -226,7 +219,7 @@
         transform: translateY(-50%);
     }
 
-    .sae-table p:not(.sae-tile p) {
+    .sae-table p:not(.sae-tile p, .comp-header) {
         margin: 0;
         font-size: 50px;
         display: flex;
@@ -235,16 +228,18 @@
     }
 
     .comp-header {
-        font-size: 15px;
-        border: 1px solid black;
-        background-color: rgb(231, 231, 231);
-        border-radius: 24px;
-        margin: auto 1em;
-        padding: 2px;
-    }
+        font-size: 40px;
+        font-weight: bolder;
+        align-self: center;
 
-    .sae-table > div:first-child p:not(#empty) {
-        border-bottom: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 20px;
+        background: rgb(240, 180, 180);
+
+        padding: 0.2em 0;
+        margin: 0 auto;
+        width: 80%;
+        
     }
 
     /* MINI DIVS SAE */
@@ -252,19 +247,21 @@
     .sae-tile {
         font-size: 10px;
         margin: 3em 0;
-        border: 1px solid black;
-        background-color: rgb(231, 231, 231);
-        border-radius: 24px;
-        padding-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 20px;
+        background: rgb(240, 180, 180);
+        padding-top: 1em;
+        padding-bottom: 2em;
         width: 100%;
         position: relative;
         z-index: 1000;
 
-        transition: scale 0.2s ease;
+        transition: all 0.5s ease;
     }
 
     .sae-tile:hover {
-        scale: 1.1;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: translateY(-5px);
     }
 
     .sae-tile img {

@@ -23,7 +23,6 @@
             ],
             "links": [1, 2, 3, 1, 2, 3]
         },
-        
         {
             "code": "GraphMap Analysis",
             "title": "Développement d'une application avec traitement algorithmique et gestion de projet",
@@ -45,7 +44,26 @@
             ],
             "links": [1, 2, 3, 1, 2, 3]
         },
-        
+        {
+            "code": "Portfolio",
+            "title": "Développement d'une application avec traitement algorithmique et gestion de projet",
+            "image": "portfolio.png",
+            "size": "medium",
+            "description": [
+                "L'objectif du projet est de développer une application Java pour une organisation souhaitant relier ses dispensaires de santé dans une zone géographique sans réelles infrastructures logistiques.",
+                "L'application doit permettre de déterminer le chemin le plus court entre deux dispensaires : elle peut donner d'autres informations (voisins d'un dispensaire à 1 ou 2 niveaux, quel dispensaire est le plus connecté à d'autres dispensaires d'un certain type...)",
+                "Ce projet doit être géré selon les méthodes vues en cours de gestion de projet informatique (Gantt, matrice RACI, découpage WBS.",
+                "Il doit également respecter les conventions étudiées en cours de qualité de développement."
+            ],
+            "technos": ["HTML", "CSS", "VueJS", "Git", "GitHub"],
+            "skills": [
+                "Programmation web",
+                "Programmation orientée composants",
+                "Travail sur soi",
+                "Présentation des acquis liés à la formation"
+            ],
+            "links": [1, 2, 3, 1, 2, 3]
+        },
         {
             "code": "CSShoes",
             "title": "Recueil des besoins",
