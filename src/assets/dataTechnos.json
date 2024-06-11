@@ -1,0 +1,24 @@
+{
+    "technos": [
+        {
+            "title": "Développement web",
+            "names": ["HTML", "CSS", "JavaScript", "Vue.JS", "React", "Next.JS", "PHP", "Symfony", "Node.JS"]
+        },
+        {
+            "title": "Développement logiciel",
+            "names": ["Python", "Java", "C", "Kotlin", "LaTeX"]
+        },
+        {
+            "title": "Gestion de projet",
+            "names": ["Scrum", "Git", "GitHub", "GitLab", "UML"]
+        },
+        {
+            "title": "Systèmes d'exploitation",
+            "names": ["Windows", "Linux", "Docker"]
+        },
+        {
+            "title": "Bases de données",
+            "names": ["Oracle", "MySQL", "MongoDB"]
+        }
+    ]
+}
