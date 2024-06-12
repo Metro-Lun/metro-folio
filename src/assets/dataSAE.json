@@ -6,13 +6,13 @@
             "image": "sae_vroumvroum.png",
             "size": "big",
             "description": [
-                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre",
+                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre.",
                 "À partir du sujet choisi, l'équipe projet doit analyser les besoins fictifs et doit en tirer une structure d'application cohérente avec les langages et méthodologies vus en cours.",
                 "Cette application doit accueillir une base de données, et doit à terme être hébergée en ligne.",
                 "De plus, une documentation technique complète est demandée : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
                 "Ce projet doit utiliser une méthode Agile."
             ],
-            "technos": ["HTML", "CSS", "JavaScript", "NodeJS", "TypeScript", "SQL", "MySQL", "UML", "Trello", "Canva", "Git", "GitLab"],
+            "technos": ["JavaScript", "Node.JS", "TypeScript", "MySQL", "HTML", "CSS", "UML", "Git", "GitLab", "Trello", "Canva"],
             "skills": [
                 "Analyse des besoins",
                 "Conception d'une application",
@@ -34,7 +34,7 @@
                 "Ce projet doit être géré selon les méthodes vues en cours de gestion de projet informatique (Gantt, matrice RACI, découpage WBS.",
                 "Il doit également respecter les conventions étudiées en cours de qualité de développement."
             ],
-            "technos": ["Java", "Swing", "JUnit", "Git", "GitLab", "SourceTree"],
+            "technos": ["Java", "JUnit 5", "Git", "GitLab", "SourceTree"],
             "skills": [
                 "Programmation orientée objet",
                 "Réponse à des besoins clients définis",
@@ -55,7 +55,7 @@
                 "Ce projet doit être géré selon les méthodes vues en cours de gestion de projet informatique (Gantt, matrice RACI, découpage WBS.",
                 "Il doit également respecter les conventions étudiées en cours de qualité de développement."
             ],
-            "technos": ["HTML", "CSS", "VueJS", "Git", "GitHub"],
+            "technos": ["Vue.JS", "HTML", "CSS", "Git", "GitHub"],
             "skills": [
                 "Programmation web",
                 "Programmation orientée composants",

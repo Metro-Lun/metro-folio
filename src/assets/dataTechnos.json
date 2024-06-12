@@ -6,11 +6,11 @@
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "Java", "C", "Kotlin", "LaTeX"]
+            "names": ["Python", "Java", "JUnit 5", "C", "Kotlin", "LaTeX"]
         },
         {
             "title": "Gestion de projet",
-            "names": ["Scrum", "Git", "GitHub", "GitLab", "UML"]
+            "names": ["Scrum", "Git", "GitHub", "GitLab", "SourceTree", "UML"]
         },
         {
             "title": "Systèmes d'exploitation",

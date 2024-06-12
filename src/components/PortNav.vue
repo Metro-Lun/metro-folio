@@ -12,10 +12,8 @@
 
     <nav>
         <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
-        <RouterLink :to="{name: 'perso'}">Qui suis-je ?</RouterLink>
-        <RouterLink :to="{name: 'pro'}">Parcours professionnel</RouterLink>
+        <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
         <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
-        <RouterLink :to="{name: 'projs'}">Mes projets</RouterLink>
     </nav>
 </template>
 

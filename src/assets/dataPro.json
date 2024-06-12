@@ -1,0 +1,45 @@
+{
+    "experiences": [
+        {
+            "name": "Stagiaire développeur web",
+            "entreprise": "Centre d'Études des Tunnels (CETU)",
+            "date": "2024",
+            "explanation": [
+                "Réalisation d'un volet ''Conduite en tunnel pour les conducteurs professionnels'' sur le site du CETU",
+                "Analyse de l'existant et conception d'une application en conséquence",
+                "Développement front-end",
+                "Rédaction d'une documentation technique claire et complète"
+            ]
+        },
+        {
+            "name": "Tuteur étudiant",
+            "entreprise": "IUT Lyon 1",
+            "date": "2023 - 2024",
+            "explanation": [
+                "Dispensation de cours de support sur toutes matières",
+                "Aide aux étudiants dans leur apprentissage"
+            ]
+        },
+        {
+            "name": "Président",
+            "entreprise": "Student Club",
+            "date": "2024 - 2025",
+            "explanation": [
+                "Maintien de la cohésion entre les différents BDE de l'IUT Lyon 1 site Doua",
+                "Mise à disposition de services en collaboration avec l'IUT Lyon 1 (prévention, formation...)",
+                "Organisation d'événements divers et variés",
+                "Entretien de l'image de la fédération et de l'IUT"
+            ]
+        },
+        {
+            "name": "Chargé de communication",
+            "entreprise": "BDE Info",
+            "date": "2023 - 2024",
+            "explanation": [
+                "Mise en avant des activités de l'association",
+                "Développement de sa notoriété",
+                "Entretien et renforcement du réseau associatif"
+            ]
+        }
+    ]
+}

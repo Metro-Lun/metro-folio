@@ -44,28 +44,39 @@ p {
 }
 
 .explain-div {
-    width: 100%;
+    width: 80%;
     border-radius: 24px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.explain-div h2 {
+.explain-div-right {
+    margin-left: auto;
+}
+
+.explain-div h2, .explain-title {
     background-color: rgb(228, 228, 228);
     border-radius: 24px 24px 0px 0px;
-    margin: 0px;
+    margin: 0;
     padding: 10px 20px;
     font-size: 40px;
 }
 
-.explain-div div {
+.explain-title h3 {
+    margin-top: 0;
+    padding: 0px 20px;
+    text-decoration: italic;
+    font-size: 20px;
+}
+
+.explain-div-right h2, .explain-div-right h3 {
+    text-align: right;
+}
+
+.explain-div div:not(.explain-title) {
     margin: 0;
     border-radius: 0px 0px 24px 24px;
     padding: 10px;
     background-color: rgb(255, 183, 183);
-}
-
-.explain-title-right {
-    text-align: right;
 }
 
 .v-enter-active, .v-leave-active {
