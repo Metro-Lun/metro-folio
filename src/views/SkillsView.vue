@@ -60,7 +60,8 @@
 
     <section id="sae-vs-skills">
         <p>Voici une liste des projets universitaires en lien avec mon projet professionnel que j'ai réalisés, selon leur lien avec les compétences.</p>
-        <p>N'hésitez pas à cliquer dessus pour en savoir plus !</p>
+        <p>Un grand cercle représente un lien fort.</p>
+        <p>N'hésitez pas à cliquer sur les projets pour en savoir plus !</p>
 
         <section class="sae-table">
             <div>
@@ -76,9 +77,8 @@
                     </div>
                 </RouterLink>
                 
-                
                 <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
-                    <span :style="`font-size: ${70 * parseInt(l)}px`">o</span>
+                    <span class="link-span" :style="`font-size: ${70 * parseInt(l)}px`">o</span>
                 </p>
             </div>
         </section>

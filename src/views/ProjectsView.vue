@@ -40,52 +40,59 @@
 <template>
     <section :class="saeToDisplayIndex !== -1 ? 'overlay' : ''"></section>
 
-    <div id="titles">
-        <h1>Projets universitaires</h1>
-        <h2>développés dans le cadre des SAÉ du BUT Informatique</h2>
+    <section tabindex="0" @keyup.esc="handleClick(-1)">
+        <div id="titles">
+            <h1>Projets universitaires</h1>
+            <h2>développés dans le cadre des SAÉ du BUT Informatique</h2>
 
-        <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
-        <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
-    </div>
-
-    <section id="saes">
-        <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
-            <h3>{{ sae.code }}</h3>
-            <img :src="`/src/assets/images/sae/${sae.image}`" />
+            <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
+            <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
         </div>
-    </section>
 
-    <section v-if="saeToDisplayIndex !== -1" id="card">
-        <p id="close-button" @click="handleClick(-1)">X</p>
+        <section id="saes">
+            <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
+                <h3>{{ sae.code }}</h3>
+                <img :src="`/src/assets/images/sae/${sae.image}`" />
+                <div>
+                    <img v-for="te in sae.technos" :key="te.id" :src="`/src/assets/images/technos/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                </div>
+            </div>
+        </section>
 
-        <div id="card-titles">
-            <h2>{{saeToDisplay.code}}</h2>
-            <h3>{{saeToDisplay.title}}</h3>
-            <div>
-                <img v-for="t in saeToDisplay.technos" :key="t.id":src="`/src/assets/images/technos/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+        <section v-if="saeToDisplayIndex !== -1" id="card">
+            <div id="close-button"><button @click="handleClick(-1)">X</button></div>
+            
+
+            <div id="card-titles">
+                <h2>{{saeToDisplay.code}}</h2>
+                <h3>{{saeToDisplay.title}}</h3>
+                <div>
+                    <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/src/assets/images/technos/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                </div>
+
+                <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
+                    {{techToDisplay.name}}
+                </p>
             </div>
 
-            <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
-                {{techToDisplay.name}}
-            </p>
-        </div>
+            <div id="card-desc">
+                <img :src="`/src/assets/images/sae/${saeToDisplay.image}`" />
 
-        <div id="card-desc">
-            <img :src="`/src/assets/images/sae/${saeToDisplay.image}`" />
-
-            <div>
-                <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
-                
-                <h3>Situations professionnelles</h3>
-                <ul>
-                    <li v-for="s in saeToDisplay.skills" :key="s.id">
-                        <p>{{ s }}</p>
-                    </li>
-                </ul>
+                <div>
+                    <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
+                    
+                    <h3>Situations professionnelles</h3>
+                    <ul>
+                        <li v-for="s in saeToDisplay.skills" :key="s.id">
+                            <p>{{ s }}</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        
+            
+        </section>
+
     </section>
     
 </template>
@@ -109,7 +116,7 @@
         gap: 2em;
     }
 
-    #saes div {
+    #saes > div {
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -120,14 +127,18 @@
         transition: all 0.5s ease;
     }
 
-    #saes div:hover {
+    #saes > div:hover {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transform: translateY(-5px);
     }
 
-    #saes img {
+    #saes > div > img {
         width: 80%;
         height: auto;
+    }
+
+    #saes > div > div {
+        margin: 1.5em;
     }
 
     /* CARD */
@@ -135,7 +146,7 @@
     #card {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 20px;
-        background: rgb(246, 246, 246);
+        background-color: rgb(255, 227, 227);
         z-index: 5000;
         position: fixed;
         top: 50%;
@@ -143,6 +154,7 @@
         transform: translate(-50%, -50%);
         height: 90%;
         width: 90%;
+        overflow: hidden;
     }
 
     #card p {
@@ -150,7 +162,25 @@
     }
 
     #close-button {
+        display: flex;
+        justify-content: right;
+    }
+    
+    #close-button button {
+        font-weight: bold;
         cursor: pointer;
+        margin-top: 1em;
+        margin-right: 2em;
+        padding: 0.2em 0.5em;
+        border: 2px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        font-size: 25px;
+        transition: scale 0.2s ease;
+    }
+
+    #close-button button:hover {
+        scale: 0.8;
     }
 
     .overlay {
