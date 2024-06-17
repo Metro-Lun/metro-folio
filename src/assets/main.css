@@ -15,7 +15,8 @@ h1 {
 }
 
 main {
-    max-width: 100em;
+    width: 100%;
+    max-width: 200em;
     margin: auto;
 }
 
@@ -100,4 +101,94 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 5em auto;
+}
+
+/* ANIMATION TITRES */
+
+
+.waviy span {
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg); 
+    }
+}
+
+.big-section {
+    margin: auto;
+    max-width: 90%;
+    width: 90%;
+}
+    
+/* FOOTER */
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding: 6px 20px;
+    background-color: #4d0000;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+nav a, nav p {
+    display: inline-block;
+    margin-right: 20px;
+    opacity: 0.7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+nav p {
+    font-size: 30px;
+    margin: 0;
+}
+
+header nav:nth-child(2),
+footer nav:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pfp {
+    display: flex;
+    opacity: 1;
+}
+
+#pfp:hover{
+    animation: tourne 2s infinite;
+}
+
+#pfp img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+nav a.active,
+nav a:hover {
+    opacity: 1;
+}
+
+.router-link-active, .router-link-exact-active, .active {
+    color: #ff44cd;
+}
+
+/* ROTATION DE L'IMAGE */
+
+@keyframes tourne {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( -360deg );
+    }
 }

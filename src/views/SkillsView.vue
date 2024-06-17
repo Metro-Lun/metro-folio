@@ -21,66 +21,68 @@
 </script>
 
 <template>
-    <div id="titles"><h1>Compétences à l'IUT</h1></div>
-    <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
+    <section class="big-section">
+        <div id="titles"><h1>Compétences à l'IUT</h1></div>
+        <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
 
-    <p>Il est composé de six compétences :</p>
+        <p>Il est composé de six compétences :</p>
 
-    <section>
-        <section id="tabs">
-            <div v-for="(s, index) in skills" :key="s.id" :class="skillIndex === index ? 'tab selected' : 'tab'" @click="handleClick(index)">
-                <p>img</p>
-                <p>C{{index + 1}} - {{ s.title }}</p>
-            </div>
+        <section>
+            <section id="tabs">
+                <div v-for="(s, index) in skills" :key="s.id" :class="skillIndex === index ? 'tab selected' : 'tab'" @click="handleClick(index)">
+                    <p>img</p>
+                    <p>C{{index + 1}} - {{ s.title }}</p>
+                </div>
+            </section>
+
+            <Transition>
+                <section class="skill-desc" v-if="skill !== null">
+                    <h2>Compétence {{ skill.title }}</h2>
+
+                    <p v-for="p in skill.description" :key="p.id">{{ p }}</p>
+
+                    <h3>Niveaux</h3>
+                    <ul>
+                        <li v-for="l in skill.levels" :key="l.id">
+                            <h4>{{l.name}}</h4>
+                            <p>{{l.info}}</p>
+                        </li>
+                    </ul>
+
+                    <h3>Situations professionnelles</h3>
+                    <ul>
+                        <li v-for="ps in skill.professional_situations" :key="ps.id">
+                            <p>{{ ps }}</p>
+                        </li>
+                    </ul>
+                </section>
+            </Transition>
         </section>
 
-        <Transition>
-            <section class="skill-desc" v-if="skill !== null">
-                <h2>Compétence {{ skill.title }}</h2>
+        <section id="sae-vs-skills">
+            <p>Voici une liste des projets universitaires en lien avec mon projet professionnel que j'ai réalisés, selon leur lien avec les compétences.</p>
+            <p>Un grand cercle représente un lien fort.</p>
+            <p>N'hésitez pas à cliquer sur les projets pour en savoir plus !</p>
 
-                <p v-for="p in skill.description" :key="p.id">{{ p }}</p>
+            <section class="sae-table">
+                <div>
+                    <p id="empty"></p>
+                    <p v-for="(s, index) in skills" :key="s.id" class="comp-header">C{{index + 1}}</p>
+                </div>
 
-                <h3>Niveaux</h3>
-                <ul>
-                    <li v-for="l in skill.levels" :key="l.id">
-                        <h4>{{l.name}}</h4>
-                        <p>{{l.info}}</p>
-                    </li>
-                </ul>
-
-                <h3>Situations professionnelles</h3>
-                <ul>
-                    <li v-for="ps in skill.professional_situations" :key="ps.id">
-                        <p>{{ ps }}</p>
-                    </li>
-                </ul>
+                <div v-for="sae in saes" :key="sae.id">
+                    <RouterLink :to="{name: 'projs'}">
+                        <div class="sae-tile">
+                            <p>{{sae.code}}</p>
+                            <img :src="`/src/assets/images/sae/${sae.image}`" />
+                        </div>
+                    </RouterLink>
+                    
+                    <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
+                        <span class="link-span" :style="`font-size: ${60 * parseInt(l)}px`">o</span>
+                    </p>
+                </div>
             </section>
-        </Transition>
-    </section>
-
-    <section id="sae-vs-skills">
-        <p>Voici une liste des projets universitaires en lien avec mon projet professionnel que j'ai réalisés, selon leur lien avec les compétences.</p>
-        <p>Un grand cercle représente un lien fort.</p>
-        <p>N'hésitez pas à cliquer sur les projets pour en savoir plus !</p>
-
-        <section class="sae-table">
-            <div>
-                <p id="empty"></p>
-                <p v-for="(s, index) in skills" :key="s.id" class="comp-header">C{{index + 1}}</p>
-            </div>
-
-            <div v-for="sae in saes" :key="sae.id">
-                <RouterLink :to="{name: 'projs'}">
-                    <div class="sae-tile">
-                        <p>{{sae.code}}</p>
-                        <img :src="`/src/assets/images/sae/${sae.image}`" />
-                    </div>
-                </RouterLink>
-                
-                <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
-                    <span class="link-span" :style="`font-size: ${70 * parseInt(l)}px`">o</span>
-                </p>
-            </div>
         </section>
     </section>
 </template>

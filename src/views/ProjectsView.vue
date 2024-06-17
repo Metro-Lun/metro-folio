@@ -38,63 +38,64 @@
 </script>
 
 <template>
-    <section :class="saeToDisplayIndex !== -1 ? 'overlay' : ''"></section>
+    <section class="big-section">
+        <section :class="saeToDisplayIndex !== -1 ? 'overlay' : ''"></section>
 
-    <section tabindex="0" @keyup.esc="handleClick(-1)">
-        <div id="titles">
-            <h1>Projets universitaires</h1>
-            <h2>développés dans le cadre des SAÉ du BUT Informatique</h2>
+        <section tabindex="0" @keyup.esc="handleClick(-1)">
+            <div id="titles">
+                <h1>Projets universitaires</h1>
+                <h2>développés dans le cadre des SAÉ du BUT Informatique</h2>
 
-            <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
-            <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
-        </div>
-
-        <section id="saes">
-            <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
-                <h3>{{ sae.code }}</h3>
-                <img :src="`/src/assets/images/sae/${sae.image}`" />
-                <div>
-                    <img v-for="te in sae.technos" :key="te.id" :src="`/src/assets/images/technos/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
-                </div>
+                <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
+                <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
             </div>
+
+            <section id="saes">
+                <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
+                    <h3>{{ sae.code }}</h3>
+                    <img :src="`/src/assets/images/sae/${sae.image}`" />
+                    <div>
+                        <img v-for="te in sae.technos" :key="te.id" :src="`/src/assets/images/technos/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                    </div>
+                </div>
+            </section>
+
+            <section v-if="saeToDisplayIndex !== -1" id="card">
+                <div id="close-button"><button @click="handleClick(-1)">X</button></div>
+                
+
+                <div id="card-titles">
+                    <h2>{{saeToDisplay.code}}</h2>
+                    <h3>{{saeToDisplay.title}}</h3>
+                    <div>
+                        <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/src/assets/images/technos/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                    </div>
+
+                    <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
+                        {{techToDisplay.name}}
+                    </p>
+                </div>
+
+                <div id="card-desc">
+                    <img :src="`/src/assets/images/sae/${saeToDisplay.image}`" />
+
+                    <div>
+                        <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
+                        
+                        <h3>Situations professionnelles</h3>
+                        <ul>
+                            <li v-for="s in saeToDisplay.skills" :key="s.id">
+                                <p>{{ s }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </section>
+
         </section>
-
-        <section v-if="saeToDisplayIndex !== -1" id="card">
-            <div id="close-button"><button @click="handleClick(-1)">X</button></div>
-            
-
-            <div id="card-titles">
-                <h2>{{saeToDisplay.code}}</h2>
-                <h3>{{saeToDisplay.title}}</h3>
-                <div>
-                    <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/src/assets/images/technos/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
-                </div>
-
-                <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
-                    {{techToDisplay.name}}
-                </p>
-            </div>
-
-            <div id="card-desc">
-                <img :src="`/src/assets/images/sae/${saeToDisplay.image}`" />
-
-                <div>
-                    <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
-                    
-                    <h3>Situations professionnelles</h3>
-                    <ul>
-                        <li v-for="s in saeToDisplay.skills" :key="s.id">
-                            <p>{{ s }}</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            
-        </section>
-
     </section>
-    
 </template>
 
 <style scoped>
