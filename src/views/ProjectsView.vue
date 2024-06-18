@@ -53,7 +53,7 @@
             <section id="saes">
                 <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
                     <h3>{{ sae.code }}</h3>
-                    <img :src="`/assets/images/sae/${sae.image}`" />
+                    <img :src="`/assets/images/${sae.image}`" />
                     <div>
                         <img v-for="te in sae.technos" :key="te.id" :src="`/assets/images/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
                     </div>
