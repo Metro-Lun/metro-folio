@@ -2,7 +2,7 @@
     "technos": [
         {
             "title": "Développement web",
-            "names": ["HTML", "CSS", "JavaScript", "Vue.JS", "React", "Next.JS", "PHP", "Symfony", "Node.JS"]
+            "names": ["HTML", "CSS", "JavaScript", "Vue.JS", "React", "Next.JS", "PHP", "Symfony", "NodeJS"]
         },
         {
             "title": "Développement logiciel",
