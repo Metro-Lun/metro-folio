@@ -53,9 +53,9 @@
             <section id="saes">
                 <div v-for="(sae, index) in saes" :key="sae.id" @click="handleClick(index)">
                     <h3>{{ sae.code }}</h3>
-                    <img :src="`/src/assets/images/sae/${sae.image}`" />
+                    <img :src="`../assets/images/sae/${sae.image}`" />
                     <div>
-                        <img v-for="te in sae.technos" :key="te.id" :src="`/src/assets/images/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                        <img v-for="te in sae.technos" :key="te.id" :src="`../assets/images/${te}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
                     </div>
                 </div>
             </section>
@@ -68,7 +68,7 @@
                     <h2>{{saeToDisplay.code}}</h2>
                     <h3>{{saeToDisplay.title}}</h3>
                     <div>
-                        <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/src/assets/images/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                        <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`../assets/images/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
                     </div>
 
                     <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
@@ -77,7 +77,7 @@
                 </div>
 
                 <div id="card-desc">
-                    <img :src="`/src/assets/images/${saeToDisplay.image}`" />
+                    <img :src="`../assets/images/${saeToDisplay.image}`" />
 
                     <div>
                         <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>

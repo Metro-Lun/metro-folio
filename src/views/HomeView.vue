@@ -60,7 +60,7 @@
                 <h2>{{ t.title }}</h2>
                 <div class="tech-list">
                     <div v-for="n in t.names" :key="n.id" class="tech-div">
-                        <img :src="`/src/assets/images/${n}.png`" />
+                        <img :src="`../assets/images/${n}.png`" />
                         <p>{{n}}</p>
                     </div>
                 </div>
