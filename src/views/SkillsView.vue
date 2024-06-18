@@ -77,7 +77,7 @@
                     <RouterLink :to="{name: 'projs'}">
                         <div class="sae-tile">
                             <p>{{sae.code}}</p>
-                            <img :src="`../assets/images/${sae.image}`" />
+                            <img :src="`/assets/images/${sae.image}`" />
                         </div>
                     </RouterLink>
                     

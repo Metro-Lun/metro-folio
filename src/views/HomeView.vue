@@ -27,14 +27,14 @@
             </h1>
         </div>
 
-        <img src="../assets/images/main-logo.png" />
+        <img src="/assets/images/main-logo.png" />
     </section>
     
     <section class="big-section">
         <div id="titles"><h1>Qui suis-je ?</h1></div>
 
         <section id="intro">
-            <img id="face-img" src="../assets/images/face.jpg" alt="Photo de moi-même" />
+            <img id="face-img" src="/assets/images/face.jpg" alt="Photo de moi-même" />
 
             <div>
                 <p>Je m'appelle Mehdi Bourbon (c'est bien évidemment moi sur la photo). Je suis un étudiant en BUT informatique à Lyon, toujours en quête de connaissances, notamment sur le développement : la quantité de technologies et de moyens différents d'arriver à un même résultat est fascinant !</p>
@@ -60,7 +60,7 @@
                 <h2>{{ t.title }}</h2>
                 <div class="tech-list">
                     <div v-for="n in t.names" :key="n.id" class="tech-div">
-                        <img :src="`../assets/images/${n}.png`" />
+                        <img :src="`/assets/images/${n}.png`" />
                         <p>{{n}}</p>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
     }
 
     .path {
-        background-image: url('../assets/images/curved-dotted-line-png-19.png');
+        background-image: url('/assets/images/curved-dotted-line-png-19.png');
         background-repeat: no-repeat;
         background-position: center center;
     }
