@@ -43,8 +43,8 @@
 
                     <h3>Niveaux</h3>
                     <ul>
-                        <li v-for="l in skill.levels" :key="l.id">
-                            <h4>{{l.name}}</h4>
+                        <li v-for="(l, indexL) in skill.levels" :key="l.id">
+                            <h4>{{indexL + 1}} - {{l.name}}</h4>
                             <p>{{l.info}}</p>
                         </li>
                     </ul>
@@ -55,6 +55,9 @@
                             <p>{{ ps }}</p>
                         </li>
                     </ul>
+
+                    <h3>Niveau personnel : <strong>{{ skill.personal_review.level }}</strong></h3>
+                    <p>{{skill.personal_review.explanation}}</p>
                 </section>
             </Transition>
         </section>

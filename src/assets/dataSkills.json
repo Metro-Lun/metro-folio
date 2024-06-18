@@ -22,27 +22,134 @@
                     "info": "Choisir les bonnes technologies, intégrer des applications dans des environnements de production et savoir les maintenir en état"
                 }
             ],
-            "professional_situations": ["Élaboration d'une une application informatique", "Évolution des applications", "Maintenance d'une application informatique en conditions opérationnelles"]
+            "professional_situations": ["Élaboration d'une une application informatique", "Évolution des applications", "Maintenance d'une application informatique en conditions opérationnelles"],
+            "personal_review": {
+                "level": 2,
+                "explanation": "Je suis capable de sélectionner une technologie adéquate en fonction des spécifications et de réaliser une solution informatique complète. Je n'ai encore pas eu l'occasion, en revanche, d'en maintenir."
+            }
         },
         {
-            "title": "Réaliser",
-            "professional_situations": ["aa", "bb", "cc"]
+            "title": "Optimiser",
+            "description": [
+                "Pour maîtriser la compétence Optimiser, il faut être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
+                "En effet, la taille, le choix du langage, le temps d'exécution, les algorithmes utilisés entrent en jeu dans l'expérience utilisateur et l'usage fait de notre solution.",
+                "Ainsi, il est nécessaire d'analyser le problème et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats.",
+                "Cependant, les solutions employées ne doivent pas faire gage de facilité : la sécurité des données et l'impact sociétal et environnemental associé restent primordiaux.",
+                "La solution retenue doit être justifiée."
+            ],
+            "levels": [
+                {
+                    "name": "Appréhender et construire des algorithmes",
+                    "info": "Comparer des algorithmes et choisir le meilleur, à l'aide des outils mathématiques à disposition (arbres, graphes...)"
+                },
+                {
+                    "name": "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
+                    "info": "Par souci de sécurité et d'impact, savoir utiliser des techniques algorithmiques avancées au besoin (optimisation, IA, hachage...)"
+                },
+                {
+                    "name": "Analyser et optimiser des applications",
+                    "info": "Améliorer un code existant après analyse de son comportement, remplacer des technologies si nécessaire pour améliorer son fonctionnement"
+                }
+            ],
+            "professional_situations": ["Améliorer les performances des programmes dans des contextes contraints", "Limiter l'impact environnemental d'une application informatique", "Mettre en place des applications informatiques adaptées et efficaces"],
+            "personal_review": {
+                "level": 2,
+                "explanation": "Je sais évaluer différentes solutions et sélectionner la meilleure (et celle qui permet de consommer le moins possible en termes de ressources et d'énergie)."
+            }
         },
         {
-            "title": "Réaliser",
-            "professional_situations": ["aa", "bb", "cc"]
+            "title": "Administrer",
+            "description": [
+                "Pour maîtriser la compétence Administrer, il faut être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
+                "Ceci passe par la connaissance du fonctionnement des protocoles de base, mais aussi par une prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
+            ],
+            "levels": [
+                {
+                    "name": "Installer et configurer un poste de travail",
+                    "info": "Connaître et identifier les différents composants d'un système, savoir les manipuler, configurer un système d'exploitation"
+                },
+                {
+                    "name": "Déployer des services dans une architecture réseau",
+                    "info": "Savoir utiliser des serveurs, relier des applications par ces services et les sécuriser"
+                }
+            ],
+            "professional_situations": ["Déployer une nouvelle architecture technique", "Améliorer une infrastructure existante", "Sécuriser les applications et les services"],
+            "personal_review": {
+                "level": 2,
+                "explanation": "Je suis en capacité de déployer des serveurs web Apache sous Linux, et de créer des liaisons TCP et UDP."
+            }
         },
         {
-            "title": "Réaliser",
-            "professional_situations": ["aa", "bb", "cc"]
+            "title": "Gérer",
+            "description": [
+                "Pour maîtriser la compétence Gérer, il faut savoir analyser et exploiter les données d'une structure.",
+                "Il est possible de les entretenir et de concevoir une base ou un agencement optimal comme il est possible de les analyser pour en tirer une conclusion, souvent stratégique.",
+                "Assurer la sécurité, la cohérence et l'intégrité des données est un indispensable."
+            ],
+            "levels": [
+                {
+                    "name": "Concevoir et mettre en place une base de données à partir d'un cahier des charges client",
+                    "info": "Savoir concevoir des bases de données relationnelles, mais également les interroger, et en tirer des données"
+                },
+                {
+                    "name": "Optimiser une base de données, interagir avec une application et mettre en oeuvre la sécurité",
+                    "info": "Analyser des données et améliorer leur flux via les bases les contenants, aussi hétérogènes les données soient-elles"
+                }
+            ],
+            "professional_situations": ["Lancer un nouveau projet", "Sécuriser des données", "Exploiter des données pour la prise de décisions"],
+            "personal_review": {
+                "level": 2,
+                "explanation": "Je peux exploiter des bases de données relationnelles et non-relationnelles, et les analyser à l'aide de tableaux de reporting simples."
+            }
         },
         {
-            "title": "Réaliser",
-            "professional_situations": ["aa", "bb", "cc"]
+            "title": "Conduite",
+            "description": [
+                "Pour maîtriser la compétence Conduire, il est nécessaire de savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
+                "Savoir adopter les bonnes démarches, une bonne politique de communication, et respecter les règles juridiques et éthique est crucial."
+            ],
+            "levels": [
+                {
+                    "name": "Identifier les besoins métiers des clients et des utilisateurs",
+                    "info": "Appréhender les besoins, mettre en place les outils nécessaires et savoir identifier les acteurs du projet"
+                },
+                {
+                    "name": "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
+                    "info": "Analyser les processus d'une organisation pour améliorer son système d'information, et être capable de suivre des projets"
+                }
+            ],
+            "professional_situations": ["lancer un nouveau projet", "Piloter le maintien d'un projet en condition opérationnelle", "Faire évoluer un système d'information"],
+            "personal_review": {
+                "level": 2,
+                "explanation": "Je peux planifier (Gantt, RACI, PERT méthodes de découpage) et suivre (tableau de bord) un projet à toutes ses phases, en utilisant les méthodes agiles ou non."
+            }
         },
         {
-            "title": "Réaliser",
-            "professional_situations": ["aa", "bb", "cc"]
+            "title": "Collaborer",
+            "description": [
+                "Pour maîtriser la compétence Collaborer, il est nécessaire d'apprendre à travailler de manière efficace dans une équipe informatique.",
+                "À ces fins, la communication est un facteur clé. Les informations doivent être partagées et accessibles.",
+                "Les projets lancés suivent les évolutions numériques et juridiques."
+            ],
+            "levels": [
+                {
+                    "name": "Identifier ses aptitudes pour travailler dans une équipe",
+                    "info": "Découvrir les aptitudes requises dans le monde de l'informatique et savoir s'y identifier, et acquérir les compétences manquantes, ainsi que des compétences interpersonnelles"
+                },
+                {
+                    "name": "Situer son rôle et ses missions au sein d'une équipe informatique",
+                    "info": "Analyser la place de l'informatique dans le monde du travail et vivre des expériences dans une équipe informatique"
+                },
+                {
+                    "name": "Manager une équipe informatique",
+                    "info": "Guider la transition numérique au seun d'une organisation, gérer les projets informatiques selon des enjeux d'innovation"
+                }
+            ],
+            "professional_situations": ["Lancer un nouveau projet", "Organiser son travail en relation avec celui de son équipe", "Elaborer, gérer et transmettre de l'information"],
+            "personal_review": {
+                "level": 3,
+                "explanation": "Je sais gérer une petite équipe pour un projet donné et comprends les objectifs à atteindre. J'utilise mes soft skills pour communiquer et j'intègre rapidement divers milieux."
+            }
         }
     ]
 }
