@@ -30,7 +30,6 @@
         <section>
             <section id="tabs">
                 <div v-for="(s, index) in skills" :key="s.id" :class="skillIndex === index ? 'tab selected' : 'tab'" @click="handleClick(index)">
-                    <p>img</p>
                     <p>C{{index + 1}} - {{ s.title }}</p>
                 </div>
             </section>
@@ -107,6 +106,7 @@
         user-select: none;
         display: flex;
         gap: 10px;
+        width: 10%;
         padding: 0px 15px;
         transition: all 0.6s ease;
     }
