@@ -104,6 +104,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        overflow: hidden;
     }
 
     .main-title {
@@ -219,7 +221,6 @@
         padding: 16px 35px;
 
         font-size: 20px;
-        font-weight: bold;
 
         border: none;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
