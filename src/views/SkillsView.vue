@@ -35,7 +35,7 @@
             </section>
 
             <Transition>
-                <section class="skill-desc" v-if="skill !== null">
+                <section :class="`skill-desc-${skillIndex}`" v-if="skill !== null">
                     <h2>Compétence {{ skill.title }}</h2>
 
                     <p v-for="p in skill.description" :key="p.id">{{ p }}</p>
@@ -69,7 +69,10 @@
             <section class="sae-table">
                 <div>
                     <p id="empty"></p>
-                    <p v-for="(s, index) in skills" :key="s.id" class="comp-header">C{{index + 1}}</p>
+                    <div v-for="(s, index) in skills" :key="s.id" class="comp-header">
+                        <p>C{{ index + 1 }}</p>
+                        <p>{{ s.title }}</p>
+                    </div>
                 </div>
 
                 <div v-for="sae in saes" :key="sae.id">
@@ -150,8 +153,7 @@
 
     /* SKILL DESCRIPTION */
 
-    .skill-desc {
-        background: rgb(240, 180, 180);
+    [class^="skill-desc-"] {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         border-radius: 0px 50px 50px 50px;
         flex-direction: column;
@@ -160,24 +162,43 @@
         position: relative;
     }
 
-    .skill-desc h2 {
+    [class^="skill-desc-"] h2 {
         font-size: 30px;
         margin: 0px 0px 1em 0px;
     }
 
-    .skill-desc h3 {
+    [class^="skill-desc-"] h3 {
         margin-top: 2em;
         font-size: 25px;
     }
 
-    .skill-desc h4 {
+    [class^="skill-desc-"] h4 {
         font-size: 22px;
         margin-bottom: 0;
     }
 
-    .skill-desc h4 ~ p {
+    [class^="skill-desc-"] h4 ~ p {
         font-size: 17px;
         margin: 0;
+    }
+
+    .skill-desc-0 {
+        background-color: rgb(240, 180, 180);
+    }
+    .skill-desc-1 {
+        background-color: rgb(255, 210, 179);
+    }
+    .skill-desc-2 {
+        background-color: rgb(255, 252, 216);
+    }
+    .skill-desc-3 {
+        background-color: rgb(223, 255, 220);
+    }
+    .skill-desc-4 {
+        background-color: rgb(201, 229, 255);
+    }
+    .skill-desc-5 {
+        background-color: #e7e5e5;
     }
 
     /* SAE TABLE */
@@ -226,25 +247,46 @@
 
     .sae-table p:not(.sae-tile p, .comp-header) {
         margin: 0;
-        font-size: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .comp-header {
-        font-size: 40px;
         font-weight: bolder;
         align-self: center;
-
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         border-radius: 20px;
-        background: rgb(240, 180, 180);
-
         padding: 0.2em 0;
         margin: 0 auto;
         width: 80%;
-        
+    }
+
+    .comp-header:nth-child(2) {
+        background-color: rgb(252, 125, 125);
+    }
+    .comp-header:nth-child(3) {
+        background-color: rgb(252, 176, 125);
+    }
+    .comp-header:nth-child(4) {
+        background-color: rgb(255, 248, 155);
+    }
+    .comp-header:nth-child(5) {
+        background-color: rgb(171, 255, 163);
+    }
+    .comp-header:nth-child(6) {
+        background-color: rgb(125, 191, 252);
+    }
+    .comp-header:nth-child(7) {
+        background-color: #cccccc;
+    }
+
+    .comp-header p:first-child {
+        font-size: 40px;
+    }
+
+    .comp-header p:nth-child(2) {
+        font-size: 20px;
     }
 
     /* MINI DIVS SAE */
