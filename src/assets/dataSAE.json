@@ -12,7 +12,7 @@
                 "De plus, une documentation technique complète, telle que celle demandée dans le monde professionnel, est demandée à travers de nombreux livrables : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
                 "Ce projet doit utiliser une méthode Agile, et doit, dans sa manipulation des données et sa structure, respecter des paradigmes de qualité (Design Patterns, ergonomie...)."
             ],
-            "technos": ["JavaScript", "Node.JS", "TypeScript", "MySQL", "HTML", "CSS", "UML", "Git", "GitLab", "Trello", "Canva"],
+            "technos": ["JavaScript", "NodeJS", "TypeScript", "MySQL", "HTML", "CSS", "UML", "Git", "GitLab", "Trello", "Canva"],
             "skills": [
                 "Analyse des besoins",
                 "Conception d'une application",
@@ -55,7 +55,7 @@
                 "Il peut prendre n'importe quelle forme et permet de rendre compte d'une posture réflexive et d'une prise de recul vis-à-vis des compétences de la formation et du parcours suivi.",
                 "Le portfolio du BUT Informatique est un site web comportant un volet personnel et un volet académique."
             ],
-            "technos": ["Vue.JS", "HTML", "CSS", "Git", "GitHub"],
+            "technos": ["Vue.JS", "NodeJS", "HTML", "CSS", "Git", "GitHub"],
             "skills": [
                 "Programmation web",
                 "Programmation orientée composants",
