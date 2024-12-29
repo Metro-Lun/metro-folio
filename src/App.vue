@@ -4,9 +4,7 @@
 </script>
 
 <template>
-    <header>
-        <PortNav />
-    </header>
+    <PortNav />
 
     <main>
         <RouterView />
@@ -14,7 +12,7 @@
 
     <footer>
         <nav>
-            <p>© Mehdi BOURBON - juin 2024</p>
+            <p>© Mehdi BOURBON - {}</p>
         </nav>
 
         <nav>
