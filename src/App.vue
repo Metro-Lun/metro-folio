@@ -1,27 +1,29 @@
 <script setup>
     import { RouterView } from 'vue-router'
-    import PortNav from '@/components/PortNav.vue'
+    import HeaderComponent from './components/HeaderComponent.vue';
+    import FooterComponent from './components/FooterComponent.vue';
+
+    let theme = () => {
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function toggleTheme() {
+        theme = theme === 'dark' ? 'light' : 'dark';
+    }
+
+
+
+
 </script>
 
 <template>
-    <PortNav />
+    <HeaderComponent :theme="theme" @newTheme="toggleTheme" />
 
-    <main>
+    <main :class="theme === 'light' ? 'light' : 'dark'">
         <RouterView />
     </main>
 
-    <footer>
-        <nav>
-            <p>© Mehdi BOURBON - {}</p>
-        </nav>
-
-        <nav>
-            <div>
-                <a href="https://github.com/Metro-Lun"><img src="/assets/images/github-blanc.png" /></a>
-                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><img src="/assets/images/linkedin-blanc.png" /></a>
-            </div>
-        </nav>
-    </footer>
+    <FooterComponent />
 </template>
 
 <style>
@@ -43,5 +45,15 @@
     footer img {
         width: 70px;
     }
+
+    header {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    /* DARK MAIN*/
+
+    /* LIGHT MAIN */
+
+
 
 </style>

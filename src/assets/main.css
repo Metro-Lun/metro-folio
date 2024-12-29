@@ -4,7 +4,7 @@ body {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 227, 227);
+    background-color: rgb(15, 4, 4);
 }
 
 h1 {
@@ -18,15 +18,6 @@ main {
     width: 100%;
     max-width: 200em;
     margin: auto;
-}
-
-header {
-    top: 0;
-    position: fixed;
-    display: grid;
-    grid-template: auto / 1fr 1fr;
-    width: 100%;
-    z-index: 2000;
 }
 
 p {
@@ -132,7 +123,6 @@ nav {
     margin-top: 0;
     margin-bottom: 2em;
     padding: 6px 20px;
-    background-color: #4d0000;
     display: flex;
     align-items: center;
     z-index: 2;
