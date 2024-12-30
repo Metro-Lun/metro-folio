@@ -90,7 +90,6 @@ p {
 
 /* ANIMATION TITRES */
 
-
 .waviy span {
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
@@ -111,14 +110,7 @@ p {
 /* FOOTER */
 
 nav {
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 0;
-    margin-bottom: 2em;
-    padding: 6px 20px;
     display: flex;
-    align-items: center;
     z-index: 2;
 }
 
@@ -160,10 +152,6 @@ footer nav:nth-child(2) {
 nav a.active,
 nav a:hover {
     opacity: 1;
-}
-
-.router-link-active, .router-link-exact-active, .active {
-    color: #ff44cd;
 }
 
 /* ROTATION DE L'IMAGE */

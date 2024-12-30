@@ -8,7 +8,7 @@
     let theme = ref(windowTheme);
 
     function toggleTheme() {
-        theme = theme === 'dark' ? 'light' : 'dark';
+        theme.value = theme.value === 'dark' ? 'light' : 'dark';
     }
 
 </script>

@@ -1,7 +1,7 @@
 <script setup>
     import { RouterLink } from 'vue-router';
 
-    defineProps(["theme"]);
+    const props = defineProps(["theme"]);
     const emits = defineEmits(["newTheme"]);
 
     function changeTheme() {
@@ -10,19 +10,25 @@
 </script>
 
 <template>
-    <header :class="theme === 'light' ? 'light' : 'dark'">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
+    <header :class="props.theme === 'light' ? 'light' : 'dark'">
         <img src="/assets/images/pfp.png" />
 
-        <section>
+        <section id="links-n-light">
             <nav>
                 <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
                 <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
                 <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
             </nav>
-            <div id="light-switch" @click="changeTheme">
-                <i class="fas fa-moon"></i>
-                <div id="switch-btn"></div>
-            </div>
+            <section id="switch-container">
+                <div id="light-switch" @click="changeTheme">
+                    <i class="fas fa-moon"></i>
+                    <div id="switch-btn"></div>
+                </div>
+            </section>
          </section>
     </header>
 </template>
@@ -61,13 +67,19 @@
         right: -1px;
     }
 
+    header i {
+        color: white;
+    }
 
+    #links-n-light {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
 
-
-
-
-
-
+    .router-link-active, .router-link-exact-active, .active {
+        color: #ff44cd;
+    }
 
 
 
