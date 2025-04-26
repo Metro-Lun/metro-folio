@@ -2,11 +2,11 @@
     "technos": [
         {
             "title": "Développement web",
-            "names": ["HTML", "CSS", "JavaScript", "Vue.JS", "React", "Next.JS", "PHP", "Symfony", "NodeJS"]
+            "names": ["HTML", "CSS", "JavaScript", "VueJS", "React", "PHP", "NodeJS"]
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "Java", "JUnit 5", "C", "Kotlin", "LaTeX"]
+            "names": ["Python", "Java", "JUnit 5", "C", "LaTeX"]
         },
         {
             "title": "Gestion de projet",

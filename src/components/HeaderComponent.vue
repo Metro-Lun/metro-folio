@@ -44,10 +44,11 @@
         grid-template: auto / 1fr 1fr;
         width: 100%;
         z-index: 2000;
+        height: 4em;
     }
 
     header.light {
-        background-color: red;
+        background-color: rgb(255, 79, 79);
     }
 
     header.dark {
