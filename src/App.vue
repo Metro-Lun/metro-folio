@@ -9,6 +9,7 @@
 
     function toggleTheme() {
         theme.value = theme.value === 'dark' ? 'light' : 'dark';
+        console.log(theme.value)
     }
 
 </script>
@@ -57,6 +58,9 @@
     }
 
     /* DARK MAIN*/
+    .light {
+        background-color: blue;
+    }
 
     /* LIGHT MAIN */
 

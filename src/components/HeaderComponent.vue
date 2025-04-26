@@ -15,8 +15,6 @@
     </head>
 
     <header :class="props.theme === 'light' ? 'light' : 'dark'">
-        <img src="/assets/images/pfp.png" />
-
         <section id="links-n-light">
             <nav>
                 <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
@@ -25,7 +23,12 @@
             </nav>
             <section id="switch-container">
                 <div id="light-switch" @click="changeTheme">
-                    <i class="fas fa-moon"></i>
+                    <div>
+                        <i v-show="props.theme === 'dark'" id="dark-icon" class="fas fa-moon"></i>
+                    </div>
+                    <div>
+                        <i v-show="props.theme === 'light'" id="light-icon" class="fas fa-sun"></i>
+                    </div>
                     <div id="switch-btn"></div>
                 </div>
             </section>
@@ -43,16 +46,32 @@
         z-index: 2000;
     }
 
+    header.light {
+        background-color: red;
+    }
+
+    header.dark {
+        background-color: blue;
+    }
+
+
+
     /* LIGHT SWITCH */
 
     #light-switch{
         width: 4rem;
         height: 2rem;
-        border: 1px solid #1E2939;
         background-color: #1E2939;
         border-radius: 1rem;  
         position: relative;
-        border: 1px solid red;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.light #light-switch {
+        background-color: rgb(95, 223, 255);
     }
 
     #switch-btn {
@@ -63,12 +82,27 @@
         position: absolute; 
     }
 
-    header.dark #switch-btn {
-        right: -1px;
+    #dark-icon {
+        padding-left: 10px;
+        color: white;
     }
 
-    header i {
-        color: white;
+    #light-icon {
+        padding-right: 10px;
+        color: yellow;
+    }
+    
+    #switch-btn {
+        border: 1px solid black;
+    }
+
+    header.dark #switch-btn {
+        right: -1px;        /* allows for the button to move */
+        background-color: white;
+    }
+
+    header.light #switch-btn {
+        background-color: yellow;
     }
 
     #links-n-light {
