@@ -15,7 +15,7 @@
 <template>
     <section id="main-home">
         <p>hjkjk</p>
-        <section class="main-front-presentation">
+        <section id="main-front-presentation">
             <div>
                 <h1>Mehdi BOURBON</h1>
                 <h2>Texte pour me présenter</h2>
@@ -37,15 +37,18 @@
             <h2 @click="handleClick(2)" :class="tab == 2 ? 'selected' : ''">Passe-temps</h2>
         </section>
 
-        <TechComponent v-if="tab == 0"/>
-        <JourneyComponent v-if="tab == 1" />
-        <HobbiesComponent v-if="tab == 2" />
+        <section id="choice-container">
+            <TechComponent v-if="tab == 0"/>
+            <JourneyComponent v-if="tab == 1" />
+            <HobbiesComponent v-if="tab == 2" />
+        </section>
     </section>
 </template>
 
 <style scoped>
-    .main-front-presentation {
+    #main-front-presentation {
         display: flex;
+        background-color: #8E1616;
     }
 
     /* CHOOSE */

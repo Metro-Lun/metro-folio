@@ -47,7 +47,7 @@
     }
 
     header.dark {
-        background-color: rgb(255, 205, 205);
+        background-color: #1D1616;
     }
 
     header.light :is(.router-link-active, .router-link-exact-active, .active) {

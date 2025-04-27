@@ -1,4 +1,7 @@
 <script setup>
+    import { useThemeStore } from '@/stores/theme';
+
+    const themeStore = useThemeStore();
 
     function getMonthAndYear() {
         let options = {year: 'numeric', month: 'long'};
@@ -8,7 +11,7 @@
 </script>
 
 <template>
-    <footer>
+    <footer :class="themeStore.theme">
         <section>
             <p>© Mehdi BOURBON - {{ getMonthAndYear() }}</p>
         </section>
@@ -25,5 +28,29 @@
 <style scoped>
     footer {
         background-color: rgb(255, 227, 227);
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        height: 6em;
+    }
+
+    footer nav {
+        display: flex;
+        margin: auto 0;
+    }
+
+    footer div {
+        justify-content: flex-end;
+    }
+
+    footer img {
+        width: 64px;
+    }
+
+    footer.dark {
+        background-color: #1D1616;
+    }
+
+    footer.light {
+        background-color: rgb(255, 79, 79);
     }
 </style>

@@ -21,7 +21,7 @@
 
 <style scoped>
     #technos {
-        padding: 0 2em 0 2em;
+        padding: 0 2em 2em 2em;
     }
 
     .div-techs {
@@ -38,4 +38,9 @@
     .tech-section {
         margin-bottom: 2em;
     }
+
+    #technos :last-child {
+        margin-bottom: 0;
+    }
+
 </style>

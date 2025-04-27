@@ -1,5 +1,9 @@
 @import './base.css';
 
+html, body {
+    height: 100%
+}
+
 body {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     margin: 0;

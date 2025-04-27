@@ -20,46 +20,24 @@
 <template>
     <HeaderComponent :theme="themeStore.theme" @newTheme="toggleTheme" />
 
-    <main :class="themeStore.theme === 'light' ? 'light' : 'dark'">
-        <RouterView />
+    <main :class="themeStore.theme">
+        <section :class="themeStore.theme" id="app">
+            <RouterView />
+        </section>
     </main>
 
     <FooterComponent :theme="themeStore.theme"/>
 </template>
 
 <style>
-
-    /* FOOTER */
-
-    footer {
-        display: grid;
-        grid-template: auto / 1fr 1fr;
-    }
-
-    footer nav {
-        display: flex;
-        margin-top: 5em;
-        margin-bottom: 0;
-    }
-
-    footer div {
-        justify-content: flex-end;
-    }
-
-    footer img {
-        width: 70px;
-    }
-
     main {
         width: 100%;
-        max-width: 200em;
-        margin: 0 auto;
-        padding-bottom: 1em;
+        min-height: 100vh;
+        padding-bottom: auto;
     }
 
-    /* DARK MAIN*/
-    .dark {
-        background-color: rgb(22, 0, 0);
+    main.dark {
+        background-color: #D84040;
         color: white;
     }
 </style>
