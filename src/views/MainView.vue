@@ -14,7 +14,6 @@
 
 <template>
     <section id="main-home">
-        <p>hjkjk</p>
         <section id="main-front-presentation">
             <div>
                 <h1>Mehdi BOURBON</h1>
@@ -32,7 +31,7 @@
         </section>
 
         <section id="choose">
-            <h2 @click="handleClick(0)" :class="tab == 0 ? 'selected' : ''">Compétences techniques</h2>
+            <h2 @click="handleClick(0)" :class="tab == 0 ? 'selected' : ''">Technologies</h2>
             <h2 @click="handleClick(1)" :class="tab == 1 ? 'selected' : ''">Parcours professionnel</h2>
             <h2 @click="handleClick(2)" :class="tab == 2 ? 'selected' : ''">Passe-temps</h2>
         </section>

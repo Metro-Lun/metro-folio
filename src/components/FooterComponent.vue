@@ -27,7 +27,6 @@
 
 <style scoped>
     footer {
-        background-color: rgb(255, 227, 227);
         display: grid;
         grid-template: auto / 1fr 1fr;
         height: 6em;
