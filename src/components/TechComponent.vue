@@ -5,8 +5,6 @@
 
 <template>
     <section id="technos">
-        <h1>Mes technologies</h1>
-
         <div v-for="tech in techs" :key="tech.id" class="tech-section">
             <h2>{{ tech.title }}</h2>
 

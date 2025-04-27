@@ -10,7 +10,7 @@
         },
         {
             "title": "Gestion de projet",
-            "names": ["Scrum", "Git", "GitHub", "GitLab", "Trello", "SourceTree", "UML"]
+            "names": ["Git", "GitLab", "GitHub", "UML", "Scrum", "Trello", "SourceTree"]
         },
         {
             "title": "Systèmes d'exploitation",

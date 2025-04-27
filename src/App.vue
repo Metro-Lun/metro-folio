@@ -3,6 +3,9 @@
     import HeaderComponent from './components/HeaderComponent.vue';
     import FooterComponent from './components/FooterComponent.vue';
     import { ref } from 'vue';
+    import { useThemeStore } from '@/stores/theme';
+
+    const themeStore = useThemeStore();
 
     let windowTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     let theme = ref(windowTheme);
@@ -15,13 +18,13 @@
 </script>
 
 <template>
-    <HeaderComponent :theme="theme" @newTheme="toggleTheme" />
+    <HeaderComponent :theme="themeStore.theme" @newTheme="toggleTheme" />
 
-    <main :class="theme === 'light' ? 'light' : 'dark'">
+    <main :class="themeStore.theme === 'light' ? 'light' : 'dark'">
         <RouterView />
     </main>
 
-    <FooterComponent />
+    <FooterComponent :theme="themeStore.theme"/>
 </template>
 
 <style>
@@ -50,7 +53,8 @@
     main {
         width: 100%;
         max-width: 200em;
-        margin: auto;
+        margin: 0 auto;
+        padding-bottom: 1em;
     }
 
     /* DARK MAIN*/
@@ -58,11 +62,4 @@
         background-color: rgb(22, 0, 0);
         color: white;
     }
-
-    /* LIGHT MAIN */
-    .light {
-        background-color: rgb(255, 247, 247);
-    }
-
-
 </style>

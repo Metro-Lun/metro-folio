@@ -4,7 +4,6 @@ body {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(15, 4, 4);
 }
 
 h1 {
@@ -121,7 +120,6 @@ nav a, nav p {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: #ffffff;
 }
 
 nav p {
