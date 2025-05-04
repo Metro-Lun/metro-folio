@@ -3,8 +3,10 @@
     import TechComponent from '@/components/TechComponent.vue';
     import JourneyComponent from '@/components/JourneyComponent.vue';
     import HobbiesComponent from '@/components/HobbiesComponent.vue';
+    import { useThemeStore } from '@/stores/theme';
 
     const tab = ref(0);
+    const themeStore = useThemeStore();
 
     function handleClick(tabNum) {
         tab.value = tabNum;
@@ -13,21 +15,17 @@
 </script>
 
 <template>
-    <section id="main-home">
+    <section id="main-home" :class="themeStore.theme">
         <section id="main-front-presentation">
-            <div>
-                <h1>Mehdi BOURBON</h1>
-                <h2>Texte pour me présenter</h2>
-            </div>
+            <section id="inner-presentation">
+                <div>
+                    <h1>Mehdi BOURBON</h1>
 
-            <div>
-                <p>Image de moi</p>
-            </div>
-        </section>
+                    <h2>Texte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaa</h2>
+                </div>
 
-        <section id="main-small-talk">
-            <p>blabla</p>
-            <p>blabla2</p>
+                <img src="/assets/images/testphoto.png" />
+            </section>
         </section>
 
         <section id="choose">
@@ -46,8 +44,30 @@
 
 <style scoped>
     #main-front-presentation {
-        display: flex;
         background-color: #8E1616;
+    }
+
+    #inner-presentation {
+        display: flex;
+        justify-content: space-around;
+        padding: 5em 0;
+        max-width: 200em;
+        margin: auto;
+    }
+
+    #main-front-presentation h1 {
+        font-family: 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        justify-content: start;
+    }
+
+    #main-front-presentation h2 {
+        max-width: 40em;
+    }
+
+    #main-front-presentation img {
+        max-height: 30em;
+        border-radius: 20%;
     }
 
     /* CHOOSE */
@@ -73,10 +93,17 @@
         position: absolute;
         width: 100%;
         height: 1.5px;
-        background: red;
         transition: transform 0.2s ease-in-out;
         transform: scale(0);
         margin-top:0.5em;
+    }
+
+    #main-home.dark #choose h2::after, #choose h2.selected::after {
+        background: white;
+    }
+
+    #main-home.light #choose h2::after, #choose h2.selected::after {
+        background: black;
     }
 
     #choose h2:hover::after, #choose h2.selected::after {

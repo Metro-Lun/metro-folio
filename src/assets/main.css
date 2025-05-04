@@ -1,4 +1,17 @@
-@import './base.css';
+@font-face {
+    font-family: "Proxima Nova";
+    src: url('../assets/fonts/proxima-nova.ttf');
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url('../assets/fonts/CONSOLA.TTF')
+}
+
+@font-face {
+    font-family: "Cascadia";
+    src: url('../assets/fonts/CascadiaMono-Regular.otf')
+}
 
 * {
     margin: 0;
