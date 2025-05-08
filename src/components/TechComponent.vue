@@ -19,6 +19,10 @@
 </template>
 
 <style scoped>
+    h2 {
+        margin-bottom: 20px;
+    }
+
     #technos {
         padding: 0 2em 2em 2em;
     }
@@ -31,7 +35,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 120px;
+        width: 110px;
     }
 
     .tech-section {
@@ -40,6 +44,11 @@
 
     #technos :last-child {
         margin-bottom: 0;
+    }
+
+    img {
+        max-height: 80px;
+        margin-bottom: 5px;
     }
 
 </style>

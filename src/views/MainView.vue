@@ -15,6 +15,10 @@
 </script>
 
 <template>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
     <section id="main-home" :class="themeStore.theme">
         <section id="main-front-presentation">
             <section id="inner-presentation">
@@ -22,6 +26,13 @@
                     <h1>Mehdi BOURBON</h1>
 
                     <h2>Texte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaa</h2>
+                
+                    <button id="cv-link" :class="themeStore.theme">
+                        <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
+                            <i class="fas fa-download"></i>
+                            Mon super CV
+                        </a>
+                    </button>
                 </div>
 
                 <img src="/assets/images/testphoto.png" />
@@ -73,7 +84,7 @@
     /* CHOOSE */
 
     #choose {
-        margin: 4em auto 0 auto;
+        margin: 1.8em 2em 0 2em;
         display: grid;
         grid-template: auto / 1fr 1fr 1fr;
         text-align: center;
@@ -108,5 +119,45 @@
 
     #choose h2:hover::after, #choose h2.selected::after {
         transform: scale(1);
+    }
+
+    #choice-container {
+        margin-top: 4em;
+    }
+
+    /* CV LINK */
+    #cv-link {
+        padding: 1em;
+        background: none;
+        border-radius: 8px;
+        margin-top: 2em;
+        transition: all 0.5s ease;
+    }
+
+    #cv-link.dark {
+        border: 2px solid white;
+    }
+
+    #cv-link.light {
+        border: 2px solid black;
+    }
+
+    #cv-link a {
+        text-decoration: none;
+        font-family: "Consolas", "Proxima Nova", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+    }
+
+    #cv-link.dark a {
+        color: white;
+    }
+
+    #cv-link.light a {
+        color: black;
+    }
+
+    #cv-link:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: translateY(-5px);
     }
 </style>
