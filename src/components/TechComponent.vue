@@ -11,7 +11,7 @@
             <div class="div-techs">
                 <div v-for="name in tech.names" :key="name.id" class="div-tech">
                     <img :src="`/assets/images/tech/${name}.png`" />
-                    <p>{{ name }}</p>
+                    <p>{{ name === "C2" ? "C#" : name }}</p>
                 </div>
             </div>
         </div>

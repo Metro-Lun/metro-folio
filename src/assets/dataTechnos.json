@@ -2,11 +2,11 @@
     "technos": [
         {
             "title": "Développement web",
-            "names": ["HTML", "CSS", "JavaScript", "VueJS", "React", "PHP", "NodeJS"]
+            "names": ["JavaScript", "TypeScript", "VueJS", "Angular", "React", "NodeJS", "Blazor"]
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "Java", "JUnit 5", "C", "LaTeX"]
+            "names": ["Python", "Java", "C", "C2", "LaTeX"]
         },
         {
             "title": "Gestion de projet",
@@ -18,7 +18,7 @@
         },
         {
             "title": "Bases de données",
-            "names": ["Oracle", "MySQL", "MongoDB"]
+            "names": ["Oracle", "MySQL", "MongoDB", "Neo4J"]
         }
     ]
 }
