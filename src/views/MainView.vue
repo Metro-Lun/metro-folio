@@ -20,7 +20,7 @@
     </head>
 
     <section id="main-home" :class="themeStore.theme">
-        <section id="main-front-presentation">
+        <section id="main-front-presentation" :class="themeStore.theme">
             <section id="inner-presentation">
                 <div>
                     <h1>Mehdi BOURBON</h1>
@@ -55,7 +55,17 @@
 
 <style scoped>
     #main-front-presentation {
+        height: calc(100vh - 4em);
+    }
+
+    #main-front-presentation.dark {
+        color: white;
         background-color: #8E1616;
+    }
+
+    #main-front-presentation.light {
+        color: black;
+        background-color: #ffaeae;
     }
 
     #inner-presentation {
@@ -77,7 +87,7 @@
     }
 
     #main-front-presentation img {
-        max-height: 30em;
+        max-height: 35em;
         border-radius: 20%;
     }
 

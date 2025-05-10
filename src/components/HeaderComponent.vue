@@ -11,14 +11,14 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-    <header :class="themeStore.theme === 'light' ? 'light' : 'dark'">
+    <header :class="themeStore.theme">
         <div id="profile-container">
             <img src="/assets/images/pfp.png" />
             <p>Mehdi BOURBON</p>
         </div>
 
         <section id="links-n-light">
-            <nav>
+            <nav :class="themeStore.theme">
                 <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
                 <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
                 <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
@@ -51,11 +51,11 @@
     }
 
     header.light :is(.router-link-active, .router-link-exact-active, .active) {
-        color: #6b0000;
+        color: #ffffff;
     }
 
     header.dark :is(.router-link-active, .router-link-exact-active, .active) {
-        color: #1f0000;
+        color: #ec6363;
     }
 
     /* LIGHT SWITCH */
@@ -67,14 +67,21 @@
     }
 
     header img {
-        height: 90%;
+        height: 80%;
         border-radius: 50%;
-        margin: auto 1em;
+        margin: 0.2em 0.7em;
     }
 
     #profile-container {
         height: 4em;
         display: flex;
+        align-items: center;
+    }
+
+    #profile-container p {
+        font-family: 'Cascadia', 'Consolas', 'Proxima Nova', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
     }
 
 </style>

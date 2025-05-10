@@ -156,23 +156,17 @@ footer nav:nth-child(2) {
     justify-content: flex-end;
 }
 
-#pfp {
-    display: flex;
-    opacity: 1;
-}
-
-#pfp:hover{
-    animation: tourne 2s infinite;
-}
-
-#pfp img {
-    width: 70px;
-    border-radius: 50%;
-}
-
 nav a.active,
 nav a:hover {
     opacity: 1;
+}
+
+nav.light a:visited {
+    color: black;
+}
+
+nav.dark a:visited {
+    color: white;
 }
 
 /* ROTATION DE L'IMAGE */

@@ -9,7 +9,7 @@
 
 <template>
     <section id="switch-container">
-        <div id="light-switch" @click="changeTheme">
+        <div id="light-switch" @click="changeTheme" :class="themeStore.theme">
             <div>
                 <i v-show="themeStore.theme === 'dark'" id="dark-icon" class="fas fa-moon"></i>
             </div>
@@ -22,16 +22,23 @@
 </template>
 
 <style scoped>
-    #light-switch{
+    #light-switch {
         width: 4rem;
         height: 2rem;
         background-color: #1E2939;
         border-radius: 1rem;  
         position: relative;
-        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    #light-switch.light {
+        border: 1px solid black;
+    }
+
+    #light-switch.dark {
+        border: 1px solid white;
     }
 
     header.light #light-switch {
@@ -39,10 +46,9 @@
     }
 
     #switch-btn {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%; /* Avec 50% on obtient un disque */ 
-        background-color: white;
+        width: 1.9rem;
+        height: 1.9rem;
+        border-radius: 50%;
         position: absolute; 
     }
 
@@ -54,10 +60,6 @@
     #light-icon {
         padding-right: 10px;
         color: yellow;
-    }
-    
-    #switch-btn {
-        border: 1px solid black;
     }
 
     header.dark #switch-btn {
