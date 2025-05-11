@@ -11,15 +11,21 @@
 </script>
 
 <template>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
+
     <footer :class="themeStore.theme">
-        <section>
-            <p>© Mehdi BOURBON - {{ getMonthAndYear() }}</p>
-        </section>
+        <p :class="themeStore.theme">
+            © Mehdi BOURBON - {{ getMonthAndYear() }}
+        </p>
 
         <nav>
             <div>
                 <a href="https://github.com/Metro-Lun"><img src="/assets/images/github-blanc.png" /></a>
                 <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><img src="/assets/images/linkedin-blanc.png" /></a>
+                <a href="mailto:mehdi.bourbon@outlook.fr"><i class="fas fa-envelope"></i></a>
             </div>
         </nav>
     </footer>
@@ -27,8 +33,10 @@
 
 <style scoped>
     footer {
-        display: grid;
-        grid-template: auto / 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
         height: 6em;
     }
 
@@ -51,5 +59,22 @@
 
     footer.light {
         background-color: rgb(255, 79, 79);
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    p.light {
+        color: black;
+    }
+
+    p.dark {
+        color: white;
+    }
+
+    i {
+        color: white;
+        font-size: 64px;
     }
 </style>

@@ -84,4 +84,11 @@
         font-weight: bold;
     }
 
+    header.dark #profile-container p {
+        color: white;
+    }
+
+    header.light #profile-container p {
+        color: black;
+    }
 </style>

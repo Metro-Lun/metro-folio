@@ -25,8 +25,6 @@ html, body {
 
 body {
     font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -38,76 +36,6 @@ h1 {
 
 p {
     font-size: 20px;
-}
-
-/* EXPLAIN SECTION */
-
-.explain-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100em;
-    margin: 5em auto;
-    gap: 6em;
-}
-
-.explain-div {
-    width: 80%;
-    border-radius: 24px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.explain-div-right {
-    margin-left: auto;
-}
-
-.explain-div h2, .explain-title {
-    background-color: rgb(228, 228, 228);
-    border-radius: 24px 24px 0px 0px;
-    margin: 0;
-    padding: 10px 20px;
-    font-size: 40px;
-}
-
-.explain-title h3 {
-    margin-top: 0;
-    padding: 0px 20px;
-    text-decoration: italic;
-    font-size: 20px;
-}
-
-.explain-div-right h2, .explain-div-right h3 {
-    text-align: right;
-}
-
-.explain-div div:not(.explain-title) {
-    margin: 0;
-    border-radius: 0px 0px 24px 24px;
-    padding: 10px;
-    background-color: rgb(255, 183, 183);
-}
-
-.v-enter-active, .v-leave-active {
-    transition: all 0.5s ease;
-}
-
-.v-enter-from, .v-leave-to {
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-50px);
-}
-
-.v-enter-to, .v-leave-from {
-    max-height: 1000px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5em auto;
 }
 
 /* ANIMATION TITRES */
