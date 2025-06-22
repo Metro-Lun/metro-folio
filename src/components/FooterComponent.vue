@@ -38,6 +38,8 @@
         align-items: center;
         gap: 4em;
         height: 6em;
+        backdrop-filter: blur(10px);
+        color: white;
     }
 
     footer nav {
@@ -49,32 +51,12 @@
         justify-content: flex-end;
     }
 
-    footer img {
-        width: 64px;
-    }
-
-    footer.dark {
-        background-color: #1D1616;
-    }
-
-    footer.light {
-        background-color: rgb(255, 79, 79);
-    }
-
-    p {
-        font-weight: bold;
-    }
-
-    p.light {
-        color: black;
-    }
-
-    p.dark {
-        color: white;
+    footer img, i {
+        width: 46px;
     }
 
     i {
         color: white;
-        font-size: 64px;
+        font-size: 46px;
     }
 </style>

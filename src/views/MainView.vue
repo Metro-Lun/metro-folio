@@ -25,7 +25,8 @@
                 <div>
                     <h1>Mehdi BOURBON</h1>
 
-                    <h2>Texte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaaTexte pour me présenter oueeeeeeee jsuis trop sympaaaaa</h2>
+                    <h2>Développeur fullstack</h2>
+                    <h2>chais pas j'ai 20 ans je suis super cool</h2>
                 
                     <button id="cv-link" :class="themeStore.theme">
                         <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
@@ -35,7 +36,8 @@
                     </button>
                 </div>
 
-                <img src="/assets/images/testphoto.png" />
+                <img src="/assets/images/testphoto.png" alt="" class="floating"/>
+                
             </section>
         </section>
 
@@ -54,18 +56,32 @@
 </template>
 
 <style scoped>
+    .floating {
+        position: relative;
+        animation: float2d 30s ease-in-out infinite;
+        will-change: transform;
+    }
+
+    @keyframes float2d {
+        0%   { transform: translate(0px, 0px) rotate(0deg); }
+        10%  { transform: translate(12px, -8px) rotate(2deg); }
+        20%  { transform: translate(20px, -20px) rotate(3deg); }
+        30%  { transform: translate(12px, -35px) rotate(2deg); }
+        40%  { transform: translate(0px, -45px) rotate(0.5deg); }
+        50%  { transform: translate(-12px, -35px) rotate(-2deg); }
+        60%  { transform: translate(-20px, -20px) rotate(-3deg); }
+        70%  { transform: translate(-12px, -8px) rotate(-2deg); }
+        80%  { transform: translate(0px, 0px) rotate(0deg); }
+        90%  { transform: translate(8px, 6px) rotate(1deg); }
+        100% { transform: translate(0px, 0px) rotate(0deg); }
+    }
+
     #main-front-presentation {
         height: calc(100vh - 4em);
     }
 
-    #main-front-presentation.dark {
+    #main-front-presentation {
         color: white;
-        background-color: #8E1616;
-    }
-
-    #main-front-presentation.light {
-        color: black;
-        background-color: #ffaeae;
     }
 
     #inner-presentation {
@@ -105,6 +121,7 @@
         font-size: 40px;
         position: relative;
         cursor: pointer;
+        color: white;
     }
 
     #choose h2::after, #choose h2.selected::after {
@@ -118,12 +135,8 @@
         margin-top:0.5em;
     }
 
-    #main-home.dark #choose h2::after, #choose h2.selected::after {
+    #main-home #choose h2::after, #choose h2.selected::after {
         background: white;
-    }
-
-    #main-home.light #choose h2::after, #choose h2.selected::after {
-        background: black;
     }
 
     #choose h2:hover::after, #choose h2.selected::after {
@@ -143,12 +156,8 @@
         transition: all 0.5s ease;
     }
 
-    #cv-link.dark {
+    #cv-link {
         border: 2px solid white;
-    }
-
-    #cv-link.light {
-        border: 2px solid black;
     }
 
     #cv-link a {
@@ -157,16 +166,17 @@
         font-size: 24px;
     }
 
-    #cv-link.dark a {
+    #cv-link a {
         color: white;
     }
 
-    #cv-link.light a {
-        color: black;
+    #cv-link {
+        box-shadow:
+            0px 4px 30px rgba(255, 255, 255, 0.5);   
     }
 
     #cv-link:hover {
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transform: translateY(-5px);
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
     }
 </style>

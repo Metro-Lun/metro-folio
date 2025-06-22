@@ -22,6 +22,8 @@
 
 html, body {
     height: 100%;
+    background-image: linear-gradient(-20deg, #332fff 0%, #d31d1d 100%);
+    background-attachment: fixed;
 }
 
 body {
@@ -69,10 +71,14 @@ nav {
 nav a, nav p {
     display: inline-block;
     margin-right: 20px;
-    opacity: 0.7;
+    opacity: 0.6;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+}
+
+nav a {
+    color: white;
 }
 
 nav p {
@@ -86,17 +92,8 @@ footer nav:nth-child(2) {
     justify-content: flex-end;
 }
 
-nav a.active,
 nav a:hover {
     opacity: 1;
-}
-
-nav.light a:visited {
-    color: black;
-}
-
-nav.dark a:visited {
-    color: white;
 }
 
 /* TITLES */

@@ -1,6 +1,5 @@
 <script setup>
     import { RouterLink } from 'vue-router';
-    import LightSwitch from './LightSwitch.vue';
     import { useThemeStore } from '@/stores/theme';
     
     const themeStore = useThemeStore();
@@ -25,7 +24,7 @@
                 <RouterLink :to="{name: 'contact'}">Me contacter</RouterLink>
             </nav>
 
-            <LightSwitch />
+            <!-- <LightSwitch /> -->
          </section>
     </header>
 </template>
@@ -39,23 +38,12 @@
         width: 100%;
         z-index: 2000;
         height: 4em;
-        color: black;
+        backdrop-filter: blur(10px);
+        color: white;
     }
 
-    header.light {
-        background-color: rgb(255, 79, 79);
-    }
-
-    header.dark {
-        background-color: #1D1616;
-    }
-
-    header.light :is(.router-link-active, .router-link-exact-active, .active) {
-        color: #ffffff;
-    }
-
-    header.dark :is(.router-link-active, .router-link-exact-active, .active) {
-        color: #ec6363;
+    header :is(.router-link-active, .router-link-exact-active, .active) {
+        opacity: 1;
     }
 
     /* LIGHT SWITCH */

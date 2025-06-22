@@ -25,6 +25,7 @@
 
     #technos {
         padding: 0 2em 2em 2em;
+        color: white;
     }
 
     .div-techs {
@@ -40,6 +41,9 @@
 
     .tech-section {
         margin-bottom: 2em;
+        display: grid;
+        grid-template: auto / 1fr 5fr;
+        border: 1px solid white;
     }
 
     #technos :last-child {

@@ -12,7 +12,6 @@
 
     function toggleTheme() {
         theme.value = theme.value === 'dark' ? 'light' : 'dark';
-        console.log(theme.value)
     }
 
 </script>
@@ -35,10 +34,5 @@
         min-height: calc(100vh - 6.1em);
         padding-bottom: auto;
         margin-top: 4em;
-    }
-
-    main.dark {
-        background-color: #D84040;
-        color: white;
     }
 </style>
