@@ -1,6 +1,25 @@
 {
     "sae": [
         {
+            "code": "PLATINE",
+            "title": "Développement avancé d'une application",
+            "image": "sae_platine.png",
+            "size": "big",
+            "description": [
+                "PLATINE est un ERP destiné à faciliter la gestion du département informatique.",
+                "Il centralise tous les services administratifs (EDT, notes, stages, absences, etc.) afin de fluidifier les flux d'informations.",
+                "Ce projet fut réalisé par une équipe de 19 personnes dont j'ai été le chef de projet."
+            ],
+            "technos": ["React", "ExpressJS", "TypeScript", "Prisma", "Docker", "Git", "GitLab", "Trello"],
+            "skills": [
+                "Analyse et recueil des besoins",
+                "Analyse et choix des technologies",
+                "Développement fullstack avancé",
+                "Gestion d'équipe et de projet"
+            ],
+            "links": [3, 3, 1, 1, 3, 3]
+        },
+        {
             "code": "VroumVroum",
             "title": "Développement d'une application",
             "image": "sae_vroumvroum.png",
@@ -12,7 +31,7 @@
                 "De plus, une documentation technique complète, telle que celle demandée dans le monde professionnel, est demandée à travers de nombreux livrables : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
                 "Ce projet doit utiliser une méthode Agile, et doit, dans sa manipulation des données et sa structure, respecter des paradigmes de qualité (Design Patterns, ergonomie...)."
             ],
-            "technos": ["JavaScript", "NodeJS", "TypeScript", "MySQL", "HTML", "CSS", "UML", "Git", "GitLab", "Trello", "Canva"],
+            "technos": ["JavaScript", "ExpressJS", "NodeJS", "TypeScript", "MySQL", "Git", "GitLab", "Trello", "Canva"],
             "skills": [
                 "Analyse des besoins",
                 "Conception d'une application",
@@ -35,7 +54,7 @@
                 "Il doit également respecter les conventions étudiées en cours de qualité de développement.",
                 "Il demande l'exploration algorithmique de structures de données représentant un graphe."
             ],
-            "technos": ["Java", "JUnit 5", "Git", "GitLab", "SourceTree"],
+            "technos": ["Java", "Git", "GitLab", "SourceTree"],
             "skills": [
                 "Programmation orientée objet",
                 "Réponse à des besoins clients définis",
@@ -55,7 +74,7 @@
                 "Il peut prendre n'importe quelle forme et permet de rendre compte d'une posture réflexive et d'une prise de recul vis-à-vis des compétences de la formation et du parcours suivi.",
                 "Le portfolio du BUT Informatique est un site web comportant un volet personnel et un volet académique."
             ],
-            "technos": ["Vue.JS", "NodeJS", "HTML", "CSS", "Git", "GitHub"],
+            "technos": ["VueJS", "NodeJS", "HTML", "CSS", "Git", "GitHub"],
             "skills": [
                 "Programmation web",
                 "Programmation orientée composants",
@@ -82,24 +101,6 @@
                 "Développement web statique"
             ],
             "links": [2, 0, 0, 0, 3, 1]
-        },
-        {
-            "code": "Le Poster",
-            "title": "Organisation d'un travail d'équipe",
-            "image": "sae_poster.png",
-            "size": "small",
-            "description": [
-                "L'objectif du projet est de se renseigner sur un sujet lié à l'informatique et de designer un poster.",
-                "Ce poster, en plus d'être esthétique et pertinent, doit refléter le travail d'équipe du groupe qui l'a créé.",
-                "Par ce projet, l'étudiant rencontre pour la première fois des problématiques liées au travail en équipe."
-            ],
-            "technos": ["Canva"],
-            "skills": [
-                "Création d'une charte d'équipe",
-                "Travail et mise en commun",
-                "Création graphique"
-            ],
-            "links": [0, 0, 0, 0, 1, 3]
         },
         {
             "code": "L'Annuaire",

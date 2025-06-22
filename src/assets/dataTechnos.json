@@ -2,7 +2,7 @@
     "technos": [
         {
             "title": "Développement web",
-            "names": ["JavaScript", "TypeScript", "VueJS", "Angular", "React", "NodeJS", "Blazor"]
+            "names": ["JavaScript", "TypeScript", "VueJS", "Angular", "React", "ExpressJS", "NodeJS", "Blazor"]
         },
         {
             "title": "Développement logiciel",

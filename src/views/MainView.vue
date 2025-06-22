@@ -77,7 +77,6 @@
     }
 
     #main-front-presentation h1 {
-        font-family: 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
         font-weight: normal;
         justify-content: start;
     }

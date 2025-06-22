@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
 
 html, body {
@@ -28,8 +29,8 @@ body {
 }
 
 h1 {
+    font-family: 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: center;
     margin-bottom: 1.2em;
     font-size: 80px;
 }
@@ -55,6 +56,7 @@ p {
     margin: auto;
     max-width: 90%;
     width: 90%;
+    padding: 1.2em 0;
 }
     
 /* FOOTER */

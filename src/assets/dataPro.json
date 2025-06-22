@@ -1,6 +1,16 @@
 {
     "experiences": [
         {
+            "name": "Alternant développeur C#",
+            "entreprise": "Arx One",
+            "date": "2024-2025",
+            "explanation": [
+                "Développement d'une solution de restauration granulaire de disques virtuels",
+                "Amélioration de la solution de sauvegarde existante",
+                "Développement logiciel"
+            ]
+        },
+        {
             "name": "Stagiaire développeur web",
             "entreprise": "Centre d'Études des Tunnels (CETU)",
             "date": "2024",
