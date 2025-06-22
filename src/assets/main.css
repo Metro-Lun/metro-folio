@@ -99,13 +99,20 @@ nav.dark a:visited {
     color: white;
 }
 
-/* ROTATION DE L'IMAGE */
+/* TITLES */
 
-@keyframes tourne {
-    0% {
-        transform: rotate( 0deg );
-    }
-    100% {
-        transform: rotate( -360deg );
-    }
+#titles {
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+}
+
+#titles h1 { margin-bottom: 1px; }
+#titles h2 { margin-bottom: 3em; }
+#titles p { margin-bottom: 0; }
+
+#titles div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

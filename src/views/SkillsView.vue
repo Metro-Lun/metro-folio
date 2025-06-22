@@ -22,10 +22,15 @@
 
 <template>
     <section class="big-section">
-        <div id="titles"><h1>Compétences à l'IUT</h1></div>
-        <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
+        <div id="titles">
+            <h1>Compétences à l'IUT</h1>
+            <h2></h2>
 
-        <p>Il est composé de six compétences :</p>
+            <div>
+                <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
+                <p>Il est composé de six compétences :</p>
+            </div>
+        </div>
 
         <section>
             <section id="tabs">
@@ -62,9 +67,9 @@
         </section>
 
         <section id="sae-vs-skills">
-            <p>Voici une liste des projets universitaires en lien avec mon projet professionnel que j'ai réalisés, selon leur lien avec les compétences.</p>
-            <p>Un grand cercle représente un lien fort.</p>
-            <p>N'hésitez pas à cliquer sur les projets pour en savoir plus !</p>
+            <div id="titles">
+                <h1>Lien compétences / projets</h1>
+            </div>
 
             <section class="sae-table">
                 <div>

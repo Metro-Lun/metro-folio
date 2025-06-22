@@ -99,24 +99,6 @@
 </template>
 
 <style scoped>
-    /* TITLES */
-
-    #titles {
-        display: flex;
-        flex-direction: column;
-        margin: 5em auto;
-    }
-
-    #titles h1 { margin-bottom: 1px; }
-    #titles h2 { margin-bottom: 3em; }
-    #titles p { margin-bottom: 0; }
-
-    #titles div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     /* SAE GRID */
 
     #saes {
