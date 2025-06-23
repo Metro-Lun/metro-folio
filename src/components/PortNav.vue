@@ -6,7 +6,7 @@
 <template>
     <nav>
         <a href="https://github.com/Metro-Lun" id='pfp'>
-            <img src='/assets/images/pfp.png' />
+            <img src='/assets/images/pfp.png'/>
         </a>
     </nav>
 
