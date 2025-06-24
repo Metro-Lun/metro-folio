@@ -21,6 +21,8 @@
 <style scoped>
     h2 {
         margin-bottom: 20px;
+        margin-right: 2em;
+        text-align: end;
     }
 
     #technos {
@@ -30,6 +32,8 @@
 
     .div-techs {
         display: flex;
+        padding-left: 2em;
+        border-left: 2px solid white;
     }
 
     .div-tech {
@@ -42,8 +46,8 @@
     .tech-section {
         margin-bottom: 2em;
         display: grid;
-        grid-template: auto / 1fr 5fr;
-        border: 1px solid white;
+        grid-template: auto / 1fr 4fr;
+        align-items: center;
     }
 
     #technos :last-child {
