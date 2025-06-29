@@ -84,25 +84,6 @@
             "links": [3, 3, 3, 3, 3, 3]
         },
         {
-            "code": "CSShoes",
-            "title": "Recueil de besoins",
-            "image": "sae_web.png",
-            "size": "medium",
-            "description": [
-                "L'objectif du projet est de concevoir un site web statique (HTML/CSS) à partir de l'analyse des besoins du public concerné.",
-                "Dans notre cas, le site obtenu est un site vitrine d'une boutique de baskets.",
-                "Le recueil des besoins se fait via un formulaire rempli par le plus de personnes possibles. À partir des réponses de ce formulaire (dont les questions touchent à tous les éléments graphiques ainsi qu'au contenu retrouvable sur le site), des maquettes sont réalisées, et on peut passer au développement."
-            ],
-            "technos": ["HTML", "CSS", "Git", "GitLab"],
-            "skills": [
-                "Recueil des besoins",
-                "Analyse des besoins recueillis",
-                "Maquettage (wireframes)",
-                "Développement web statique"
-            ],
-            "links": [2, 0, 0, 0, 3, 1]
-        },
-        {
             "code": "L'Annuaire",
             "title": "Implémentation d'un besoin client",
             "image": "sae_c.png",

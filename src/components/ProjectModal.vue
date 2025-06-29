@@ -51,7 +51,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 90%;
+        height: 85%;
         width: 90%;
         overflow: hidden;
         background: rgb(255, 232, 245);
@@ -75,6 +75,7 @@
         cursor: pointer;
         padding: 0.2em 0.5em;
         font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+        transition: scale 0.2s ease;
     }
     
     #close-button button {
@@ -86,7 +87,6 @@
         background-color: transparent;
         border-radius: 50%;
         font-size: 25px;
-        transition: scale 0.2s ease;
     }
 
     #ok-button button {
@@ -98,10 +98,9 @@
         padding: 2px 1em;
         border-radius: 16px;
         box-shadow: rgba(118, 0, 186, 0.6) 0px 7px 29px 0px;
-        transition: scale 0.2s ease;
     }
 
-    #close-button button:hover {
+    button:hover {
         scale: 0.8;
     }
 
@@ -165,7 +164,7 @@
     }
 
     #card-desc h3 {
-        margin-top: 1.5em;
+        margin-top: 1em;
     }
 
     /* TECH-NAME */

@@ -21,7 +21,6 @@
                 <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
                 <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
                 <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
-                <RouterLink :to="{name: 'contact'}">Me contacter</RouterLink>
             </nav>
 
             <!-- <LightSwitch /> -->
