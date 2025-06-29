@@ -1,8 +1,4 @@
 <script setup>
-    import { useThemeStore } from '@/stores/theme';
-
-    const themeStore = useThemeStore();
-
     function getMonthAndYear() {
         let options = {year: 'numeric', month: 'long'};
         return new Date().toLocaleDateString("fr-FR", options);
@@ -15,9 +11,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-
-    <footer :class="themeStore.theme">
-        <p :class="themeStore.theme">
+    <footer>
+        <p>
             © Mehdi BOURBON - {{ getMonthAndYear() }}
         </p>
 
