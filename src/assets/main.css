@@ -99,6 +99,7 @@ nav a:hover {
 /* TITLES */
 
 #titles {
+    color: white;
     display: flex;
     flex-direction: column;
     margin: 5em auto;

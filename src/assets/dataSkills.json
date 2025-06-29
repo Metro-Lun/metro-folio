@@ -3,10 +3,8 @@
         {
             "title": "Réaliser",
             "description": [
-                "Pour maîtriser la compétence Réaliser, il faut être capable de développer un outil informatique qui répond à un besoin client.",
-                "Le processus du développement passe par la conception du produit, mais également par le code, les tests, et le déploiement / l'intégration, et enfin par la maintenance de ce dernier.",
-                "Une bonne application respecte les besoins décrits par le client, à l'aide de code et d'algorithmes bien écrits et bien structurés, et assez documentés pour être facilement améliorés dans le futur.",
-                "Il faut également savoir choisir les bonnes technologies."
+                "Objectif : être capable de développer un outil informatique qui répond à un besoin client.",
+                "Etapes : conception du produit, code, tests, déploiement / intégration, maintenance, documentation."
             ],
             "levels": [
                 {
@@ -31,11 +29,8 @@
         {
             "title": "Optimiser",
             "description": [
-                "Pour maîtriser la compétence Optimiser, il faut être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
-                "En effet, la taille, le choix du langage, le temps d'exécution, les algorithmes utilisés entrent en jeu dans l'expérience utilisateur et l'usage fait de notre solution.",
-                "Ainsi, il est nécessaire d'analyser le problème et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats.",
-                "Cependant, les solutions employées ne doivent pas faire gage de facilité : la sécurité des données et l'impact sociétal et environnemental associé restent primordiaux.",
-                "La solution retenue doit être justifiée."
+                "Objectif : être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
+                "Il est nécessaire d'analyser un problème informatique et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats."
             ],
             "levels": [
                 {
@@ -60,8 +55,8 @@
         {
             "title": "Administrer",
             "description": [
-                "Pour maîtriser la compétence Administrer, il faut être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
-                "Ceci passe par la connaissance du fonctionnement des protocoles de base, mais aussi par une prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
+                "Objectif : être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
+                "Etapes : connaissance du fonctionnement des protocoles de base, prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
             ],
             "levels": [
                 {
@@ -82,7 +77,7 @@
         {
             "title": "Gérer",
             "description": [
-                "Pour maîtriser la compétence Gérer, il faut savoir analyser et exploiter les données d'une structure.",
+                "Objectif : savoir analyser et exploiter les données d'une structure.",
                 "Il est possible de les entretenir et de concevoir une base ou un agencement optimal comme il est possible de les analyser pour en tirer une conclusion, souvent stratégique.",
                 "Assurer la sécurité, la cohérence et l'intégrité des données est indispensable."
             ],
@@ -105,7 +100,7 @@
         {
             "title": "Conduire",
             "description": [
-                "Pour maîtriser la compétence Conduire, il est nécessaire de savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
+                "Objectif : savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
                 "Savoir adopter les bonnes démarches, une bonne politique de communication, et respecter les règles juridiques et éthique est crucial."
             ],
             "levels": [
@@ -127,9 +122,8 @@
         {
             "title": "Collaborer",
             "description": [
-                "Pour maîtriser la compétence Collaborer, il est nécessaire d'apprendre à travailler de manière efficace dans une équipe informatique.",
-                "À ces fins, la communication est un facteur clé. Les informations doivent être partagées et accessibles.",
-                "Les projets lancés suivent les évolutions numériques et juridiques."
+                "Objectif : apprendre à travailler de manière efficace dans une équipe informatique.",
+                "La communication est un facteur clé. Les informations doivent être partagées et accessibles."
             ],
             "levels": [
                 {

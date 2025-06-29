@@ -66,12 +66,6 @@
 </template>
 
 <style scoped>
-    #titles {
-        color: white;
-    }
-
-    /* SAE GRID */
-
     #saes {
         margin: 5em 0;
         display: grid;

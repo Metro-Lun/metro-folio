@@ -17,7 +17,7 @@
         </div>
 
         <section id="links-n-light">
-            <nav :class="themeStore.theme">
+            <nav>
                 <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
                 <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
                 <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>

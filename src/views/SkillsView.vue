@@ -15,9 +15,6 @@
             skillIndex.value = i;
         }
     }
-
-
-
 </script>
 
 <template>
@@ -97,11 +94,6 @@
     </section>
 </template>
 
-
-
-
-
-
 <style scoped>
     /* TABS */
 
@@ -114,7 +106,8 @@
         user-select: none;
         display: flex;
         gap: 10px;
-        width: 10%;
+        width: 12%; 
+        height: 3em;
         padding: 0px 15px;
         transition: all 0.6s ease;
     }
@@ -124,27 +117,21 @@
     }
 
     .tab:nth-child(1) {
-        border: 2px solid rgb(230, 71, 71);
         background-color: rgb(252, 125, 125);
     }
     .tab:nth-child(2) {
-        border: 2px solid orange;
         background-color: rgb(252, 176, 125);
     }
     .tab:nth-child(3) {
-        border: 2px solid yellow;
         background-color: rgb(255, 248, 155);
     }
     .tab:nth-child(4) {
-        border: 2px solid rgb(92, 238, 92);
         background-color: rgb(171, 255, 163);
     }
     .tab:nth-child(5) {
-        border: 2px solid rgb(120, 120, 253);
         background-color: rgb(125, 191, 252);
     }
     .tab:nth-child(6) {
-        border: 2px solid #999999;
         background-color: #cccccc;
     }
 
