@@ -41,6 +41,7 @@
         flex-direction: column;
         align-items: center;
         width: 110px;
+        margin-right: 20px;
     }
 
     .tech-section {

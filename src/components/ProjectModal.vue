@@ -70,13 +70,6 @@
         display: flex;
         justify-content: center;
     }
-
-    button {
-        cursor: pointer;
-        padding: 0.2em 0.5em;
-        font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
-        transition: scale 0.2s ease;
-    }
     
     #close-button button {
         font-weight: bold;

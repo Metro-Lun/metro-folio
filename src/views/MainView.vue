@@ -25,7 +25,7 @@
                 <div>
                     <h1>Mehdi BOURBON</h1>
 
-                    <h2>Développeur fullstack</h2>
+                    <h2>Développeur web</h2>
                     <h2>chais pas j'ai 20 ans je suis super cool</h2>
                 
                     <button id="cv-link" :class="themeStore.theme">
@@ -149,34 +149,26 @@
 
     /* CV LINK */
     #cv-link {
-        padding: 1em;
-        background: none;
-        border-radius: 8px;
-        margin-top: 2em;
-        transition: all 0.5s ease;
-    }
-
-    #cv-link {
-        border: 2px solid white;
-    }
-
-    #cv-link a {
-        text-decoration: none;
-        font-family: "Consolas", "Proxima Nova", Arial, Helvetica, sans-serif;
-        font-size: 24px;
-    }
-
-    #cv-link a {
-        color: white;
-    }
-
-    #cv-link {
-        box-shadow:
-            0px 4px 30px rgba(255, 255, 255, 0.5);   
+        margin-top: 0.8em;
+        box-shadow: 10px 5px 5px rgb(118, 7, 155);
+        font-size: 30px;
+        background-image: linear-gradient(-20deg, #e8a7fa 0%, #ffffff 100%);
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 60px;
+        box-shadow: rgba(188, 72, 255, 0.8) 0px 7px 29px 0px;
+        transition: all 0.2s ease;
     }
 
     #cv-link:hover {
         transform: translateY(-5px);
-        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    }
+
+    #cv-link a {
+        text-decoration: none;
+        font-family: "Quicksand", "Proxima Nova", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(188, 72, 255);
     }
 </style>

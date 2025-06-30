@@ -22,17 +22,21 @@
 </template>
 
 <style scoped>
-        .job-card {
-        background-color: rgba(255,255,255,0.6);
+    .job-card {
+        background-color: rgb(255,255,255);
+        opacity: 0.6;
         padding: 3em;
         border-radius: 16px;
         width: 80em;
         display: grid;
         grid-template: 1fr 4fr / 4fr 2fr;
+        transform: all 0.3s ease;
     }
 
     .job-card:hover {
         transform: translateY(-1em);
+        opacity: 1;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .job-card h1 {

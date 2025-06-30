@@ -29,6 +29,22 @@
             </div>
         </div>
 
+        <section id="skill-section">
+            <div v-for="(s, index) in skills" :key="s.id" class="skill-div">
+                <h2>C{{index + 1}} - {{ s.title }}</h2>
+
+                <div>
+                    <h3>Niveaux</h3>
+                    <ul>
+                        <li v-for="(l, indexL) in skill.levels" :key="l.id">
+                            <h4>{{indexL + 1}} - {{l.name}}</h4>
+                            <p>{{l.info}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section>
             <section id="tabs">
                 <div v-for="(s, index) in skills" :key="s.id" :class="skillIndex === index ? 'tab selected' : 'tab'" @click="handleClick(index)">
@@ -38,17 +54,9 @@
 
             <Transition>
                 <section :class="`skill-desc-${skillIndex}`" v-if="skill !== null">
-                    <h2>Compétence {{ skill.title }}</h2>
-
                     <p v-for="p in skill.description" :key="p.id">{{ p }}</p>
 
-                    <h3>Niveaux</h3>
-                    <ul>
-                        <li v-for="(l, indexL) in skill.levels" :key="l.id">
-                            <h4>{{indexL + 1}} - {{l.name}}</h4>
-                            <p>{{l.info}}</p>
-                        </li>
-                    </ul>
+                    
 
                     <h3>Situations professionnelles</h3>
                     <ul>
@@ -95,6 +103,26 @@
 </template>
 
 <style scoped>
+    #skill-section {
+        display: grid;
+        grid-template : auto / 1fr 1fr;
+        gap: 2em;
+    }
+
+    .skill-div {
+        display: grid;
+        grid-template: 1fr 4fr / 2fr 4fr;
+        background-color: white;
+    }
+
+
+
+
+
+
+
+
+
     /* TABS */
 
     #tabs {
