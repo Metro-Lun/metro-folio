@@ -1,20 +1,9 @@
 <script setup>
-    import { ref } from 'vue';
     import sa from '@/assets/dataSAE.json';
     import sk from '@/assets/dataSkills.json';
 
     const skills = sk.skills;
     const saes = sa.sae;
-
-    const skill = ref(skills[0]);
-    const skillIndex = ref(0);
-
-    function handleClick(i) {
-        if(skillIndex.value !== i) {
-            skill.value = skills[i];
-            skillIndex.value = i;
-        }
-    }
 </script>
 
 <template>
@@ -30,45 +19,43 @@
         </div>
 
         <section id="skill-section">
-            <div v-for="(s, index) in skills" :key="s.id" class="skill-div">
-                <h2>C{{index + 1}} - {{ s.title }}</h2>
+            <div v-for="(skill, index) in skills" :key="skill.id" class="skill-div">
+                <h2>C{{index + 1}} - {{ skill.title }}</h2>
 
                 <div>
                     <h3>Niveaux</h3>
-                    <ul>
-                        <li v-for="(l, indexL) in skill.levels" :key="l.id">
+
+                    <div v-for="(l, indexL) in skill.levels" :key="l.id" class="skill-level">
+                        <div class="skill-level-title">
+                            <p :class="`level-${indexL + 1}`">{{ indexL + 1 }}</p>
+                            <p>{{ l.name }}</p>
+                        </div>
+                        
+
+                        <ul>
+                        <li >
                             <h4>{{indexL + 1}} - {{l.name}}</h4>
                             <p>{{l.info}}</p>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <section id="tabs">
-                <div v-for="(s, index) in skills" :key="s.id" :class="skillIndex === index ? 'tab selected' : 'tab'" @click="handleClick(index)">
-                    <p>C{{index + 1}} - {{ s.title }}</p>
-                </div>
-            </section>
-
-            <Transition>
-                <section :class="`skill-desc-${skillIndex}`" v-if="skill !== null">
-                    <p v-for="p in skill.description" :key="p.id">{{ p }}</p>
-
+                    </div>
                     
+                </div>
 
+                <div>
                     <h3>Situations professionnelles</h3>
                     <ul>
                         <li v-for="ps in skill.professional_situations" :key="ps.id">
                             <p>{{ ps }}</p>
                         </li>
                     </ul>
+                </div>
 
+                <div>
                     <h3>Niveau personnel : <strong>{{ skill.personal_review.level }}</strong></h3>
                     <p>{{skill.personal_review.explanation}}</p>
-                </section>
-            </Transition>
+                </div>
+            </div>
         </section>
 
         <section id="sae-vs-skills">
@@ -110,13 +97,41 @@
     }
 
     .skill-div {
-        display: grid;
-        grid-template: 1fr 4fr / 2fr 4fr;
         background-color: white;
+        padding: 2em;
     }
 
+    .skill-level-title {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+    }
 
+    .skill-level-title p:first-child {
+        border-radius: 50%;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        border: none;
+    }
 
+    .level-1 {
+        background-image: linear-gradient(-20deg, #880000 0%, #fc4444 100%);
+        box-shadow: rgba(255, 36, 36, 0.6) 0px 7px 29px 0px;
+        padding: 4px 0.7em;
+    }
+
+    .level-2 {
+        background-image: linear-gradient(-20deg, #d156f3 0%, #840c96 100%);
+        box-shadow: rgba(118, 0, 186, 0.6) 0px 7px 29px 0px;
+        padding: 4px 0.6em;
+
+    }
+
+    .level-3 {
+        background-image: linear-gradient(-20deg, #0b037c 0%, #3f6cff 100%);
+        box-shadow: rgba(10, 14, 255, 0.6) 0px 7px 29px 0px;
+        padding: 4px 0.6em;
+    }
 
 
 
