@@ -19,7 +19,7 @@
         </div>
 
         <section id="skill-section">
-            <div v-for="(skill, index) in skills" :key="skill.id" class="skill-div">
+            <div v-for="(skill, index) in skills" :key="skill.id" :class="`skill-div skill-div-${index+1}`">
                 <h2>C{{index + 1}} - {{ skill.title }}</h2>
 
                 <div>
@@ -90,16 +90,16 @@
     }
 
     .skill-div {
-        background-color: rgba(255, 255, 255, 0.6);
         padding: 2em;
         border-radius: 24px;
         transition: all 0.3s ease;
+        opacity: 0.6;
     }
 
     .skill-div:hover {
-        background-color: rgba(255, 255, 255, 1);
         transition: all 0.3s ease;
         transform: translateY(-1em);
+        opacity: 1;
     }
 
     .skill-div > h2 {
@@ -113,6 +113,10 @@
         font-size: 30px;
         margin-bottom: 20px;
     }
+
+    .skill-div-1 {background-image: linear-gradient(-20deg, #c91313 0%, #ec5555 100%);}
+    .skill-div-2 {background-image: linear-gradient(-20deg, #d67506 0%, #e28b39 100%);}
+
 
     .skill-level-title {
         display: flex;
