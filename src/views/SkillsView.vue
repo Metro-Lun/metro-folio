@@ -30,14 +30,7 @@
                             <p :class="`level-${indexL + 1}`">{{ indexL + 1 }}</p>
                             <p>{{ l.name }}</p>
                         </div>
-                        
-
-                        <ul>
-                        <li >
-                            <h4>{{indexL + 1}} - {{l.name}}</h4>
-                            <p>{{l.info}}</p>
-                        </li>
-                    </ul>
+                        <p class="level-info">{{ l.info }}</p>
                     </div>
                     
                 </div>
@@ -97,8 +90,28 @@
     }
 
     .skill-div {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
         padding: 2em;
+        border-radius: 24px;
+        transition: all 0.3s ease;
+    }
+
+    .skill-div:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transition: all 0.3s ease;
+        transform: translateY(-1em);
+    }
+
+    .skill-div > h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom : 1em;
+        font-size: 40px;
+    }
+
+    .skill-div div h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
     }
 
     .skill-level-title {
@@ -110,8 +123,14 @@
     .skill-level-title p:first-child {
         border-radius: 50%;
         color: rgb(255, 255, 255);
-        font-size: 25px;
+        font-size: 20px;
         border: none;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .skill-level-title p:nth-child(2) {
+        font-weight: bold;
     }
 
     .level-1 {
@@ -121,7 +140,7 @@
     }
 
     .level-2 {
-        background-image: linear-gradient(-20deg, #d156f3 0%, #840c96 100%);
+        background-image: linear-gradient(-20deg, #5d0077 0%, #e436ff 100%);
         box-shadow: rgba(118, 0, 186, 0.6) 0px 7px 29px 0px;
         padding: 4px 0.6em;
 
@@ -133,6 +152,10 @@
         padding: 4px 0.6em;
     }
 
+    .level-info {
+        margin : 0.5em 0;
+        font-size: 20px;
+    }
 
 
 
