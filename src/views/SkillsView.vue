@@ -114,8 +114,8 @@
         margin-bottom: 20px;
     }
 
-    .skill-div-1 {background-image: linear-gradient(-20deg, #c91313 0%, #ec5555 100%);}
-    .skill-div-2 {background-image: linear-gradient(-20deg, #d67506 0%, #e28b39 100%);}
+    .skill-div-1 {background-image: linear-gradient(-20deg, #ff5e5e 0%, #ec5555 100%);}
+    .skill-div-2 {background-image: linear-gradient(-20deg, #ee8d1f 0%, #f5a55a 100%);}
 
 
     .skill-level-title {
