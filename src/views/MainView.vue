@@ -1,17 +1,19 @@
 <script setup>
-    import { ref } from 'vue';
+    import { ref, onMounted } from 'vue';
     import TechComponent from '@/components/TechComponent.vue';
     import JourneyComponent from '@/components/JourneyComponent.vue';
     import HobbiesComponent from '@/components/HobbiesComponent.vue';
-    import { useThemeStore } from '@/stores/theme';
 
     const tab = ref(0);
-    const themeStore = useThemeStore();
+    const show = ref(false);
 
     function handleClick(tabNum) {
         tab.value = tabNum;
     }
 
+    onMounted(() => {
+        show.value = true
+    });
 </script>
 
 <template>
@@ -19,32 +21,52 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-    <section id="main-home" :class="themeStore.theme">
-        <section id="main-front-presentation" :class="themeStore.theme">
+    <section id="main-home">
+        <section id="main-front-presentation">
             <section id="inner-presentation">
-                <div>
-                    <h1>Mehdi BOURBON</h1>
+                    <div>
+                        <transition name="slide-fade">
+                            <h1 v-if="show">Mehdi BOURBON</h1>
+                        </transition>
 
-                    <h2>Développeur web</h2>
-                    <h2>chais pas j'ai 20 ans je suis super cool</h2>
-                
-                    <button id="cv-link" :class="themeStore.theme">
-                        <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
-                            <i class="fas fa-download"></i>
-                            Mon super CV
-                        </a>
-                    </button>
-                </div>
+                        <transition name="slide-fade">
+                            <div v-if="show" class="delay-1">
+                                <h2>Développeur web</h2>
+                                <h2>chais pas j'ai 20 ans je suis super cool</h2>
+                            </div>
+                        </transition>
 
-                <img src="/assets/images/testphoto.png" alt="" class="floating"/>
+                    
+                        <button id="cv-link">
+                            <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
+                                <i class="fas fa-download"></i>
+                                Mon super CV
+                            </a>
+                        </button>
+                    </div>
+
+                <transition name="fade">
+                    <img v-if="show" src="/assets/images/testphoto.png" alt="" class="floating"/>
+                </transition>
                 
             </section>
         </section>
 
         <section id="choose">
-            <h2 @click="handleClick(0)" :class="tab == 0 ? 'selected' : ''">Technologies</h2>
-            <h2 @click="handleClick(1)" :class="tab == 1 ? 'selected' : ''">Parcours professionnel</h2>
-            <h2 @click="handleClick(2)" :class="tab == 2 ? 'selected' : ''">Passe-temps</h2>
+            <h2 @click="handleClick(0)" :class="tab == 0 ? 'selected' : ''">
+                <i class="fa-solid fa-code" />
+                <p>Technologies</p>
+            </h2>
+
+            <h2 @click="handleClick(1)" :class="tab == 1 ? 'selected' : ''">
+                <i class="fa-solid fa-briefcase"/>
+                <p>Parcours professionnel</p>
+            </h2>
+
+            <h2 @click="handleClick(2)" :class="tab == 2 ? 'selected' : ''">
+                <i class="fa-solid fa-face-smile"/>
+                <p>Passe-temps</p>
+            </h2>
         </section>
 
         <section id="choice-container">
@@ -56,6 +78,10 @@
 </template>
 
 <style scoped>
+    h2 p {
+        font-size: 40px;
+    }
+
     .floating {
         position: relative;
         animation: float2d 30s ease-in-out infinite;
@@ -148,6 +174,7 @@
     }
 
     /* CV LINK */
+
     #cv-link {
         margin-top: 0.8em;
         box-shadow: 10px 5px 5px rgb(118, 7, 155);

@@ -18,7 +18,11 @@ const router = createRouter({
       name: 'skills',
       component: () => import ('../views/SkillsView.vue')
     }
-  ]
+  ],
+  scrollBehavior() {
+    // Revenir en haut de la page à chaque navigation
+    return { top: 0 }
+  }
 });
 
 export default router;

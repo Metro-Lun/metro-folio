@@ -1,13 +1,15 @@
 <script setup>
     import ProjectCard from '@/components/ProjectCard.vue';
     import ProjectModal from '@/components/ProjectModal.vue';
-    import { ref } from 'vue';
+    import { ref, onMounted } from 'vue';
     import s from '@/assets/dataSAE.json';
-    import { useThemeStore } from '@/stores/theme';
-
-    const themeStore = useThemeStore();
 
     const saes = s.sae;
+
+    const show = ref(false);
+    onMounted(() => {
+        show.value = true
+    });
 
     const saeToDisplayIndex = ref(-1);
     const saeToDisplay = ref(null);
@@ -39,18 +41,25 @@
 </script>
 
 <template>
-    <section :class="`big-section ${themeStore.theme}`">
+    <section class="big-section">
         <section :class="saeToDisplayIndex !== -1 ? 'overlay' : ''"></section>
 
         <section tabindex="0" @keyup.esc="handleClick(-1)">
             <div id="titles">
-                <h1>Projets universitaires</h1>
-                <h2>développés dans le cadre du BUT Informatique</h2>
+                <transition name="slide-fade">
+                    <h1 v-if="show">Projets universitaires</h1>
+                </transition>
 
-                <div>
-                    <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
-                    <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
-                </div>
+                <transition name="slide-fade">
+                    <h2 v-if="show" class="delay-1">développés dans le cadre du BUT Informatique</h2>
+                </transition>
+                
+                <transition name="slide-fade">
+                    <div v-if="show" class="delay-2">
+                        <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
+                        <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
+                    </div>
+                </transition>
             </div>
 
             <section id="saes">

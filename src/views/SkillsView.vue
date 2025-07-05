@@ -1,4 +1,5 @@
 <script setup>
+    import { ref, onMounted } from "vue";
     import sa from '@/assets/dataSAE.json';
     import sk from '@/assets/dataSkills.json';
 
@@ -6,6 +7,12 @@
 
     const skills = sk.skills;
     const saes = sa.sae;
+
+    const show = ref(false)
+
+    onMounted(() => {
+        show.value = true;
+    });
 </script>
 
 <template>
@@ -15,13 +22,18 @@
 
     <section class="big-section">
         <div id="titles">
-            <h1>Compétences à l'IUT</h1>
+            <transition name="slide-fade">
+                <h1 v-if="show">Compétences à l'IUT</h1>
+            </transition>
             <h2></h2>
 
-            <div>
-                <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
-                <p>Il est composé de six compétences :</p>
-            </div>
+            <transition name="slide-fade">
+                <div v-if="show" class="delay-1">
+                    <p>Le BUT Informatique est l'occasion de réaliser des projets notés, mais également de s'en inspirer pour trouver des idées et développer ses propres applications.</p>
+                    <p>Il est composé de six compétences :</p>
+                </div>
+            </transition>
+            
         </div>
 
         <section id="skill-section">
