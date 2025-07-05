@@ -46,7 +46,11 @@
                     </div>
 
                 <transition name="fade">
-                    <img v-if="show" src="/assets/images/testphoto.png" alt="" class="floating"/>
+                    <div v-if="show" id="profile-div">
+                        <div id="profile-sub-div">
+                            <img src="/assets/images/testphoto.png" alt="" class="floating"/>
+                        </div>
+                    </div>
                 </transition>
                 
             </section>
@@ -84,22 +88,44 @@
 
     .floating {
         position: relative;
-        animation: float2d 30s ease-in-out infinite;
+        animation: float2d 25s ease-in-out infinite;
         will-change: transform;
     }
 
     @keyframes float2d {
         0%   { transform: translate(0px, 0px) rotate(0deg); }
-        10%  { transform: translate(12px, -8px) rotate(2deg); }
-        20%  { transform: translate(20px, -20px) rotate(3deg); }
-        30%  { transform: translate(12px, -35px) rotate(2deg); }
-        40%  { transform: translate(0px, -45px) rotate(0.5deg); }
-        50%  { transform: translate(-12px, -35px) rotate(-2deg); }
-        60%  { transform: translate(-20px, -20px) rotate(-3deg); }
-        70%  { transform: translate(-12px, -8px) rotate(-2deg); }
+        10%  { transform: translate(12px, -8px) rotate(5deg); }
+        20%  { transform: translate(20px, -20px) rotate(7deg); }
+        30%  { transform: translate(12px, -35px) rotate(6deg); }
+        40%  { transform: translate(0px, -45px) rotate(2deg); }
+        50%  { transform: translate(-12px, -35px) rotate(-5deg); }
+        60%  { transform: translate(-20px, -20px) rotate(-6deg); }
+        70%  { transform: translate(-12px, -8px) rotate(-4deg); }
         80%  { transform: translate(0px, 0px) rotate(0deg); }
-        90%  { transform: translate(8px, 6px) rotate(1deg); }
+        90%  { transform: translate(8px, 6px) rotate(3deg); }
         100% { transform: translate(0px, 0px) rotate(0deg); }
+    }
+
+    #profile-div {
+        animation: up-n-down 20s ease-in-out infinite;
+        will-change: transform;
+    }
+
+    @keyframes up-n-down {
+        0% { transform: translateY(-20px); }
+        50% { transform: translateY(70px); }
+        100% { transform: translateY(-20px); }
+    }
+
+    #profile-sub-div {
+        animation: left-n-right 25s ease-in-out infinite;
+        will-change: transform;
+    }
+
+    @keyframes left-n-right {
+        0% { transform: translateX(-50px); }
+        50% { transform: translateX(70px); }
+        100% { transform: translateX(-50px); }
     }
 
     #main-front-presentation {
