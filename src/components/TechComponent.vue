@@ -58,6 +58,6 @@
     img {
         max-height: 80px;
         margin-bottom: 5px;
+        transition: all 0.1s ease;
     }
-
 </style>

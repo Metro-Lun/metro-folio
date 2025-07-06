@@ -6,11 +6,11 @@
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "Java", "C", "C2", "LaTeX"]
+            "names": ["Python", "C2", "Java", "C"]
         },
         {
             "title": "Gestion de projet",
-            "names": ["Git", "GitLab", "GitHub", "UML", "Scrum", "Trello", "SourceTree"]
+            "names": ["GitLab", "GitHub", "UML", "Scrum", "Trello"]
         },
         {
             "title": "Systèmes d'exploitation",
@@ -18,7 +18,7 @@
         },
         {
             "title": "Bases de données",
-            "names": ["Oracle", "MySQL", "MongoDB", "Neo4J"]
+            "names": ["MongoDB", "PostgreSQL", "Oracle", "MySQL", "Neo4J"]
         }
     ]
 }

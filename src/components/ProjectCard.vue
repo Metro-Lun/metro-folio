@@ -39,6 +39,7 @@
     .sae-img {
         width: 80%;
         height: auto;
+        border-radius: 16px;
     }
 
     h3 {
