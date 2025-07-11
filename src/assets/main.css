@@ -107,7 +107,6 @@ nav a:hover {
 #jobs-section {
     display: flex;
     flex-direction: column;
-    gap: 6em;
     align-items: center;
 }
 

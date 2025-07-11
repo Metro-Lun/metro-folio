@@ -5,7 +5,7 @@
 <template>
     <div @click="clickHandler(index)" class="card" >
         <h3>{{ sae.code }}</h3>
-        <img :src="`/assets/images/${sae.image}`" class="sae-img" />
+        <img :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
         <div class="technos">
             <img v-for="te in sae.technos" :key="te.id" :src="`/assets/images/tech/${te}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
         </div>

@@ -18,8 +18,8 @@
 
         <nav>
             <div>
-                <a href="https://github.com/Metro-Lun"><img src="/assets/images/github-blanc.png" /></a>
-                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><img src="/assets/images/linkedin-blanc.png" /></a>
+                <a href="https://github.com/Metro-Lun"><img src="/assets/images/logos/github-blanc.png" /></a>
+                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><img src="/assets/images/logos/linkedin-blanc.png" /></a>
                 <a href="mailto:mehdi.bourbon@outlook.fr"><i class="fas fa-envelope"></i></a>
             </div>
         </nav>
