@@ -1,40 +1,49 @@
 <script setup>
-    defineProps(["skill", "index"])
+    defineProps(["skill", "index", "opened"])
 </script>
 
 <template>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
     <section :class="`skill-div skill-div-${index+1}`">
-        <h2>C{{index + 1}} - {{ skill.title }}</h2>
-
-        <div class="skill-situations">
-            <h3>Situations professionnelles</h3>
-            <ul>
-                <li v-for="ps in skill.professional_situations" :key="ps.id">
-                    <p>{{ ps }}</p>
-                </li>
-            </ul>
+        <div class="skill-main-title-wrapper">
+            <h2 class="skill-main-title">C{{index + 1}} - {{ skill.title }}</h2>
+            <i class="fa-solid fa-chevron-right" />
         </div>
 
-        <div class="skill-levels">
-            <h3>Niveaux</h3>
+        <section :class="`all-skill ${opened ? 'opened' : ''}`">
+            <div class="skill-situations">
+                <h3>Situations professionnelles</h3>
+                <ul>
+                    <li v-for="ps in skill.professional_situations" :key="ps.id">
+                        <p>{{ ps }}</p>
+                    </li>
+                </ul>
+            </div>
 
-            <div v-for="(l, indexL) in skill.levels" :key="l.id" class="skill-level">
-                <div class="skill-level-title">
-                    <p :class="`level-${indexL + 1}`">{{ indexL + 1 }}</p>
-                    <p>{{ l.name }}</p>
+            <div class="skill-levels">
+                <h3>Niveaux</h3>
+
+                <div v-for="(l, indexL) in skill.levels" :key="l.id" class="skill-level">
+                    <div class="skill-level-title">
+                        <p :class="`level-${indexL + 1}`">{{ indexL + 1 }}</p>
+                        <p>{{ l.name }}</p>
+                    </div>
+                    <p class="level-info">{{ l.info }}</p>
                 </div>
-                <p class="level-info">{{ l.info }}</p>
-            </div>
-        </div>
-
-        <div class="skill-review">
-            <div>
-                <h3>Niveau personnel :</h3>
-                <p :class="`level-${skill.personal_review.level}`">{{ skill.personal_review.level}}</p>
             </div>
 
-            <p class="skill-review-explained">{{skill.personal_review.explanation}}</p>
-        </div>
+            <div class="skill-review">
+                <div>
+                    <h3>Niveau personnel :</h3>
+                    <p :class="`level-${skill.personal_review.level}`">{{ skill.personal_review.level}}</p>
+                </div>
+
+                <p class="skill-review-explained">{{skill.personal_review.explanation}}</p>
+            </div>
+        </section>
     </section>
 </template>
 
@@ -44,19 +53,22 @@
         border-radius: 24px;
         transition: all 0.3s ease;
         opacity: 0.6;
+        background-color: white;
+        transition: all 0.3s ease;
     }
 
     .skill-div:hover {
-        transition: all 0.3s ease;
         transform: translateY(-1em);
         opacity: 1;
     }
 
-    .skill-div > h2 {
-        display: flex;
-        justify-content: flex-end;
+    .skill-div.opened {
+        transition: all 0.3s ease;
+    }
+
+    .skill-main-title-wrapper {
         margin-bottom : 1em;
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
     }
 
@@ -141,6 +153,30 @@
     .skill-review-explained {
         margin-top: 1em;
     }
+
+    /* CHEVRON */
+
+    .skill-main-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .opened i {
+        color: red;
+    }
+
+    .all-skill {
+        display: none;
+        transition: all .5s ease;
+    }
+
+    .all-skill.opened {
+        display: block;
+
+        transform: translateY(0);
+    }
+
 
 
 </style>

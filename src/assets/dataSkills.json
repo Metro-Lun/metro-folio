@@ -22,8 +22,8 @@
             ],
             "professional_situations": ["Élaboration d'une une application informatique", "Évolution des applications", "Maintenance d'une application informatique en conditions opérationnelles"],
             "personal_review": {
-                "level": 2,
-                "explanation": "Je suis capable de sélectionner une technologie adéquate en fonction des spécifications et de réaliser une solution informatique complète. Je n'ai encore pas eu l'occasion, en revanche, d'en maintenir."
+                "level": 3,
+                "explanation": "Je suis capable de sélectionner une technologie adéquate en fonction des spécifications et de réaliser une solution informatique complète. J'ai eu l'occasion d'en maintenir, voire d'en améliorer certaines."
             }
         },
         {
@@ -48,8 +48,8 @@
             ],
             "professional_situations": ["Améliorer les performances des programmes dans des contextes contraints", "Limiter l'impact environnemental d'une application informatique", "Mettre en place des applications informatiques adaptées et efficaces"],
             "personal_review": {
-                "level": 2,
-                "explanation": "Je sais évaluer différentes solutions et sélectionner la meilleure (et celle qui permet de consommer le moins possible en termes de ressources et d'énergie)."
+                "level": 3,
+                "explanation": "Je sais évaluer différentes solutions et sélectionner la meilleure (et celle qui permet de consommer le moins possible en termes de ressources et d'énergie). J'ai également eu l'occasion d'analyser un code existant pour l'améliorer."
             }
         },
         {
@@ -113,7 +113,7 @@
                     "info": "Analyser les processus d'une organisation pour améliorer son système d'information, et être capable de suivre des projets"
                 }
             ],
-            "professional_situations": ["lancer un nouveau projet", "Piloter le maintien d'un projet en condition opérationnelle", "Faire évoluer un système d'information"],
+            "professional_situations": ["Lancer un nouveau projet", "Piloter le maintien d'un projet en condition opérationnelle", "Faire évoluer un système d'information"],
             "personal_review": {
                 "level": 2,
                 "explanation": "Je peux planifier (Gantt, RACI, PERT méthodes de découpage) et suivre (tableau de bord) un projet à toutes ses phases, en utilisant les méthodes agiles ou non."
@@ -142,7 +142,7 @@
             "professional_situations": ["Lancer un nouveau projet", "Organiser son travail en relation avec celui de son équipe", "Elaborer, gérer et transmettre de l'information"],
             "personal_review": {
                 "level": 3,
-                "explanation": "Je sais gérer une petite équipe pour un projet donné et comprends les objectifs à atteindre. J'utilise mes soft skills pour communiquer et j'intègre rapidement divers milieux."
+                "explanation": "Je sais gérer une équipe pour un projet donné et comprends les objectifs à atteindre. J'utilise mes soft skills pour communiquer et j'intègre rapidement divers milieux."
             }
         }
     ]

@@ -118,12 +118,12 @@ button {
 
 /* SKILLS */
 
-.skill-div-1 {background-image: linear-gradient(-20deg, #ff5e5e 0%, #ec5555 100%);}
-.skill-div-2 {background-image: linear-gradient(-20deg, #ee8d1f 0%, #f5a55a 100%);}
-.skill-div-3 {background-image: linear-gradient(-20deg, #e7d210 0%, #fce772 100%);}
-.skill-div-4 {background-image: linear-gradient(-20deg, #36920b 0%, #79d13e 100%);}
-.skill-div-5 {background-image: linear-gradient(-20deg, #1d7cf8 0%, #5fb2ff 100%);}
-.skill-div-6 {background-image: linear-gradient(-20deg, #9747f1 0%, #af72ff 100%);}
+.skill-div-1 .skill-main-title {color: #ec5555}
+.skill-div-2 .skill-main-title {color: #ee8d1f;}
+.skill-div-3 .skill-main-title {color: #e7d210;}
+.skill-div-4 .skill-main-title {color: #36920b;}
+.skill-div-5 .skill-main-title {color: #1d7cf8;}
+.skill-div-6 .skill-main-title {color: #9747f1;}
 
 /* ANIMATIONS */
 

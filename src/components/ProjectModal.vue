@@ -19,7 +19,7 @@
         </div>
 
         <div id="card-desc">
-            <img :src="`/assets/images/${saeToDisplay.image}`" />
+            <img :src="`/assets/images/projects/${saeToDisplay.image}`" />
 
             <div>
                 <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
@@ -142,6 +142,7 @@
 
     #card-desc img {
         width: 90%;
+        border-radius: 24px;
     }
 
     li p {

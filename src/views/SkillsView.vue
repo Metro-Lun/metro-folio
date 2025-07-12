@@ -13,6 +13,13 @@
     onMounted(() => {
         show.value = true;
     });
+
+    const opened = ref([false, false, false, false, false, false]);
+
+    const openSkill = (index) => {
+        opened.value[index] = !opened.value[index];
+        console.log(index, opened.value)
+    }
 </script>
 
 <template>
@@ -23,7 +30,7 @@
     <section class="big-section">
         <div id="titles">
             <transition name="slide-fade">
-                <h1 v-if="show">Compétences à l'IUT</h1>
+                <h1 v-if="show">Compétences du BUT Informatique</h1>
             </transition>
             <h2></h2>
 
@@ -37,7 +44,9 @@
         </div>
 
         <section id="skill-section">
-            <SkillCard v-for="(skill, index) in skills" :key="skill.id" :skill="skill" :index="index"/>
+            <div v-for="(skill, index) in skills"  :key="skill.id" v-on:click="() => openSkill(index)">
+                <SkillCard :skill="skill" :index="index" :opened="opened[index]"/>
+            </div>
         </section>
 
         <section id="sae-vs-skills">
@@ -58,7 +67,7 @@
                     <RouterLink :to="{name: 'projs'}">
                         <div class="sae-tile">
                             <p>{{sae.code}}</p>
-                            <img :src="`/assets/images/${sae.image}`" />
+                            <img :src="`/assets/images/projects/${sae.image}`" />
                         </div>
                     </RouterLink>
                     

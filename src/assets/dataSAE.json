@@ -2,7 +2,7 @@
     "sae": [
         {
             "code": "PLATINE",
-            "title": "Développement avancé d'une application",
+            "title": "ERP de gestion du département informatique",
             "image": "sae_platine.png",
             "size": "big",
             "description": [
@@ -21,15 +21,14 @@
         },
         {
             "code": "VroumVroum",
-            "title": "Développement d'une application",
+            "title": "Jeu de voitures avec circuits 2D",
             "image": "sae_vroumvroum.png",
             "size": "big",
             "description": [
-                "L'objectif du projet est de créer une application de A à Z, en passant par toutes les phases d'un projet informatique. Le sujet est libre.",
-                "À partir du sujet choisi, l'équipe projet doit analyser les besoins fictifs et doit en tirer une structure d'application cohérente avec les langages et méthodologies vus en cours.",
-                "Cette application doit accueillir une base de données, et doit à terme être hébergée en ligne.",
-                "De plus, une documentation technique complète, telle que celle demandée dans le monde professionnel, est demandée à travers de nombreux livrables : dossier de conception, rapport technique, notice d'installation et d'utilisation et vidéo de présentation.",
-                "Ce projet doit utiliser une méthode Agile, et doit, dans sa manipulation des données et sa structure, respecter des paradigmes de qualité (Design Patterns, ergonomie...)."
+                "VroumVroum est un jeu en ligne qui consiste à réaliser des courses de voitures.",
+                "Le joueur peut créer ses circuits à l'aide de tuiles 2D ou bien choisir de jouer parmi ceux existants.",
+                "Ce projet fut réalisé par une équipe de 4 personnes en Agile.",
+                "L'accent a été mis sur le respect de Design Patterns."
             ],
             "technos": ["JavaScript", "ExpressJS", "NodeJS", "TypeScript", "MySQL", "Git", "GitLab", "Trello", "Canva"],
             "skills": [
@@ -38,58 +37,53 @@
                 "Gestion de projet Agile",
                 "Travail en équipe",
                 "Développement web avancé",
-                "Rédaction d'une documentation technique"
+                "Rédaction d'une documentation technique (cahier des charges, rapport, notice d'utilisation...)"
             ],
-            "links": [3, 1, 2, 2, 3, 3]
+            "links": [3, 2, 2, 3, 3, 3]
         },
         {
             "code": "GraphMap Analysis",
-            "title": "Développement d'une application",
+            "title": "Logiciel de gestion logistique d'hôpitaux",
             "image": "sae_java.png",
             "size": "big",
             "description": [
                 "L'objectif du projet est de développer une application Java pour une organisation souhaitant relier ses dispensaires de santé dans une zone géographique sans réelles infrastructures logistiques.",
-                "L'application doit permettre de déterminer le chemin le plus court entre deux dispensaires : elle peut donner d'autres informations (voisins d'un dispensaire à 1 ou 2 niveaux, quel dispensaire est le plus connecté à d'autres dispensaires d'un certain type...) à l'aide d'une interface graphique.",
-                "Ce projet doit être géré selon les méthodes vues en cours de gestion de projet informatique (Gantt, matrice RACI, découpage WBS).",
-                "Il doit également respecter les conventions étudiées en cours de qualité de développement.",
-                "Il demande l'exploration algorithmique de structures de données représentant un graphe."
+                "L'application permet de déterminer le chemin le plus court entre deux dispensaires : elle peut donner d'autres informations (voisins d'un dispensaire à 1 ou 2 niveaux, quel dispensaire est le plus connecté à d'autres dispensaires d'un certain type...) à l'aide d'une interface graphique."
             ],
             "technos": ["Java", "Git", "GitLab", "SourceTree"],
             "skills": [
                 "Programmation orientée objet",
+                "Structures de données et optimisation",
                 "Réponse à des besoins clients définis",
-                "Développement d'interfaces logicielles",
-                "Gestion de projet",
-                "Application de méthodes de développement de qualité : GitFlow, classes de test, Javadoc"
+                "Développement d'interfaces graphiques logicielles",
+                "Gestion de projet"
             ],
-            "links": [3, 3, 0, 0, 3, 1]
+            "links": [3, 3, 0, 0, 3, 3]
         },
         {
             "code": "Portfolio",
-            "title": "Projet personnel et professionnel (PPP)",
+            "title": "(vous êtes dessus)",
             "image": "portfolio.png",
             "size": "medium",
             "description": [
-                "Le portfolio a pour objectif d'évaluer les niveaux de compétence en deuxième année de BUT.",
-                "Il peut prendre n'importe quelle forme et permet de rendre compte d'une posture réflexive et d'une prise de recul vis-à-vis des compétences de la formation et du parcours suivi.",
-                "Le portfolio du BUT Informatique est un site web comportant un volet personnel et un volet académique."
+                "Ce site permet de me présenter, ainsi que mes projets et mes compétences."
             ],
             "technos": ["VueJS", "NodeJS", "HTML", "CSS", "Git", "GitHub"],
             "skills": [
                 "Programmation web",
                 "Programmation orientée composants",
                 "Travail sur soi",
-                "Présentation des acquis liés à la formation"
+                "Présentation des acquis liés à mes études et à mes expériences"
             ],
-            "links": [3, 3, 3, 3, 3, 3]
+            "links": [3, 3, 1, 0, 0, 0]
         },
         {
             "code": "L'Annuaire",
-            "title": "Implémentation d'un besoin client",
+            "title": "Application CLI de gestion de profils client",
             "image": "sae_c.png",
             "size": "medium",
             "description": [
-                "L'objectif du projet est de répondre au besoin prédéfini d'une entreprise fictive, qui souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
+                "Une entreprise souhaite gérer les données de ses clients. Elle souhaite disposer d'une application type CRUD lui permettant de charger son annuaire de clients au format CSV, et d'y apporter des modifications.",
                 "L'application L'Annuaire permet d'afficher les données du fichier CSV, mais également de vérifier quelles données sont valides par rapport aux contraintes spécifiées, d'ajouter, de supprimer, de modifier des informations, de repérer quels sont les clients à qui il manque des données, et de filtrer sur un ou deux champs."
             ],
             "technos": ["C", "Git", "GitLab"],
@@ -98,7 +92,7 @@
                 "Optimisation du programme et allocation dynamique",
                 "Réponse à des besoins clients définis"
             ],
-            "links": [3, 2, 1, 0, 1, 1]
+            "links": [3, 2, 1, 0, 1, 2]
         }
     ]
 }
