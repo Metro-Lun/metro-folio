@@ -10,7 +10,7 @@
     <section :class="`skill-div skill-div-${index+1}`">
         <div class="skill-main-title-wrapper">
             <h2 class="skill-main-title">C{{index + 1}} - {{ skill.title }}</h2>
-            <i class="fa-solid fa-chevron-right" />
+            <i :class="`fa-solid fa-chevron-right ${opened ? 'opened' : ''}`" />
         </div>
 
         <section :class="`all-skill ${opened ? 'opened' : ''}`">
@@ -43,7 +43,7 @@
 
                 <p class="skill-review-explained">{{skill.personal_review.explanation}}</p>
             </div>
-        </section>
+        </section>        
     </section>
 </template>
 
@@ -162,21 +162,26 @@
         justify-content: space-between;
     }
 
-    .opened i {
-        color: red;
+    i {
+        transition: transform .5s ease-in-out;
+    }
+    
+    i.opened {
+        transform: rotate(90deg);
     }
 
     .all-skill {
-        display: none;
-        transition: all .5s ease;
+        opacity: 0;
+        max-height: 0;
+        transition: all .5s ease-in-out;
+        user-select: none;
+        pointer-events: none;
     }
 
     .all-skill.opened {
-        display: block;
-
-        transform: translateY(0);
+        opacity: 1;
+        max-height: 1000px;
+        pointer-events: auto;
+        user-select: auto;
     }
-
-
-
 </style>
