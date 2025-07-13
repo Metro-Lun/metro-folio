@@ -116,7 +116,7 @@
         left: 50%;
         width: 3px;
         height: 105%;
-        background-color: black;
+        background-color: white;
         transform: translateX(-50%);
     }
 
@@ -127,7 +127,7 @@
         left: 0;
         width: 100%;
         height: 3px;
-        background-color: black;
+        background-color: white;
         transform: translateY(-50%);
     }
 
@@ -188,5 +188,16 @@
         text-decoration: none;
         color: black;
         font-weight: bold;
+    }
+
+    .sae-table i {
+        color: white;
+    }
+
+    @media (max-height: 800px) {
+        #skill-section {
+            display: grid;
+            grid-template : auto / 1fr;
+        }
     }
 </style>

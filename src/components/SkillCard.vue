@@ -184,4 +184,27 @@
         pointer-events: auto;
         user-select: auto;
     }
+
+    @media (max-height: 800px) {
+        h2 {
+            font-size: 26px;
+        }
+
+        .level-info {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        .skill-level-title p:first-child {
+            font-size: 16px;
+        }
+
+        .skill-review > div > p {
+            font-size: 20px;
+        }
+
+    }
 </style>
