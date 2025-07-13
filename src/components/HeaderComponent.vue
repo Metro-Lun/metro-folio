@@ -1,8 +1,15 @@
 <script setup>
+    import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
     import { useThemeStore } from '@/stores/theme';
     
     const themeStore = useThemeStore();
+
+    const opened = ref(false);
+
+    const openHeader = () => {
+        opened.value = !opened.value;
+    }
 </script>
 
 <template>
@@ -16,15 +23,17 @@
             <p>Mehdi BOURBON</p>
         </div>
 
-        <section id="links-n-light">
-            <nav>
-                <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
-                <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
-                <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
-            </nav>
+        <div id="burger" v-on:click="openHeader">
+            <i class="fa-solid fa-bars" />
+        </div>
 
-            <!-- <LightSwitch /> -->
-         </section>
+        <nav id="links" :class="`${opened ? 'opened': ''}`">
+            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
+            <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
+            <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
+        </nav>
+
+        <!-- <LightSwitch /> -->
     </header>
 </template>
 
@@ -46,7 +55,7 @@
     }
 
     /* LIGHT SWITCH */
-    #links-n-light {
+    #links {
         display: flex;
         align-items: center;
         justify-content: end;
@@ -71,11 +80,54 @@
         font-weight: bold;
     }
 
-    header.dark #profile-container p {
+    header #profile-container p {
         color: white;
     }
 
-    header.light #profile-container p {
-        color: black;
+    /* RESPONSIVE */
+
+    #burger {
+        display: none;
     }
+
+    @media (max-height: 700px) {
+        #burger {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-right: 1em;
+            font-size: 35px;
+        }
+
+        #links {
+            opacity: 0;
+            top: 4em;
+            right: 0;
+            position: absolute;
+            z-index: 1212;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            background-color: white;
+            border-radius: 16px;
+            transition: all .5s ease-in-out;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        #links.opened {
+            opacity: 1;
+            user-select: auto;
+            pointer-events: auto;
+        }
+
+        #links.opened a {
+            color: black;
+            margin : 5px 20px 5px 20px;
+        }
+
+        
+    }
+
+
 </style>
