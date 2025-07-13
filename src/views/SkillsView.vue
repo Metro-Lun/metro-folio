@@ -58,8 +58,8 @@
                 <div>
                     <p id="empty"></p>
                     <div v-for="(s, index) in skills" :key="s.id" :class="`comp-header skill-div-${index+1}`">
-                        <p>C{{ index + 1 }}</p>
-                        <p>{{ s.title }}</p>
+                        <i :class="`fa-solid ${s.icon} skill-main-title-title`" />
+                        <p class="skill-main-title-title">{{ s.title }}</p>
                     </div>
                 </div>
 
@@ -72,7 +72,8 @@
                     </RouterLink>
                     
                     <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
-                        <i class="fa-solid fa-circle" :style="`font-size: ${25 * parseInt(l)}px`" />
+                        <i class="fa-solid fa-circle big-icon" :style="`font-size: ${25 * parseInt(l)}px`" />
+                        <i class="fa-solid fa-circle small-icon" :style="`font-size: ${10 * parseInt(l)}px`" />
                     </p>
                 </div>
             </section>
@@ -116,7 +117,7 @@
         left: 50%;
         width: 3px;
         height: 105%;
-        background-color: white;
+        background-color: black;
         transform: translateX(-50%);
     }
 
@@ -127,7 +128,7 @@
         left: 0;
         width: 100%;
         height: 3px;
-        background-color: white;
+        background-color: black;
         transform: translateY(-50%);
     }
 
@@ -139,20 +140,21 @@
     }
 
     .comp-header {
-        font-weight: bolder;
+        font-weight: bold;
         align-self: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
         border-radius: 20px;
         padding: 0.2em 0;
         margin: 0 auto;
         width: 80%;
+        background-color: white;
     }
 
-    .comp-header p:first-child {
+    .comp-header i {
         font-size: 40px;
     }
 
-    .comp-header p:nth-child(2) {
+    .comp-header p {
         font-size: 20px;
     }
 
@@ -191,13 +193,49 @@
     }
 
     .sae-table i {
-        color: white;
+        color: black;
     }
+
+    .small-icon {display: none;}
+    .big-icon {display: block;}
 
     @media (max-height: 800px) {
         #skill-section {
             display: grid;
             grid-template : auto / 1fr;
         }
+
+        p.skill-main-title-title {
+            display: none !important;
+        }
+
+        .comp-header i {
+            font-size: 15px;
+        }
+
+        .small-icon {display: block;}
+        .big-icon {display: none;}
+
+        .sae-tile {
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .sae-tile img {
+            border-radius: 6px;
+        }
+
+        .sae-tile p:first-child {
+            font-size: 6px;
+        }
+
+        .vertical-line::before {
+            width: 1.5px;
+        }
+
+        .vertical-line::after {
+            height: 1.5px;
+        }
+
     }
 </style>

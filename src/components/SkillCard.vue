@@ -7,9 +7,12 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-    <section :class="`skill-div skill-div-${index+1}`">
+    <section :class="`skill-div skill-div-${index+1} ${opened ? 'opened' : ''}`">
         <div class="skill-main-title-wrapper">
-            <h2 class="skill-main-title">C{{index + 1}} - {{ skill.title }}</h2>
+            <div class="skill-main-title-title">
+                <i :class="`fa-solid ${skill.icon}`" />
+                <h2 class="skill-main-title">{{ skill.title }}</h2>
+            </div>
             <i :class="`fa-solid fa-chevron-right ${opened ? 'opened' : ''}`" />
         </div>
 
@@ -206,5 +209,19 @@
             font-size: 20px;
         }
 
+    }
+
+    .skill-main-title-title {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .skill-main-title-wrapper {
+            margin: 0;
+    }
+
+    .opened .skill-main-title-wrapper {
+        margin-bottom: 1em;
     }
 </style>

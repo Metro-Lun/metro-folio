@@ -2,6 +2,7 @@
     "skills": [
         {
             "title": "Réaliser",
+            "icon": "fa-code",
             "description": [
                 "Objectif : être capable de développer un outil informatique qui répond à un besoin client.",
                 "Etapes : conception du produit, code, tests, déploiement / intégration, maintenance, documentation."
@@ -28,6 +29,7 @@
         },
         {
             "title": "Optimiser",
+            "icon": "fa-chart-area",
             "description": [
                 "Objectif : être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
                 "Il est nécessaire d'analyser un problème informatique et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats."
@@ -54,6 +56,7 @@
         },
         {
             "title": "Administrer",
+            "icon": "fa-terminal",
             "description": [
                 "Objectif : être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
                 "Etapes : connaissance du fonctionnement des protocoles de base, prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
@@ -76,6 +79,7 @@
         },
         {
             "title": "Gérer",
+            "icon": "fa-database",
             "description": [
                 "Objectif : savoir analyser et exploiter les données d'une structure.",
                 "Il est possible de les entretenir et de concevoir une base ou un agencement optimal comme il est possible de les analyser pour en tirer une conclusion, souvent stratégique.",
@@ -99,6 +103,7 @@
         },
         {
             "title": "Conduire",
+            "icon": "fa-person-chalkboard",
             "description": [
                 "Objectif : savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
                 "Savoir adopter les bonnes démarches, une bonne politique de communication, et respecter les règles juridiques et éthique est crucial."
@@ -121,6 +126,7 @@
         },
         {
             "title": "Collaborer",
+            "icon": "fa-user-group",
             "description": [
                 "Objectif : apprendre à travailler de manière efficace dans une équipe informatique.",
                 "La communication est un facteur clé. Les informations doivent être partagées et accessibles."
