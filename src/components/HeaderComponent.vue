@@ -1,9 +1,6 @@
 <script setup>
     import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
-    import { useThemeStore } from '@/stores/theme';
-    
-    const themeStore = useThemeStore();
 
     const opened = ref(false);
 
@@ -17,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-    <header :class="themeStore.theme">
+    <header>
         <div id="profile-container">
             <img src="/assets/images/pfp.png" />
             <p>Mehdi BOURBON</p>
@@ -126,8 +123,12 @@
             margin : 5px 20px 5px 20px;
         }
 
-        
+        #profile-container p {
+            font-size: 22px;
+        }
+
+        header img {
+            height: 60%;
+        }
     }
-
-
 </style>
