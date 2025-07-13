@@ -53,7 +53,7 @@
         transform: translate(-50%, -50%);
         height: 85%;
         width: 90%;
-        overflow: hidden;
+        overflow: scroll;
         background: rgb(255, 232, 245);
     }
 
@@ -69,6 +69,7 @@
     #ok-button {
         display: flex;
         justify-content: center;
+        margin: 2em auto;
     }
     
     #close-button button {
@@ -145,6 +146,10 @@
         border-radius: 24px;
     }
 
+    li {
+        margin-left: 1em;
+    }
+
     li p {
         margin: 10px auto;
     }
@@ -155,6 +160,10 @@
 
     #card-desc div > p:first-child {
         margin-top: 0;
+    }
+
+    #card-desc div > p {
+        margin-bottom: 10px;
     }
 
     #card-desc h3 {
@@ -177,4 +186,32 @@
         border: 1px solid rgba(55, 55, 55, 0.99);
         padding: 1px 5px;
     }
+
+    /* RESPONSIVE */
+
+    @media (max-height: 800px) {
+        #card-desc {
+            margin: auto 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #card h3 { font-size: 18px; }
+
+        #ok-button {
+            margin-bottom: 2em;
+        }
+
+        .project-techno {
+            height: 20px;
+            margin: auto 0.5em;
+        }
+
+        #tech-name {
+            font-size: 12px !important;
+        }
+    }
+
+    
 </style>

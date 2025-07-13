@@ -50,4 +50,18 @@
     .technos {
         margin: 1.5em;
     }
+
+    @media (max-height: 800px) {
+        h3 {
+            font-size: 15px;
+        }
+
+        .project-techno {
+            height: 15px;
+        }
+
+        .technos {
+            margin: 0.6em;
+        }
+    }
 </style>

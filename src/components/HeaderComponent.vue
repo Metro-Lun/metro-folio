@@ -87,7 +87,7 @@
         display: none;
     }
 
-    @media (max-height: 700px) {
+    @media (max-height: 800px) {
         #burger {
             display: flex;
             align-items: center;
@@ -124,7 +124,7 @@
         }
 
         #profile-container p {
-            font-size: 22px;
+            font-size: 15px;
         }
 
         header img {

@@ -156,7 +156,7 @@ button {
     opacity: 1;
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
     h1 {
         font-size: 40px;
     }

@@ -81,4 +81,11 @@
         grid-template: auto / 1fr 1fr 1fr;
         gap: 2em;
     }
+
+    @media (max-height: 800px) {
+        #saes {
+            display: grid;
+            grid-template : auto / 1fr;
+        }
+    }
 </style>
