@@ -18,9 +18,9 @@
 
         <nav>
             <div>
-                <a href="https://github.com/Metro-Lun"><img src="/assets/images/logos/github-blanc.png" /></a>
-                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><img src="/assets/images/logos/linkedin-blanc.png" /></a>
-                <a href="mailto:mehdi.bourbon@outlook.fr"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Metro-Lun"><i class="fa-brands fa-github" /></a>
+                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><i class="fa-brands fa-linkedin-in" /></a>
+                <a href="mailto:mehdi.bourbon@outlook.fr"><i class="fa-solid fa-envelope" /></a>
             </div>
         </nav>
     </footer>
@@ -46,12 +46,12 @@
         justify-content: flex-end;
     }
 
-    footer img, i {
+    footer i {
         width: 46px;
     }
 
     i {
         color: white;
-        font-size: 46px;
+        font-size: 40px;
     }
 </style>
