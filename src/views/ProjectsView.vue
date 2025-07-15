@@ -12,32 +12,20 @@
     });
 
     const saeToDisplayIndex = ref(-1);
-    const saeToDisplay = ref(null);
-
-    const techToDisplay = ref(null);
+    const display = ref(false);
 
     function handleClick(i) {
-        if(saeToDisplayIndex.value === i) {
-            saeToDisplayIndex.value = -1;
-            saeToDisplay.value = null;
-        } else {
-            saeToDisplayIndex.value = i;
-            saeToDisplay.value = saes[i];
-        }
+        saeToDisplayIndex.value = i;
+        handleOpen();
     }
 
-    function handleHover(evt, t) {
-       if(t === null) {
-            techToDisplay.value = null;
-       } else {
-            const rect = evt.target.getBoundingClientRect();
-            techToDisplay.value = {
-                name: t,
-                left: `${evt.target.offsetLeft - (rect.width / 4)}px`,
-                top: `${evt.target.offsetTop + 16}px`
-            };
-       }
+    function handleOpen() {
+        console.log(display.value)
+        display.value = !display.value;
+        console.log(display.value)
     }
+
+
 </script>
 
 <template>
@@ -67,8 +55,10 @@
             </section>
 
             <section v-if="saeToDisplayIndex !== -1">
-                <div id="black-filter"></div>
-                <ProjectModal :saeToDisplay="saeToDisplay" :techToDisplay="techToDisplay" :clickHandler="handleClick" :hoverHandler="handleHover"/>
+                <div id="black-filter" :class="`${display ? 'active' : ''}`"></div>
+                <div :class="`wrapper ${display ? 'active' : ''}`">
+                    <ProjectModal :saeToDisplay="saes[saeToDisplayIndex]" :clickHandler="handleOpen" />
+                </div>
             </section>
 
         </section>
@@ -83,14 +73,43 @@
         gap: 2em;
     }
 
+    .wrapper {
+        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+        border-radius: 20px;
+        z-index: -12;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 85%;
+        width: 90%;
+        overflow: auto;
+        background: rgb(255, 232, 245);
+        transform: translateX(-50%) translateY(-30%);
+        opacity: 0;
+    }
+
+    .wrapper.active {
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+        z-index: 5000;
+    }
+
     #black-filter {
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0);
+        z-index: -13;
+        opacity: 0;
+    }
+
+    #black-filter.active {
         z-index: 4999;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
     }
 
     @media (max-height: 800px) {

@@ -2,30 +2,19 @@
     import { RouterView } from 'vue-router'
     import HeaderComponent from './components/HeaderComponent.vue';
     import FooterComponent from './components/FooterComponent.vue';
-    import { ref } from 'vue';
-    import { useThemeStore } from '@/stores/theme';
-
-    const themeStore = useThemeStore();
-
-    let windowTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    let theme = ref(windowTheme);
-
-    function toggleTheme() {
-        theme.value = theme.value === 'dark' ? 'light' : 'dark';
-    }
 
 </script>
 
 <template>
-    <HeaderComponent :theme="themeStore.theme" @newTheme="toggleTheme" />
+    <HeaderComponent />
 
-    <main :class="themeStore.theme">
-        <section :class="themeStore.theme" id="app">
+    <main>
+        <section id="app">
             <RouterView />
         </section>
     </main>
 
-    <FooterComponent :theme="themeStore.theme"/>
+    <FooterComponent/>
 </template>
 
 <style>

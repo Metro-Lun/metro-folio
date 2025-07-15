@@ -1,16 +1,32 @@
 <script setup>
-    defineProps(["saeToDisplay", "techToDisplay", "clickHandler", "hoverHandler"])
+    import { ref } from 'vue';
+    defineProps(["saeToDisplay", "clickHandler"])
+
+    const techToDisplay = ref(null);
+
+    function handleHover(evt, t) {
+       if(t === null) {
+            techToDisplay.value = null;
+       } else {
+            const rect = evt.target.getBoundingClientRect();
+            techToDisplay.value = {
+                name: t,
+                left: `${evt.target.offsetLeft - (rect.width / 4)}px`,
+                top: `${evt.target.offsetTop + 16}px`
+            };
+       }
+    }
 </script>
 
 <template>
     <section id="card">
-        <div id="close-button"><button @click="clickHandler(-1)">X</button></div>
+        <div id="close-button"><button @click="clickHandler">X</button></div>
         
         <div id="card-titles">
             <h2>{{saeToDisplay.code}}</h2>
             <h3>{{saeToDisplay.title}}</h3>
             <div>
-                <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
+                <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
             </div>
 
             <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
@@ -41,20 +57,6 @@
     .project-techno {
         height: 30px;
         margin: auto 0.5em;
-    }
-
-    #card {
-        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
-        border-radius: 20px;
-        z-index: 5000;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 85%;
-        width: 90%;
-        overflow: scroll;
-        background: rgb(255, 232, 245);
     }
 
     #card p {
