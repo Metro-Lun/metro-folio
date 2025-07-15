@@ -67,6 +67,7 @@
             </section>
 
             <section v-if="saeToDisplayIndex !== -1">
+                <div id="black-filter"></div>
                 <ProjectModal :saeToDisplay="saeToDisplay" :techToDisplay="techToDisplay" :clickHandler="handleClick" :hoverHandler="handleHover"/>
             </section>
 
@@ -80,6 +81,16 @@
         display: grid;
         grid-template: auto / 1fr 1fr 1fr;
         gap: 2em;
+    }
+
+    #black-filter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 4999;
     }
 
     @media (max-height: 800px) {
