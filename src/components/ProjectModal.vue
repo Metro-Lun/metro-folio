@@ -5,6 +5,7 @@
     const techToDisplay = ref(null);
 
     function handleHover(evt, t) {
+        console.log(evt, t)
        if(t === null) {
             techToDisplay.value = null;
        } else {
@@ -26,7 +27,7 @@
             <h2>{{saeToDisplay.code}}</h2>
             <h3>{{saeToDisplay.title}}</h3>
             <div>
-                <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
+                <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
             </div>
 
             <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
