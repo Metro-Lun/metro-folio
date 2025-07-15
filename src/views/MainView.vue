@@ -24,7 +24,7 @@
     <section id="main-home">
         <section id="main-front-presentation">
             <section id="inner-presentation">
-                    <div>
+                    <div id="title">
                         <transition name="slide-fade">
                             <h1 v-if="show">Mehdi BOURBON</h1>
                         </transition>
@@ -40,7 +40,7 @@
                         <button id="cv-link">
                             <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
                                 <i class="fas fa-download"></i>
-                                Mon super CV
+                                <p>Mon super CV</p>
                             </a>
                         </button>
                     </div>
@@ -130,9 +130,6 @@
 
     #main-front-presentation {
         height: calc(100vh - 4em);
-    }
-
-    #main-front-presentation {
         color: white;
     }
 
@@ -223,5 +220,34 @@
         font-size: 30px;
         font-weight: bold;
         color: rgb(188, 72, 255);
+    }
+
+    @media (max-width: 900px) {
+        #inner-presentation {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 2em;
+        }
+
+        .floating {
+            height: 20px;
+        }
+
+        #title, #title div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #title div h2 {
+            font-size: 10px;
+        }
+
+        #cv-link {
+            font-size: 12px;
+        }
     }
 </style>

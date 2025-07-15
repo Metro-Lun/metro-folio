@@ -156,29 +156,6 @@ button {
     opacity: 1;
 }
 
-/* .fade-top-enter-active,
-.fade-top-leave-active {
-  transition: all .3s ease-in-out;
-}
-
-.fade-top-enter-from {
-  transform: translateX(-50%) translateY(-60%);
-  opacity: 0;
-}
-.fade-top-enter-to {
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
-}
-
-.fade-top-leave-from {
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
-}
-.fade-top-leave-to {
-  transform: translateX(-50%) translateY(-40%);
-  opacity: 0;
-} */
-
 @media (max-height: 800px) {
     h1 {
         font-size: 40px;
