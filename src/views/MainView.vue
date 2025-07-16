@@ -220,26 +220,29 @@
         font-size: 30px;
         font-weight: bold;
         color: rgb(188, 72, 255);
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     @media (max-width: 900px) {
         #inner-presentation {
             display: flex;
             flex-direction: column-reverse;
-            padding-top: 2em;
+            padding-top: 0.4em;
         }
 
         .floating {
             height: 20px;
         }
 
-        #title, #title div {
+        #title > h1 {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            width: 80%;
-            margin: 0 auto;
+        }
+
+        #title div *, #cv-link {
+            margin-left: 15vw;
         }
 
         #title div h2 {
@@ -248,6 +251,10 @@
 
         #cv-link {
             font-size: 12px;
+        }
+
+        #choose h2, #choose h2 p {
+            font-size: 10px;
         }
     }
 </style>
