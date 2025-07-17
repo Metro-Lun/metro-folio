@@ -20,7 +20,7 @@
 <style>
     main {
         width: 100%;
-        min-height: calc(100vh - 6.1em);
+        min-height: calc(100vh - 10em);
         padding-bottom: auto;
         margin-top: 4em;
     }
