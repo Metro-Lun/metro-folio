@@ -135,16 +135,21 @@
     @media (max-width: 900px) {
         .job-element {
             display: grid;
-            grid-template: auto / 3fr 1fr;
+            grid-template: auto / 1fr 4fr;
             width: 100%;
         }
 
         .job-card {
             width: 90%;
+            padding: 2em;
+            grid-template: 1fr 1fr / 5fr 1fr;
+            height: 14em;
+            margin: 1em 0;
+            overflow-y: scroll;
         }
 
         .job-card h1 {
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 0;
         }
 
@@ -154,15 +159,34 @@
 
         .job-dot::before {
             width: 4px;
-            height: 47%;
+            height: 45%;
         }
 
         .job-dot::after {
-            width: 6px;
-            height: 44%;
-            background-color: rgba(255, 255, 255, 0.6);
-            transform: translateX(-50%);
+            top: 55%;
+            width: 4px;
+            height: 45%;
         }
+
+        .job-img img {
+            height: 25px;
+            margin-right: 1em;
+        }
+
+        .job-card h2 {
+            font-size: 12px;
+        }
+
+        .job-expl {
+            margin-top: 1em;
+        }
+
+        .job-expl li {
+            font-size: 11px;
+            margin-bottom: 1em;
+        }
+
+
 
     }
 </style>
