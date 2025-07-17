@@ -46,12 +46,24 @@
         justify-content: flex-end;
     }
 
-    footer i {
-        width: 46px;
-    }
-
     i {
+        width: 46px;
         color: white;
         font-size: 40px;
+    }
+
+    @media (max-width: 900px) {
+        footer {
+            gap: 1em;
+        }
+
+        i {
+            font-size: 20px;
+            width: 20px;
+        }
+
+        p {
+            font-size: 10px;
+        }
     }
 </style>

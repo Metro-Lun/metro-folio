@@ -186,7 +186,12 @@
             margin-bottom: 1em;
         }
 
+        .job-title {
+            gap: 1em;
+        }
 
-
+        .job-title i {
+            font-size: 20px;
+        }
     }
 </style>
