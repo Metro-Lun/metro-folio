@@ -11,7 +11,7 @@
             <div class="div-techs">
                 <div v-for="name in tech.names" :key="name.id" class="div-tech">
                     <img :src="`/assets/images/tech/${name}.png`" />
-                    <p>{{ name === "C2" ? "C#" : name }}</p>
+                    <p class="tech-name">{{ name === "C2" ? "C#" : name }}</p>
                 </div>
             </div>
         </div>
@@ -20,7 +20,6 @@
 
 <style scoped>
     h2 {
-        margin-bottom: 20px;
         margin-right: 2em;
         text-align: end;
     }
@@ -59,5 +58,29 @@
         max-height: 80px;
         margin-bottom: 5px;
         transition: all 0.1s ease;
+    }
+
+    @media (max-width: 900px) {
+        .div-techs {
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: 12px;
+            width: 8em;
+        }
+
+        img {
+            max-height: 30px;
+        }
+
+        .tech-name {
+            font-size: 10px;
+        }
+
+        .div-tech {
+            margin-bottom: 1em;
+            width: 80px;
+        }
     }
 </style>

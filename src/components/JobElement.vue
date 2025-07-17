@@ -60,7 +60,7 @@
         transform: translateX(-50%);
     }
 
-    .job-dot p::after {
+    .job-dot::after {
         content: "";
         position: absolute;
         top: 56%;
@@ -130,5 +130,39 @@
 
     .job-title i {
         font-size: 36px;
+    }
+
+    @media (max-width: 900px) {
+        .job-element {
+            display: grid;
+            grid-template: auto / 3fr 1fr;
+            width: 100%;
+        }
+
+        .job-card {
+            width: 90%;
+        }
+
+        .job-card h1 {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .job-dot > p {
+            font-size: 30px;
+        }
+
+        .job-dot::before {
+            width: 4px;
+            height: 47%;
+        }
+
+        .job-dot::after {
+            width: 6px;
+            height: 44%;
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: translateX(-50%);
+        }
+
     }
 </style>

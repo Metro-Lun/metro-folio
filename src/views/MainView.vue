@@ -253,7 +253,15 @@
             font-size: 12px;
         }
 
-        #choose h2, #choose h2 p {
+        #cv-link * {
+            font-size: 8px;
+        }
+
+        #choose h2 i {
+            font-size: 18px;
+        }
+
+        #choose h2 p {
             font-size: 10px;
         }
     }
