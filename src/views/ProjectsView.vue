@@ -35,18 +35,7 @@
         <section tabindex="0" @keyup.esc="handleClick(-1)">
             <div id="titles">
                 <transition name="slide-fade">
-                    <h1 v-if="show">Projets universitaires</h1>
-                </transition>
-
-                <transition name="slide-fade">
-                    <h2 v-if="show" class="delay-1">développés dans le cadre du BUT Informatique</h2>
-                </transition>
-                
-                <transition name="slide-fade">
-                    <div v-if="show" class="delay-2">
-                        <p>Le BUT Informatique, orienté sur la pratique, propose de nombreux projets à réaliser au cours de la formation.</p>
-                        <p>Voici les projets que j'ai réalisés et qui me tiennent le plus à coeur :</p>
-                    </div>
+                    <h1 v-if="show">Projets</h1>
                 </transition>
             </div>
 

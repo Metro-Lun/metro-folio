@@ -31,12 +31,33 @@
 
                         <transition name="slide-fade">
                             <div v-if="show" class="delay-1">
-                                <h2>Développeur web</h2>
-                                <h2>chais pas j'ai 20 ans je suis super cool</h2>
+                                <h2 id="job-title">Développeur junior.</h2>
+                                <h2>Toujours en quête de nouvelles connaissances, je tourne principalement au web, mais je touche à tout !</h2>
                             </div>
                         </transition>
 
-                    
+                        <section id="main-contact">
+                            <h2>Contact</h2>
+                            <nav>
+                                <div>
+                                    <a href="https://github.com/Metro-Lun">
+                                        <i class="fa-brands fa-github" />
+                                        <p>Mon profil GitHub</p>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/">
+                                        <i class="fa-brands fa-linkedin-in" />
+                                        <p>Mon profil LinkedIn</p>
+                                    </a>
+
+                                    <a href="mailto:mehdi.bourbon@outlook.fr">
+                                        <i class="fa-solid fa-envelope" />
+                                        <p>Me contacter par mail</p>
+                                    </a>
+                                </div>
+                            </nav>
+                        </section>
+
                         <button id="cv-link">
                             <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
                                 <i class="fas fa-download"></i>
@@ -264,5 +285,10 @@
         #choose h2 p {
             font-size: 10px;
         }
+    }
+
+    #main-contact nav {
+        display: flex;
+        flex-direction: column;
     }
 </style>
