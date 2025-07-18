@@ -21,7 +21,6 @@
     main {
         width: 100%;
         min-height: calc(100vh - 10em);
-        padding-bottom: auto;
         margin-top: 4em;
     }
 </style>

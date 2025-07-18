@@ -23,7 +23,6 @@
 }
 
 html, body {
-    height: 100%;
     background-image: linear-gradient(-20deg, #332fff 0%, #d31d1d 100%);
     background-attachment: fixed;
 }
