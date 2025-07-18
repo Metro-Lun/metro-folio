@@ -19,6 +19,10 @@ const router = createRouter({
       component: () => import ('../views/SkillsView.vue')
     },
     {
+      path: '/assets',
+      redirect: {name: "home"}
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import ('../views/NotFoundView.vue')

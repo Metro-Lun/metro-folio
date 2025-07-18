@@ -11,7 +11,5 @@
 </template>
 
 <style scoped>
-    #jobs-section {
-        border-left: 2px solid white;
-    }
+
 </style>
