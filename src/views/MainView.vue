@@ -7,9 +7,7 @@
     const tab = ref(0);
     const show = ref(false);
 
-    function handleClick(tabNum) {
-        tab.value = tabNum;
-    }
+    const handleClick = (tabNumber) => tab.value = tabNumber;
 
     onMounted(() => {
         show.value = true
@@ -31,39 +29,56 @@
 
                         <transition name="slide-fade">
                             <div v-if="show" class="delay-1">
-                                <h2 id="job-title">Développeur junior.</h2>
+                                <h2 id="job-title">Développeur junior</h2>
                                 <h2>Toujours en quête de nouvelles connaissances, je tourne principalement au web, mais je touche à tout !</h2>
                             </div>
                         </transition>
 
-                        <section id="main-contact">
-                            <h2>Contact</h2>
-                            <nav>
-                                <div>
+                        <transition name="slide-fade">
+                            <section id="main-buttons" v-if="show" class="delay-2">
+                                <nav>
+                                    <button class="main-button-style">
+                                        <a href="#choose">À propos de moi</a>
+                                    </button>
+                                    <button class="main-button-style">
+                                        <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
+                                    </button>
+                                </nav>
+                            </section>
+                        </transition>
+
+                        <transition name="slide-fade">
+                            <section id="main-contact" v-if="show" class="delay-3">
+                                <h2>Me contacter :</h2>
+                                <nav>
                                     <a href="https://github.com/Metro-Lun">
                                         <i class="fa-brands fa-github" />
-                                        <p>Mon profil GitHub</p>
+                                        <p>Metro-Lun</p>
                                     </a>
 
                                     <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/">
                                         <i class="fa-brands fa-linkedin-in" />
-                                        <p>Mon profil LinkedIn</p>
+                                        <p>Mehdi Bourbon</p>
                                     </a>
 
                                     <a href="mailto:mehdi.bourbon@outlook.fr">
                                         <i class="fa-solid fa-envelope" />
-                                        <p>Me contacter par mail</p>
+                                        <p>mehdi.bourbon@outlook.fr</p>
                                     </a>
-                                </div>
-                            </nav>
-                        </section>
+                                </nav>
+                            </section>
+                        </transition>
 
-                        <button id="cv-link">
-                            <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
-                                <i class="fas fa-download"></i>
-                                <p>Mon super CV</p>
-                            </a>
-                        </button>
+                        <transition name="slide-fade">
+                            <div class="delay-4" v-if="show">
+                                <button class="main-button-style">
+                                    <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
+                                        <i class="fas fa-download"></i>
+                                        <p>Mon super CV</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </transition>
                     </div>
 
                 <transition name="fade">
@@ -103,7 +118,7 @@
 </template>
 
 <style scoped>
-    h2 p {
+    h2 p { /* for the choice */
         font-size: 40px;
     }
 
@@ -158,13 +173,15 @@
         display: flex;
         justify-content: space-around;
         padding: 5em 0;
-        max-width: 200em;
+        max-width: 110em;
         margin: auto;
     }
 
     #main-front-presentation h1 {
         font-weight: normal;
         justify-content: start;
+        margin-bottom: 0;
+        font-size: 140px;
     }
 
     #main-front-presentation h2 {
@@ -217,35 +234,6 @@
         margin-top: 4em;
     }
 
-    /* CV LINK */
-
-    #cv-link {
-        margin-top: 0.8em;
-        box-shadow: 10px 5px 5px rgb(118, 7, 155);
-        font-size: 30px;
-        background-image: linear-gradient(-20deg, #e8a7fa 0%, #ffffff 100%);
-        border: none;
-        padding: 0.5em 1em;
-        border-radius: 60px;
-        box-shadow: rgba(188, 72, 255, 0.8) 0px 7px 29px 0px;
-        transition: all 0.2s ease;
-    }
-
-    #cv-link:hover {
-        transform: translateY(-5px);
-    }
-
-    #cv-link a {
-        text-decoration: none;
-        font-family: "Quicksand", "Proxima Nova", Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(188, 72, 255);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
     @media (max-width: 900px) {
         #inner-presentation {
             display: flex;
@@ -287,8 +275,52 @@
         }
     }
 
+    /* CONTACT */
+
+    #main-contact {
+        margin-top: 1em;
+    }
+
     #main-contact nav {
         display: flex;
         flex-direction: column;
+    }
+
+    #main-contact a {
+        color: white;
+        opacity: 1;
+    }
+
+    #main-contact i {
+        font-size: 28px;
+    }
+
+    #main-contact p {
+        font-size: 24px;
+        opacity: 1;
+        margin-left: 12px;
+    }
+
+    #title h2 {
+        font-size: 26px;
+    }
+
+    /* BUTTONS */
+    #main-buttons {
+        margin-bottom: 3em;
+    }
+
+    #main-buttons button {
+        margin-right: 1em;
+    }
+
+    #main-buttons nav a {
+        margin-right: 0;
+        opacity: 1;
+        font-size: 24px;
+    }
+
+    #job-title {
+        margin-bottom: 2em;
     }
 </style>
