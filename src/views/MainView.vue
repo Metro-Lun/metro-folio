@@ -24,7 +24,12 @@
             <section id="inner-presentation">
                     <div id="title">
                         <transition name="slide-fade">
-                            <h1 v-if="show">Mehdi BOURBON</h1>
+                            <section v-if="show">
+                                <div class="big-title">
+                                    <h2>Mehdi BOURBON</h2>
+                                    <h2>Mehdi BOURBON</h2>
+                                </div>
+                            </section>
                         </transition>
 
                         <transition name="slide-fade">
@@ -118,6 +123,59 @@
 </template>
 
 <style scoped>
+    .big-title {
+        margin-bottom: 10em;
+        font-family: "Consolas", "Quicksand", Arial, Helvetica, sans-serif;
+    }
+
+    .big-title h2 {
+        color: #fff;
+        font-size: 140px !important;
+        position: absolute;
+        transform: translateY(-100%);
+    }
+
+    .big-title h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #fff;
+    }
+
+    .big-title h2:nth-child(2) {
+        color: #fff;
+        animation: animate 4s ease-in-out infinite;
+    }
+
+    @keyframes animate {
+        0%,
+        100% {
+            clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+            );
+    }
+
+        50% {
+            clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+            );
+        }
+    }
+
     h2 p { /* for the choice */
         font-size: 40px;
     }
@@ -162,6 +220,37 @@
         0% { transform: translateX(-50px); }
         50% { transform: translateX(70px); }
         100% { transform: translateX(-50px); }
+    }
+
+    @keyframes animate {
+        0%,
+        100% {
+            clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+            );
+        }
+
+        50% {
+            clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+            );
+        }
     }
 
     #main-front-presentation {
