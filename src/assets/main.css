@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-    font-family: 'Cascadia', 'Quicksand', 'Proxima Nova', Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', 'Cascadia', 'Quicksand', 'Proxima Nova', Arial, Helvetica, sans-serif;
     display: flex;
     margin-bottom: 1.2em;
     font-size: 80px;

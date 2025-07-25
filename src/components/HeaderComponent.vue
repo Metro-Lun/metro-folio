@@ -72,7 +72,7 @@
     }
 
     #profile-container p {
-        font-family: 'Cascadia', 'Consolas', 'Proxima Nova', Arial, Helvetica, sans-serif;
+        font-family: 'Quicksand', 'Cascadia', 'Consolas', 'Proxima Nova', Arial, Helvetica, sans-serif;
         font-size: 32px;
         font-weight: bold;
     }

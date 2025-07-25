@@ -72,7 +72,7 @@
     .skill-main-title-wrapper {
         margin-bottom : 1em;
         font-size: 30px;
-        font-family: 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
+        font-family: 'Quicksand', 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
     }
 
     .skill-div div h3 {

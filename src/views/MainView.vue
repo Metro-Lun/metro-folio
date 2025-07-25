@@ -125,12 +125,12 @@
 <style scoped>
     .big-title {
         margin-bottom: 10em;
-        font-family: "Consolas", "Quicksand", Arial, Helvetica, sans-serif;
+        font-family: "Poppins", "Consolas", Arial, Helvetica, sans-serif;
     }
 
     .big-title h2 {
         color: #fff;
-        font-size: 140px !important;
+        font-size: 120px !important;
         position: absolute;
         transform: translateY(-100%);
     }
