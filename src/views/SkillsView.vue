@@ -64,12 +64,10 @@
                 </div>
 
                 <div v-for="sae in saes" :key="sae.id">
-                    <RouterLink :to="{name: 'projs'}">
-                        <div class="sae-tile">
-                            <p>{{sae.code}}</p>
-                            <img :src="`/assets/images/projects/${sae.image}`" />
-                        </div>
-                    </RouterLink>
+                    <div class="sae-tile">
+                        <p>{{sae.code}}</p>
+                        <img :src="`/assets/images/projects/${sae.image}`" />
+                    </div>
                     
                     <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">
                         <i class="fa-solid fa-circle big-icon" :style="`font-size: ${25 * parseInt(l)}px`" />

@@ -36,7 +36,13 @@ h1 {
     font-family: 'Quicksand', 'Cascadia', 'Quicksand', 'Proxima Nova', Arial, Helvetica, sans-serif;
     display: flex;
     margin-bottom: 1.2em;
-    font-size: 80px;
+    font-size: 60px;
+    color: white;
+    margin-top: 2em;
+}
+
+h2 {
+    color: white;
 }
 
 p {

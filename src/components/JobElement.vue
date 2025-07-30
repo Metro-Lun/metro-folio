@@ -35,6 +35,10 @@
 </template>
 
 <style scoped>
+    h1 {
+        color: black;
+    }
+
     .job-element {
         display: grid;
         grid-template: auto / 1fr 4fr;

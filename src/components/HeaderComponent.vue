@@ -7,6 +7,10 @@
     const openHeader = () => {
         opened.value = !opened.value;
     }
+
+    const getLink = (id) => {
+        return `/#${id}`
+    }
 </script>
 
 <template>
@@ -25,8 +29,10 @@
         </div>
 
         <nav id="links" :class="`${opened ? 'opened': ''}`">
-            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
-            <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
+            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>    
+            <a :href="getLink('technologies')">Technologies</a>
+            <a :href="getLink('projects')">Projets</a>
+            <a :href="getLink('journey')">Parcours pro et perso</a>
             <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
         </nav>
 
@@ -54,6 +60,7 @@
     /* LIGHT SWITCH */
     #links {
         display: flex;
+        gap: 1em;
         align-items: center;
         justify-content: end;
         margin-right: 1em;

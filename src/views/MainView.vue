@@ -2,14 +2,10 @@
     import { ref, onMounted } from 'vue';
     import TechComponent from '@/components/TechComponent.vue';
     import JourneyComponent from '@/components/JourneyComponent.vue';
-    import HobbiesComponent from '@/components/HobbiesComponent.vue';
+    import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
 
-    const tab = ref(0);
     const show = ref(false);
-
-    const handleClick = (tabNumber) => tab.value = tabNumber;
-
-    onMounted(() => {
+    onMounted(() => { 
         show.value = true
     });
 </script>
@@ -19,106 +15,90 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
 
-    <section id="main-home">
-        <section id="main-front-presentation">
-            <section id="inner-presentation">
-                    <div id="title">
-                        <transition name="slide-fade">
-                            <section v-if="show">
-                                <div class="big-title">
-                                    <h2>Mehdi BOURBON</h2>
-                                    <h2>Mehdi BOURBON</h2>
-                                </div>
-                            </section>
-                        </transition>
-
-                        <transition name="slide-fade">
-                            <div v-if="show" class="delay-1">
-                                <h2 id="job-title">Développeur junior</h2>
-                                <h2>Toujours en quête de nouvelles connaissances, je tourne principalement au web, mais je touche à tout !</h2>
-                            </div>
-                        </transition>
-
-                        <transition name="slide-fade">
-                            <section id="main-buttons" v-if="show" class="delay-2">
-                                <nav>
-                                    <button class="main-button-style">
-                                        <a href="#choose">À propos de moi</a>
-                                    </button>
-                                    <button class="main-button-style">
-                                        <RouterLink :to="{name: 'projs'}">Projets</RouterLink>
-                                    </button>
-                                </nav>
-                            </section>
-                        </transition>
-
-                        <transition name="slide-fade">
-                            <section id="main-contact" v-if="show" class="delay-3">
-                                <h2>Me contacter :</h2>
-                                <nav>
-                                    <a href="https://github.com/Metro-Lun">
-                                        <i class="fa-brands fa-github" />
-                                        <p>Metro-Lun</p>
-                                    </a>
-
-                                    <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/">
-                                        <i class="fa-brands fa-linkedin-in" />
-                                        <p>Mehdi Bourbon</p>
-                                    </a>
-
-                                    <a href="mailto:mehdi.bourbon@outlook.fr">
-                                        <i class="fa-solid fa-envelope" />
-                                        <p>mehdi.bourbon@outlook.fr</p>
-                                    </a>
-                                </nav>
-                            </section>
-                        </transition>
-
-                        <transition name="slide-fade">
-                            <div class="delay-4" v-if="show">
-                                <button class="main-button-style">
-                                    <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
-                                        <i class="fas fa-download"></i>
-                                        <p>Mon super CV</p>
-                                    </a>
-                                </button>
-                            </div>
-                        </transition>
-                    </div>
-
-                <transition name="fade">
-                    <div v-if="show" id="profile-div">
-                        <div id="profile-sub-div">
-                            <img src="/assets/images/testphoto.png" alt="" class="floating"/>
+    <section id="home">
+        <section id="inner-presentation">
+            <div id="title">
+                <transition name="slide-fade">
+                    <section v-if="show">
+                        <div class="big-title">
+                            <h2>Mehdi BOURBON</h2>
+                            <h2>Mehdi BOURBON</h2>
                         </div>
+                    </section>
+                </transition>
+
+                <transition name="slide-fade">
+                    <div v-if="show" class="delay-1">
+                        <h2 id="job-title">Développeur junior</h2>
+                        <h2>Toujours en quête de nouvelles connaissances, je tourne principalement au web, mais je touche à tout !</h2>
                     </div>
                 </transition>
-                
-            </section>
+
+                <transition name="slide-fade">
+                    <section id="main-buttons" v-if="show" class="delay-2">
+                        <nav>
+                            <button class="main-button-style">
+                                <a href="projects">Projets</a>
+                            </button>
+                        </nav>
+                    </section>
+                </transition>
+
+                <transition name="slide-fade">
+                    <section id="main-contact" v-if="show" class="delay-3">
+                        <h2>Me contacter :</h2>
+                        <nav>
+                            <a href="https://github.com/Metro-Lun">
+                                <i class="fa-brands fa-github" />
+                                <p>Metro-Lun</p>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/">
+                                <i class="fa-brands fa-linkedin-in" />
+                                <p>Mehdi Bourbon</p>
+                            </a>
+
+                            <a href="mailto:mehdi.bourbon@outlook.fr">
+                                <i class="fa-solid fa-envelope" />
+                                <p>mehdi.bourbon@outlook.fr</p>
+                            </a>
+                        </nav>
+                    </section>
+                </transition>
+
+                <transition name="slide-fade">
+                    <div class="delay-4" v-if="show">
+                        <button class="main-button-style">
+                            <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
+                                <i class="fas fa-download"></i>
+                                <p>Mon super CV</p>
+                            </a>
+                        </button>
+                    </div>
+                </transition>
+            </div>
+
+            <transition name="fade">
+                <div v-if="show" id="profile-div">
+                    <div id="profile-sub-div">
+                        <img src="/assets/images/testphoto.png" alt="A photo of me." class="floating"/>
+                    </div>
+                </div>
+            </transition>
+            
         </section>
+    </section>
 
-        <section id="choose">
-            <h2 @click="handleClick(0)" :class="tab == 0 ? 'selected' : ''">
-                <i class="fa-solid fa-code" />
-                <p>Technologies</p>
-            </h2>
+    <section id="technologies">
+        <TechComponent />
+    </section>
 
-            <h2 @click="handleClick(1)" :class="tab == 1 ? 'selected' : ''">
-                <i class="fa-solid fa-briefcase"/>
-                <p>Parcours professionnel</p>
-            </h2>
+    <section id="projects">
+        <ProjectsComponent />
+    </section>
 
-            <h2 @click="handleClick(2)" :class="tab == 2 ? 'selected' : ''">
-                <i class="fa-solid fa-face-smile"/>
-                <p>Passe-temps</p>
-            </h2>
-        </section>
-
-        <section id="choice-container">
-            <TechComponent v-if="tab == 0"/>
-            <JourneyComponent v-if="tab == 1" />
-            <HobbiesComponent v-if="tab == 2" />
-        </section>
+    <section id="journey">
+        <JourneyComponent />
     </section>
 </template>
 
@@ -174,10 +154,6 @@
                 0% 100%
             );
         }
-    }
-
-    h2 p { /* for the choice */
-        font-size: 40px;
     }
 
     .floating {
@@ -256,6 +232,7 @@
     #main-front-presentation {
         height: calc(100vh - 4em);
         color: white;
+        background-color: rgba(0,0,0,0.6);
     }
 
     #inner-presentation {
@@ -266,18 +243,18 @@
         margin: auto;
     }
 
-    #main-front-presentation h1 {
+    #home h1 {
         font-weight: normal;
         justify-content: start;
         margin-bottom: 0;
         font-size: 140px;
     }
 
-    #main-front-presentation h2 {
+    #home h2 {
         max-width: 40em;
     }
 
-    #main-front-presentation img {
+    #home img {
         max-height: 35em;
         border-radius: 20%;
     }
@@ -309,10 +286,6 @@
         transition: transform 0.2s ease-in-out;
         transform: scale(0);
         margin-top:0.5em;
-    }
-
-    #main-home #choose h2::after, #choose h2.selected::after {
-        background: white;
     }
 
     #choose h2:hover::after, #choose h2.selected::after {

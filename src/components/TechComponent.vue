@@ -4,17 +4,21 @@
 </script>
 
 <template>
-    <section id="technos">
-        <div v-for="tech in techs" :key="tech.id" class="tech-section">
-            <h2>{{ tech.title }}</h2>
+    <section class="big-section">
+        <h1>Technologies</h1>
 
-            <div class="div-techs">
-                <div v-for="name in tech.names" :key="name.id" class="div-tech">
-                    <img :src="`/assets/images/tech/${name}.png`" />
-                    <p class="tech-name">{{ name === "C2" ? "C#" : name }}</p>
+        <section id="technos">
+            <div v-for="tech in techs" :key="tech.id" class="tech-section">
+                <h2>{{ tech.title }}</h2>
+
+                <div class="div-techs">
+                    <div v-for="name in tech.names" :key="name.id" class="div-tech">
+                        <img :src="`/assets/images/tech/${name}.png`" />
+                        <p class="tech-name">{{ name === "C2" ? "C#" : name }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 </template>
 
