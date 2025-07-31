@@ -18,9 +18,4 @@
 </template>
 
 <style>
-    main {
-        width: 100%;
-        min-height: calc(100vh - 10em);
-        margin-top: 4em;
-    }
 </style>

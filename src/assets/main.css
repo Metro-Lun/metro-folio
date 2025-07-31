@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-
-@font-face {
-    font-family: "Proxima Nova";
-    src: url('../assets/fonts/proxima-nova.ttf');
-}
-
-@font-face {
-    font-family: "Consolas";
-    src: url('../assets/fonts/CONSOLA.TTF')
-}
-
-@font-face {
-    font-family: "Cascadia";
-    src: url('../assets/fonts/CascadiaMono-Regular.otf')
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     margin: 0;
@@ -26,19 +12,20 @@
 html, body {
     background-image: linear-gradient(-20deg, #332fff 0%, #d31d1d 100%);
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-family: 'Quicksand', 'Cascadia', 'Quicksand', 'Proxima Nova', Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     display: flex;
     margin-bottom: 1.2em;
     font-size: 60px;
     color: white;
-    margin-top: 2em;
+    margin-top: 0.6em;
 }
 
 h2 {

@@ -29,4 +29,15 @@ const router = createRouter({
   }
 });
 
+router.afterEach((to) => {
+  if (to.hash) {
+    setTimeout(() => {
+      const el = document.querySelector(to.hash)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 300)
+  }
+})
+
 export default router;

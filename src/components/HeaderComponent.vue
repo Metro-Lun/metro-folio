@@ -11,6 +11,13 @@
     const getLink = (id) => {
         return `/#${id}`
     }
+
+    function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -29,10 +36,10 @@
         </div>
 
         <nav id="links" :class="`${opened ? 'opened': ''}`">
-            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>    
-            <a :href="getLink('technologies')">Technologies</a>
-            <a :href="getLink('projects')">Projets</a>
-            <a :href="getLink('journey')">Parcours pro et perso</a>
+            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#technologies' }">Technologies</RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#projects' }">Projets</RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#journey' }">Parcours pro et perso</RouterLink>
             <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
         </nav>
 

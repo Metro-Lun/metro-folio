@@ -5,9 +5,10 @@
     import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
 
     const show = ref(false);
-    onMounted(() => { 
-        show.value = true
-    });
+
+    onMounted(() => {
+        show.value = true;
+    })
 </script>
 
 <template>
@@ -229,8 +230,9 @@
         }
     }
 
-    #main-front-presentation {
-        height: calc(100vh - 4em);
+    #home {
+        padding-top: 4em;
+        height: calc(100vh);
         color: white;
         background-color: rgba(0,0,0,0.6);
     }
