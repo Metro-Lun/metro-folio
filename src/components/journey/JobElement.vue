@@ -12,6 +12,7 @@
             <p><i class="fa-regular fa-circle" /></p>
         </section>
         <section class="job-card">
+            <section class="job-title-logo">
                 <div>
                     <div v-if="!serious" class="job-title">
                         <i :class="job.icon" />
@@ -24,6 +25,8 @@
                 <div class="job-img">
                     <img v-show="serious" :src="`/assets/images/logos/${job.entreprise}.png`" />
                 </div>
+            </section>
+                
 
                 <div class="job-expl">
                     <ul>
@@ -35,13 +38,10 @@
 </template>
 
 <style scoped>
-    h1 {
-        color: black;
-    }
 
     .job-element {
         display: grid;
-        grid-template: auto / 1fr 4fr;
+        grid-template: auto / 1fr 3fr;
     }
 
     .job-dot {
@@ -49,7 +49,6 @@
         font-weight: bold;
         display: flex;
         justify-content: center;
-        align-items: center;
         position: relative;
     }
 
@@ -58,49 +57,53 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 6px;
-        height: 44%;
-        background-color: rgba(255, 255, 255, 0.6);
+        width: 4px;
+        height: 26%;
+        background-color: white;
         transform: translateX(-50%);
     }
 
     .job-dot::after {
         content: "";
         position: absolute;
-        top: 56%;
+        top: 38%;
         left: 50%;
-        width: 6px;
-        height: 44%;
-        background-color: rgba(255, 255, 255, 0.6);
+        width: 4px;
+        height: 62%;
+        background-color: white;
         transform: translateX(-50%);
     }
 
     .job-dot > p {
-        font-size: 60px;
+        font-size: 30px;
+        margin-top: 1.8em;
+    }
+
+    .job-title-logo {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        font-weight: bold;
+
     }
 
     .job-card {
-        background-color: rgb(255,255,255);
-        opacity: 0.6;
-        padding: 3em;
+        color: white;
+        padding: 1.5em;
         border-radius: 16px;
-        width: 80em;
-        display: grid;
-        grid-template: 1fr 2fr / 3fr 1fr;
+        width: 45em;
         transform: all 0.3s ease;
-        margin: 3em 0;
-        height: 22em;
-    }
-
-    .job-card:hover {
-        transform: translateY(-1em);
-        opacity: 1;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: 1em 0;
+        height: 12em;
     }
 
     .job-card h1 {
-        font-size: 36px;
+        font-size: 20px;
         margin-bottom: 0;
+    }
+
+    .job-card h2 {
+        font-size: 16px;
     }
 
     .job-img {
@@ -110,19 +113,19 @@
     }
 
     .job-img img {
-        height: 80px;
+        height: 40px;
         align-self: flex-end;
         margin-right: 1em;
     }
 
     .job-expl {
-        margin-top: 2em;
+        margin-top: 1em;
         margin-left: 1em;
     }
 
     .job-expl li {
-        font-size: 18px;
-        margin-bottom: 1em;
+        font-size: 16px;
+        margin-bottom: 0.3em;
     }
 
     /* ICONS */

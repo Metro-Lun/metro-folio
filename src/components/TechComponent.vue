@@ -43,7 +43,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 110px;
+        width: 90px;
         margin-right: 20px;
     }
 
@@ -59,7 +59,7 @@
     }
 
     img {
-        max-height: 80px;
+        max-height: 60px;
         margin-bottom: 5px;
         transition: all 0.1s ease;
     }

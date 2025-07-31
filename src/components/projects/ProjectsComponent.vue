@@ -49,7 +49,7 @@
     #saes {
         margin: 5em 0;
         display: grid;
-        grid-template: auto / 1fr 1fr 1fr;
+        grid-template: auto / 1fr 1fr 1fr 1fr;
         gap: 2em;
     }
 
@@ -63,7 +63,7 @@
         height: 85%;
         width: 90%;
         overflow: auto;
-        background: rgb(255, 232, 245);
+        background: rgb(255,255,255,0.7);
         transform: translateX(-50%) translateY(-30%);
         opacity: 0;
     }

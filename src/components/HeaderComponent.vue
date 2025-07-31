@@ -7,17 +7,6 @@
     const openHeader = () => {
         opened.value = !opened.value;
     }
-
-    const getLink = (id) => {
-        return `/#${id}`
-    }
-
-    function scrollTo(id) {
-  const el = document.getElementById(id)
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' })
-  }
-}
 </script>
 
 <template>
@@ -58,6 +47,7 @@
         height: 4em;
         backdrop-filter: blur(10px);
         color: white;
+        background-color: rgba(255,255,255,0.2);
     }
 
     header :is(.router-link-active, .router-link-exact-active, .active) {

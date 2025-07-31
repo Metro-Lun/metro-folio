@@ -1,7 +1,7 @@
 <script setup>
     import { ref, onMounted } from 'vue';
     import TechComponent from '@/components/TechComponent.vue';
-    import JourneyComponent from '@/components/JourneyComponent.vue';
+    import JourneyComponent from '@/components/journey/JourneyComponent.vue';
     import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
 
     const show = ref(false);

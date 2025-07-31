@@ -20,7 +20,7 @@
         flex-direction: column;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        border-radius: 20px;
+        border-radius: 16px;
         transition: all 0.3s ease;
     }
 
@@ -32,23 +32,23 @@
     }
 
     .project-techno {
-        height: 30px;
+        height: 20px;
         margin: auto 0.5em;
     }
 
     .sae-img {
-        width: 80%;
+        width: 60%;
         height: auto;
-        border-radius: 16px;
+        border-radius: 6px;
     }
 
     h3 {
         margin: 0.5em 0;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .technos {
-        margin: 1.5em;
+        margin: 0.6em;
     }
 
     @media (max-height: 800px) {
