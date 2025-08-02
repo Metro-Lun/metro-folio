@@ -3,6 +3,7 @@
     import TechComponent from '@/components/TechComponent.vue';
     import JourneyComponent from '@/components/journey/JourneyComponent.vue';
     import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
+import ContactComponent from '@/components/ContactComponent.vue';
 
     const show = ref(false);
 
@@ -101,6 +102,10 @@
     <section id="journey">
         <JourneyComponent />
     </section>
+
+    <section id="journey">
+        <ContactComponent />
+    </section>
 </template>
 
 <style scoped>
@@ -178,6 +183,8 @@
     }
 
     #profile-div {
+        display: flex;
+        align-items: center;
         animation: up-n-down 20s ease-in-out infinite;
         will-change: transform;
     }
@@ -258,7 +265,7 @@
 
     #home img {
         max-height: 35em;
-        border-radius: 20%;
+        border-radius: 50%;
     }
 
     /* CHOOSE */

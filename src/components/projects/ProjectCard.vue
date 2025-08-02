@@ -5,10 +5,10 @@
 <template>
     <div @click="clickHandler(index)" class="card" >
         <h3>{{ sae.code }}</h3>
-        <img :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
         <div class="technos">
             <img v-for="te in sae.technos" :key="te.id" :src="`/assets/images/tech/${te}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
         </div>
+        <img :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
     </div>
 </template>
 
@@ -32,7 +32,7 @@
     }
 
     .project-techno {
-        height: 20px;
+        height: 26px;
         margin: auto 0.5em;
     }
 
@@ -40,6 +40,7 @@
         width: 60%;
         height: auto;
         border-radius: 6px;
+        margin-bottom: 0.6em;
     }
 
     h3 {
@@ -48,7 +49,7 @@
     }
 
     .technos {
-        margin: 0.6em;
+        margin: 0 0.6em 0.2em 0.6em;
     }
 
     @media (max-height: 800px) {

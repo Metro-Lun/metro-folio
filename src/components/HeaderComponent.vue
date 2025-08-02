@@ -25,11 +25,12 @@
         </div>
 
         <nav id="links" :class="`${opened ? 'opened': ''}`">
-            <RouterLink :to="{name: 'home'}">Accueil</RouterLink>
+            <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#technologies' }">Technologies</RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#projects' }">Projets</RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#journey' }">Parcours pro et perso</RouterLink>
-            <RouterLink :to="{name: 'skills'}">Compétences à l'IUT</RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#contact' }">Contact</RouterLink>
+            <RouterLink :to="{ name: 'skills' }">Compétences à l'IUT</RouterLink>
         </nav>
 
         <!-- <LightSwitch /> -->
