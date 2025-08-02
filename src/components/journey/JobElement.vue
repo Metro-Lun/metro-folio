@@ -9,7 +9,7 @@
 
     <section class="job-element">
         <section class="job-dot">
-            <p><i class="fa-regular fa-circle" /></p>
+            <p><i class="fa-solid fa-circle" /></p>
         </section>
         <section class="job-card">
             <section class="job-title-logo">
@@ -19,7 +19,7 @@
                         <h1>{{ job.name }}</h1>
                     </div>
                     <h1 v-else>{{ job.name }}</h1>
-                    <h2 v-if="serious">{{ job.entreprise }} - {{ job.date }}</h2>
+                    <h2 v-if="serious">{{ job.entreprise }} | {{ job.date }}</h2>
                 </div>
                 
                 <div class="job-img">
@@ -27,18 +27,16 @@
                 </div>
             </section>
                 
-
-                <div class="job-expl">
-                    <ul>
-                        <li v-for="par in job.explanation" :key="par.id">{{ par }}</li>
-                    </ul>
-                </div>
+            <div class="job-expl">
+                <ul>
+                    <li v-for="par in job.explanation" :key="par.id">{{ par }}</li>
+                </ul>
+            </div>
         </section>
     </section>
 </template>
 
 <style scoped>
-
     .job-element {
         display: grid;
         grid-template: auto / 1fr 3fr;
@@ -58,25 +56,14 @@
         top: 0;
         left: 50%;
         width: 4px;
-        height: 26%;
-        background-color: white;
-        transform: translateX(-50%);
-    }
-
-    .job-dot::after {
-        content: "";
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        width: 4px;
-        height: 62%;
+        height: 100%;
         background-color: white;
         transform: translateX(-50%);
     }
 
     .job-dot > p {
         font-size: 30px;
-        margin-top: 1.8em;
+        margin-top: 1.2em;
     }
 
     .job-title-logo {
@@ -89,12 +76,11 @@
 
     .job-card {
         color: white;
-        padding: 1.5em;
+        padding: 0.5em;
         border-radius: 16px;
         width: 45em;
         transform: all 0.3s ease;
         margin: 1em 0;
-        height: 12em;
     }
 
     .job-card h1 {
@@ -132,11 +118,16 @@
     .job-title {
         display: flex;
         align-items: center;
-        gap: 2em;
+        gap: 1em;
+        margin-top: 1em;
     }
 
     .job-title i {
-        font-size: 36px;
+        font-size: 26px;
+    }
+
+    .job-title h1 {
+        margin-top: 0;
     }
 
     @media (max-width: 900px) {

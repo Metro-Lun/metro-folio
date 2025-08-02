@@ -9,16 +9,20 @@
 
 <template>
     <section class="big-section">
-        <h1>Parcours professionnel et personnel</h1>
-
         <section id="journey-section">
-            <section id="jobs-section">
-                <JobElement v-for="job in jobs" :key="job.id" :job="job" :serious="true"/>
-            </section>
+            <div>
+                <h1>Parcours professionnel</h1>
+                <section id="jobs-section">
+                    <JobElement v-for="job in jobs" :key="job.id" :job="job" :serious="true"/>
+                </section>
+            </div>
 
-            <section id="jobs-section">
-                <JobElement v-for="hobby in hobbies" :key="hobby.id" :job="hobby" :serious="false"/>
-            </section>
+            <div>
+                <h1>Parcours personnel</h1>
+                <section id="jobs-section">
+                    <JobElement v-for="hobby in hobbies" :key="hobby.id" :job="hobby" :serious="false"/>
+                </section>
+            </div>
         </section>
     </section>
 </template>
