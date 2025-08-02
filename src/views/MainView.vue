@@ -268,43 +268,6 @@ import ContactComponent from '@/components/ContactComponent.vue';
         border-radius: 50%;
     }
 
-    /* CHOOSE */
-
-    #choose {
-        margin: 1.8em 2em 0 2em;
-        display: grid;
-        grid-template: auto / 1fr 1fr 1fr;
-        text-align: center;
-        justify-content: center;
-        gap: 3em;
-    }
-
-    #choose h2 {
-        font-size: 40px;
-        position: relative;
-        cursor: pointer;
-        color: white;
-    }
-
-    #choose h2::after, #choose h2.selected::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 1.5px;
-        transition: transform 0.2s ease-in-out;
-        transform: scale(0);
-        margin-top:0.5em;
-    }
-
-    #choose h2:hover::after, #choose h2.selected::after {
-        transform: scale(1);
-    }
-
-    #choice-container {
-        margin-top: 4em;
-    }
-
     @media (max-width: 900px) {
         #inner-presentation {
             display: flex;

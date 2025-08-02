@@ -18,7 +18,7 @@
             </div>
 
             <div>
-                <h1>Parcours personnel</h1>
+                <h1>Centres d'intérêt</h1>
                 <section id="jobs-section">
                     <JobElement v-for="hobby in hobbies" :key="hobby.id" :job="hobby" :serious="false"/>
                 </section>

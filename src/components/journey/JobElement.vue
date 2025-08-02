@@ -80,7 +80,7 @@
         border-radius: 16px;
         width: 45em;
         transform: all 0.3s ease;
-        margin: 1em 0;
+        margin: 0.5em 0;
     }
 
     .job-card h1 {
@@ -106,7 +106,7 @@
 
     .job-expl {
         margin-top: 1em;
-        margin-left: 1em;
+        margin-left: 2em;
     }
 
     .job-expl li {

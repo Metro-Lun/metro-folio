@@ -25,12 +25,12 @@
         </div>
 
         <nav id="links" :class="`${opened ? 'opened': ''}`">
-            <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#technologies' }">Technologies</RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#projects' }">Projets</RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#journey' }">Parcours pro et perso</RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#contact' }">Contact</RouterLink>
-            <RouterLink :to="{ name: 'skills' }">Compétences à l'IUT</RouterLink>
+            <RouterLink :to="{ name: 'home' }"><p>Accueil</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#technologies' }"><p>Technologies</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projects</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro et perso</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Contact</p></RouterLink>
+            <RouterLink :to="{ name: 'skills' }"><p>Compétences à l'IUT</p></RouterLink>
         </nav>
 
         <!-- <LightSwitch /> -->
@@ -51,8 +51,16 @@
         background-color: rgba(255,255,255,0.2);
     }
 
-    header :is(.router-link-active, .router-link-exact-active, .active) {
+    /* header :is(.router-link-active, .router-link-exact-active, .active) {
         opacity: 1;
+    } */
+
+    a:hover {
+        opacity: 0.4;
+    }
+
+    nav p {
+        font-size: 20px;
     }
 
     /* LIGHT SWITCH */
@@ -115,17 +123,6 @@
             transition: all .5s ease-in-out;
             user-select: none;
             pointer-events: none;
-        }
-
-        #links.opened {
-            opacity: 1;
-            user-select: auto;
-            pointer-events: auto;
-        }
-
-        #links.opened a {
-            color: black;
-            margin : 5px 20px 5px 20px;
         }
 
         #profile-container p {
