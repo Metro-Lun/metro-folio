@@ -103,7 +103,7 @@ import ContactComponent from '@/components/ContactComponent.vue';
         <JourneyComponent />
     </section>
 
-    <section id="journey">
+    <section id="contact">
         <ContactComponent />
     </section>
 </template>
