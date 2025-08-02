@@ -82,7 +82,7 @@
 <style scoped>
     #skill-section {
         display: grid;
-        grid-template : auto / 1fr 1fr;
+        grid-template : auto / 1fr 1fr 1fr;
         gap: 2em;
     }
 

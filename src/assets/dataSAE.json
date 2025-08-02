@@ -17,7 +17,8 @@
                 "Développement fullstack avancé",
                 "Gestion d'équipe et de projet"
             ],
-            "links": [3, 3, 1, 1, 3, 3]
+            "links": [3, 3, 1, 1, 3, 3],
+            "type": "academic"
         },
         {
             "code": "VroumVroum",
@@ -39,7 +40,8 @@
                 "Développement web avancé",
                 "Rédaction d'une documentation technique (cahier des charges, rapport, notice d'utilisation...)"
             ],
-            "links": [3, 2, 2, 3, 3, 3]
+            "links": [3, 2, 2, 3, 3, 3],
+            "type": "academic"
         },
         {
             "code": "GraphMap Analysis",
@@ -58,7 +60,8 @@
                 "Développement d'interfaces graphiques logicielles",
                 "Gestion de projet"
             ],
-            "links": [3, 3, 0, 0, 3, 3]
+            "links": [3, 3, 0, 0, 3, 3],
+            "type": "academic"
         },
         {
             "code": "Portfolio",
@@ -75,7 +78,8 @@
                 "Travail sur soi",
                 "Présentation des acquis liés à mes études et à mes expériences"
             ],
-            "links": [3, 3, 1, 0, 0, 0]
+            "links": [3, 3, 1, 0, 0, 0],
+            "type": "academic"
         },
         {
             "code": "L'Annuaire",
@@ -92,7 +96,8 @@
                 "Optimisation du programme et allocation dynamique",
                 "Réponse à des besoins clients définis"
             ],
-            "links": [3, 2, 1, 0, 1, 2]
+            "links": [3, 2, 1, 0, 1, 2],
+            "type": "academic"
         }
     ]
 }

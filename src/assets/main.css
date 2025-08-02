@@ -110,12 +110,12 @@ button {
 
 /* SKILLS */
 
-.skill-div-1 .skill-main-title-title {color: #ec5555 !important;}
-.skill-div-2 .skill-main-title-title {color: #ee8d1f !important;}
-.skill-div-3 .skill-main-title-title {color: #e7d210 !important;}
-.skill-div-4 .skill-main-title-title {color: #36920b !important;}
-.skill-div-5 .skill-main-title-title {color: #1d7cf8 !important;}
-.skill-div-6 .skill-main-title-title {color: #9747f1 !important;}
+.skill-div-1 .skill-main-title-title, .skill-div-1 .skill-main-title-title h2 {color: #ec5555 !important;}
+.skill-div-2 .skill-main-title-title, .skill-div-2 .skill-main-title-title h2 {color: #ee8d1f !important;}
+.skill-div-3 .skill-main-title-title, .skill-div-3 .skill-main-title-title h2 {color: #e7d210 !important;}
+.skill-div-4 .skill-main-title-title, .skill-div-4 .skill-main-title-title h2 {color: #36920b !important;}
+.skill-div-5 .skill-main-title-title, .skill-div-5 .skill-main-title-title h2 {color: #1d7cf8 !important;}
+.skill-div-6 .skill-main-title-title, .skill-div-6 .skill-main-title-title h2 {color: #9747f1 !important;}
 
 /* ANIMATIONS */
 

@@ -3,13 +3,23 @@
 </script>
 
 <template>
-    <div @click="clickHandler(index)" class="card" >
-        <h3>{{ sae.code }}</h3>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
+    <section @click="clickHandler(index)" class="card" >
+        <div class="sae-title">
+            <i v-if="sae.type === 'academic'" class="fas fa-book" />
+            <i v-if="sae.type === 'personal'" class="fas fa-user" />
+            <i v-if="sae.type === 'professional'" class="fas fa-briefcase" />
+            <h3>{{ sae.code }}</h3>
+        </div>
+        
         <div class="technos">
             <img v-for="te in sae.technos" :key="te.id" :src="`/assets/images/tech/${te}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
         </div>
         <img :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
-    </div>
+    </section>
 </template>
 
 <style scoped>
@@ -50,6 +60,12 @@
 
     .technos {
         margin: 0 0.6em 0.2em 0.6em;
+    }
+
+    .sae-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     @media (max-height: 800px) {

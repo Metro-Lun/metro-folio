@@ -55,14 +55,13 @@
         padding: 2em;
         border-radius: 24px;
         transition: all 0.3s ease;
-        opacity: 0.6;
-        background-color: white;
+        background-color: rgba(255,255,255,0.6);
         transition: all 0.3s ease;
     }
 
     .skill-div:hover {
         transform: translateY(-1em);
-        opacity: 1;
+        background-color: rgba(255,255,255,1);
     }
 
     .skill-div.opened {
@@ -71,7 +70,7 @@
 
     .skill-main-title-wrapper {
         margin-bottom : 1em;
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Quicksand', 'Cascadia', 'Proxima Nova', Arial, Helvetica, sans-serif;
     }
 

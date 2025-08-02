@@ -26,6 +26,9 @@
         <div id="card-titles">
             <h2>{{saeToDisplay.code}}</h2>
             <h3>{{saeToDisplay.title}}</h3>
+            <h4 v-if="saeToDisplay.type === 'academic'">Projet académique</h4>
+            <h4 v-if="saeToDisplay.type === 'personal'">Projet personnel</h4>
+            <h4 v-if="saeToDisplay.type === 'professional'">Projet professionnel</h4>
             <div>
                 <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
             </div>
@@ -55,6 +58,14 @@
 </template>
 
 <style scoped>
+    h2 {
+        color: black !important;
+    }
+
+    h4 {
+        margin-bottom: 0.6em;
+    }
+
     .project-techno {
         height: 30px;
         margin: auto 0.5em;
