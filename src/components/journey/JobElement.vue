@@ -23,7 +23,7 @@
                 </div>
                 
                 <div class="job-img">
-                    <img v-show="serious" :src="`/assets/images/logos/${job.entreprise}.png`" />
+                    <img draggable="false" v-show="serious" :src="`/assets/images/logos/${job.entreprise}.png`" />
                 </div>
             </section>
                 

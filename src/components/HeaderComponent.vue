@@ -16,7 +16,7 @@
 
     <header>
         <div id="profile-container">
-            <img src="/assets/images/pfp.png" />
+            <img draggable="false" src="/assets/images/pfp.png" />
             <p>Mehdi BOURBON</p>
         </div>
 
@@ -27,7 +27,7 @@
         <nav id="links" :class="`${opened ? 'opened': ''}`">
             <RouterLink :to="{ name: 'home' }"><p>Accueil</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#technologies' }"><p>Technologies</p></RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projects</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projets</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro et perso</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Contact</p></RouterLink>
             <RouterLink :to="{ name: 'skills' }"><p>Compétences à l'IUT</p></RouterLink>

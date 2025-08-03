@@ -16,9 +16,9 @@
         </div>
         
         <div class="technos">
-            <img v-for="te in sae.technos" :key="te.id" :src="`/assets/images/tech/${te}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
+            <img draggable="false" v-for="te in sae.technos" :key="te.id" :src="`/assets/images/tech/${te}.png`" class="project-techno" @mouseover="evt => hoverHandler(evt, t)" @mouseout="hoverHandler(evt, null)"/> 
         </div>
-        <img :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
+        <img draggable="false" :src="`/assets/images/projects/${sae.image}`" class="sae-img" />
     </section>
 </template>
 

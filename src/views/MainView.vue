@@ -83,7 +83,7 @@ import ContactComponent from '@/components/ContactComponent.vue';
             <transition name="fade">
                 <div v-if="show" id="profile-div">
                     <div id="profile-sub-div">
-                        <img src="/assets/images/testphoto.png" alt="A photo of me." class="floating"/>
+                        <img draggable="false" src="/assets/images/testphoto.png" alt="A photo of me." class="floating"/>
                     </div>
                 </div>
             </transition>

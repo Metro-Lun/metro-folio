@@ -66,7 +66,7 @@
                 <div v-for="sae in saes" :key="sae.id">
                     <div class="sae-tile">
                         <p>{{sae.code}}</p>
-                        <img :src="`/assets/images/projects/${sae.image}`" />
+                        <img draggable="false" :src="`/assets/images/projects/${sae.image}`" />
                     </div>
                     
                     <p v-for="l in sae.links" :key="l.id" class="sae-link vertical-line">

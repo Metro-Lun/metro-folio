@@ -5,7 +5,6 @@
     const techToDisplay = ref(null);
 
     function handleHover(evt, t) {
-        console.log(evt, t)
        if(t === null) {
             techToDisplay.value = null;
        } else {
@@ -22,38 +21,46 @@
 <template>
     <section id="card">
         <div id="close-button"><button @click="clickHandler">X</button></div>
+
+        <section id="card-content">
+            <div id="project-images">
+                <img draggable="false" :src="`/assets/images/projects/${saeToDisplay.image}`" />
+            </div>
+
+            <div>
+                <div id="card-titles">
+                    <h2>{{saeToDisplay.code}}</h2>
+                    <h3>{{saeToDisplay.title}}</h3>
+                    <h4 v-if="saeToDisplay.type === 'academic'">Projet académique</h4>
+                    <h4 v-if="saeToDisplay.type === 'personal'">Projet personnel</h4>
+                    <h4 v-if="saeToDisplay.type === 'professional'">Projet professionnel</h4>
+                    <div>
+                        <img draggable="false" v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
+                    </div>
+
+                    <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
+                        {{techToDisplay.name}}
+                    </p>
+                </div>
+
+                <div id="card-desc">
+                    <div>
+                        <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
+                        
+                        <h3>Situations professionnelles</h3>
+                        <ul>
+                            <li v-for="s in saeToDisplay.skills" :key="s.id">
+                                <p>{{ s }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="ok-button"><button @click="clickHandler(-1)">OK</button></div>
+            </div>
+        </section>
         
-        <div id="card-titles">
-            <h2>{{saeToDisplay.code}}</h2>
-            <h3>{{saeToDisplay.title}}</h3>
-            <h4 v-if="saeToDisplay.type === 'academic'">Projet académique</h4>
-            <h4 v-if="saeToDisplay.type === 'personal'">Projet personnel</h4>
-            <h4 v-if="saeToDisplay.type === 'professional'">Projet professionnel</h4>
-            <div>
-                <img v-for="t in saeToDisplay.technos" :key="t.id" :src="`/assets/images/tech/${t}.png`" class="project-techno" @mouseover="evt => handleHover(evt, t)" @mouseout="handleHover(evt, null)"/> 
-            </div>
-
-            <p v-if='techToDisplay !== null' id="tech-name" :style="{ top: techToDisplay.top, left: techToDisplay.left }">
-                {{techToDisplay.name}}
-            </p>
-        </div>
-
-        <div id="card-desc">
-            <img :src="`/assets/images/projects/${saeToDisplay.image}`" />
-
-            <div>
-                <p v-for="d in saeToDisplay.description" :key="d.id">{{d}}</p>
-                
-                <h3>Situations professionnelles</h3>
-                <ul>
-                    <li v-for="s in saeToDisplay.skills" :key="s.id">
-                        <p>{{ s }}</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="ok-button"><button @click="clickHandler(-1)">OK</button></div>
+    
     </section>
 </template>
 
@@ -68,7 +75,7 @@
 
     .project-techno {
         height: 30px;
-        margin: auto 0.5em;
+        margin-right: 1em;
     }
 
     #card p {
@@ -81,9 +88,7 @@
     }
 
     #ok-button {
-        display: flex;
-        justify-content: center;
-        margin: 2em auto;
+        margin: 2em 0 2em 1em;
     }
     
     #close-button button {
@@ -108,6 +113,17 @@
         box-shadow: rgba(118, 0, 186, 0.6) 0px 7px 29px 0px;
     }
 
+    #card-content {
+        display: grid;
+        grid-template: auto / 4fr 5fr;
+        margin: 0 4em;
+    }
+
+    #project-images img {
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     button:hover {
         scale: 0.8;
     }
@@ -127,7 +143,6 @@
     #card-titles {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #card-titles h2 {
@@ -147,17 +162,6 @@
     #card-titles > div > div {
         margin: 5px 0 0 0;
         gap: 20px;
-    }
-
-    #card-desc {
-        margin: auto 2em;
-        display: grid;
-        grid-template: auto / 4fr 5fr;
-    }
-
-    #card-desc img {
-        width: 90%;
-        border-radius: 24px;
     }
 
     li {

@@ -28,19 +28,18 @@
 
         <section :class="saeToDisplayIndex !== -1 ? 'overlay' : ''"></section>
 
-        <section tabindex="0" @keyup.esc="handleClick(-1)">
-
+        <section tabindex="0" @keyup.esc="handleOpen()">
             <section id="saes">
                 <ProjectCard v-for="(sae, index) in saes" :key="sae.id" :sae="sae" :index="index" :clickHandler="handleClick" :hoverHandler="handleHover"/>
             </section>
 
             <section v-if="saeToDisplayIndex !== -1">
                 <div id="black-filter" :class="`${display ? 'active' : ''}`"></div>
+
                 <div :class="`wrapper ${display ? 'active' : ''}`">
                     <ProjectModal :saeToDisplay="saes[saeToDisplayIndex]" :clickHandler="handleOpen" />
                 </div>
             </section>
-
         </section>
     </section>
 </template>
