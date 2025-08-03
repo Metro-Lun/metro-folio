@@ -23,10 +23,24 @@ const router = createRouter({
       component: () => import ('../views/NotFoundView.vue')
     }
   ],
-  scrollBehavior() {
-    // Revenir en haut de la page à chaque navigation
-    return { top: 0 }
-  }
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    }
+
+    if (to.name !== from.name) {
+      return { top: 0 };
+    }
+
+    return false;
+  },
 });
 
 router.afterEach((to) => {
