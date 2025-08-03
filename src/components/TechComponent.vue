@@ -24,19 +24,19 @@
 
 <style scoped>
     h2 {
-        margin-right: 2em;
-        text-align: end;
+        padding-bottom: 0.4em;
+        border-bottom: 2px solid white;
     }
 
     #technos {
-        padding: 0 2em 2em 2em;
-        color: white;
+        display: grid;
+        grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
     }
 
     .div-techs {
-        display: flex;
-        padding-left: 2em;
-        border-left: 2px solid white;
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        margin-top: 2em;
     }
 
     .div-tech {
@@ -44,13 +44,14 @@
         flex-direction: column;
         align-items: center;
         width: 90px;
-        margin-right: 20px;
+        color: white;
+        margin: 0.4em 1em;
     }
 
     .tech-section {
         margin-bottom: 2em;
-        display: grid;
-        grid-template: auto / 1fr 4fr;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
