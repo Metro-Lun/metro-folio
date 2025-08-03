@@ -23,35 +23,16 @@ const router = createRouter({
       component: () => import ('../views/NotFoundView.vue')
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    }
-
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      };
-    }
-
-    if (to.name !== from.name) {
-      return { top: 0 };
-    }
-
-    return false;
-  },
-});
-
-router.afterEach((to) => {
+scrollBehavior(to) {
   if (to.hash) {
-    setTimeout(() => {
-      const el = document.querySelector(to.hash)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
-      }
-    }, 300)
+    return {
+      el: to.hash,
+      behavior: 'smooth',
+    };
   }
-})
+
+  return { top: 0, left: 0 };
+}
+});
 
 export default router;

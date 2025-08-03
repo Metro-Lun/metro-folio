@@ -1,6 +1,45 @@
 {
     "sae": [
         {
+            "code": "Arx One Backup",
+            "title": "Restauration granulaire & Supervision WebConsole",
+            "image": "arxone.png",
+            "size": "big",
+            "description": [
+                "La solution de sauvegarde Arx One Backup permet aux clients d'Arx One de sauvegarder leurs données et de les restaurer.",
+                "La restauration granulaire permet à ces derniers de restaurer les données de leurs disques virtuels (VHDX, VMA) sans avoir à restaurer le disque entier et à le monter par la suite.",
+                "Arx One Backup possède également une application web, où j'ai intégré un volet de supervision des sauvegardes des clients."
+            ],
+            "technos": ["C2", "Blazor", "Git", "GitLab"],
+            "skills": [
+                "Amélioration de l'existant",
+                "Développement fullstack avancé",
+                "Gestion de données et de disques"
+            ],
+            "links": [3, 3, 3, 1, 2, 1],
+            "type": "professional"
+        },
+        {
+            "code": "Conducteurs professionnels en tunnel",
+            "title": "Développement d'un volet web sur le site du CETU",
+            "image": "cetu.png",
+            "size": "medium",
+            "description": [
+                "Le volet Conduite en tunnel pour les conducteurs professionnels consiste en un quiz web destiné à tester ses compétences de conduite de poids lourds en tunnels routiers.",
+                "Ce quiz interactif contient différents types de questions qui requièrent des actions comme le glisser-déposer, le clic...",
+                "Pour établir une liste de questions cohérente, il était nécessaire de se documenter auprès des experts du CETU."
+            ],
+            "technos": ["React", "NodeJS", "Trello"],
+            "skills": [
+                "Analyse des besoins",
+                "Rédaction d'une documentation technique (cahier des charges, rapport, notice d'utilisation...)",
+                "Travail en équipe",
+                "Développement front-end"
+            ],
+            "links": [3, 3, 1, 0, 2, 3],
+            "type": "professional"
+        },
+        {
             "code": "PLATINE",
             "title": "ERP de gestion du département informatique",
             "image": "sae_platine.png",

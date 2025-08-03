@@ -92,6 +92,7 @@
 
     #sae-vs-skills {
         margin-top: 5em;
+        margin-bottom: 5em;
     }
 
     .sae-table {
