@@ -2,15 +2,15 @@
     "technos": [
         {
             "title": "Développement web",
-            "names": ["HTML", "CSS", "JavaScript", "Vue.JS", "React", "Next.JS", "PHP", "Symfony", "NodeJS"]
+            "names": ["JavaScript", "TypeScript", "VueJS", "Angular", "React", "ExpressJS", "NodeJS", "Blazor"]
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "Java", "JUnit 5", "C", "Kotlin", "LaTeX"]
+            "names": ["Python", "C2", "Java", "C"]
         },
         {
             "title": "Gestion de projet",
-            "names": ["Scrum", "Git", "GitHub", "GitLab", "Trello", "SourceTree", "UML"]
+            "names": ["GitLab", "GitHub", "UML", "Scrum", "Trello"]
         },
         {
             "title": "Systèmes d'exploitation",
@@ -18,7 +18,7 @@
         },
         {
             "title": "Bases de données",
-            "names": ["Oracle", "MySQL", "MongoDB"]
+            "names": ["MongoDB", "PostgreSQL", "Oracle", "MySQL", "Neo4J"]
         }
     ]
 }

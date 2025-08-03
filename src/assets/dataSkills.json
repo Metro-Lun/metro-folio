@@ -2,11 +2,10 @@
     "skills": [
         {
             "title": "Réaliser",
+            "icon": "fa-code",
             "description": [
-                "Pour maîtriser la compétence Réaliser, il faut être capable de développer un outil informatique qui répond à un besoin client.",
-                "Le processus du développement passe par la conception du produit, mais également par le code, les tests, et le déploiement / l'intégration, et enfin par la maintenance de ce dernier.",
-                "Une bonne application respecte les besoins décrits par le client, à l'aide de code et d'algorithmes bien écrits et bien structurés, et assez documentés pour être facilement améliorés dans le futur.",
-                "Il faut également savoir choisir les bonnes technologies."
+                "Objectif : être capable de développer un outil informatique qui répond à un besoin client.",
+                "Etapes : conception du produit, code, tests, déploiement / intégration, maintenance, documentation."
             ],
             "levels": [
                 {
@@ -24,18 +23,16 @@
             ],
             "professional_situations": ["Élaboration d'une une application informatique", "Évolution des applications", "Maintenance d'une application informatique en conditions opérationnelles"],
             "personal_review": {
-                "level": 2,
-                "explanation": "Je suis capable de sélectionner une technologie adéquate en fonction des spécifications et de réaliser une solution informatique complète. Je n'ai encore pas eu l'occasion, en revanche, d'en maintenir."
+                "level": 3,
+                "explanation": "Je suis capable de sélectionner une technologie adéquate en fonction des spécifications et de réaliser une solution informatique complète. J'ai eu l'occasion d'en maintenir, voire d'en améliorer certaines."
             }
         },
         {
             "title": "Optimiser",
+            "icon": "fa-chart-area",
             "description": [
-                "Pour maîtriser la compétence Optimiser, il faut être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
-                "En effet, la taille, le choix du langage, le temps d'exécution, les algorithmes utilisés entrent en jeu dans l'expérience utilisateur et l'usage fait de notre solution.",
-                "Ainsi, il est nécessaire d'analyser le problème et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats.",
-                "Cependant, les solutions employées ne doivent pas faire gage de facilité : la sécurité des données et l'impact sociétal et environnemental associé restent primordiaux.",
-                "La solution retenue doit être justifiée."
+                "Objectif : être capable de proposer la meilleure solution à un problème informatique en fonction de critères spécifiques.",
+                "Il est nécessaire d'analyser un problème informatique et de proposer des méthodes de résolution, de savoir les comparer, et de sélectionner les structures de données et/ou algorithmes adéquats."
             ],
             "levels": [
                 {
@@ -53,15 +50,16 @@
             ],
             "professional_situations": ["Améliorer les performances des programmes dans des contextes contraints", "Limiter l'impact environnemental d'une application informatique", "Mettre en place des applications informatiques adaptées et efficaces"],
             "personal_review": {
-                "level": 2,
-                "explanation": "Je sais évaluer différentes solutions et sélectionner la meilleure (et celle qui permet de consommer le moins possible en termes de ressources et d'énergie)."
+                "level": 3,
+                "explanation": "Je sais évaluer différentes solutions et sélectionner la meilleure (et celle qui permet de consommer le moins possible en termes de ressources et d'énergie). J'ai également eu l'occasion d'analyser un code existant pour l'améliorer."
             }
         },
         {
             "title": "Administrer",
+            "icon": "fa-terminal",
             "description": [
-                "Pour maîtriser la compétence Administrer, il faut être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
-                "Ceci passe par la connaissance du fonctionnement des protocoles de base, mais aussi par une prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
+                "Objectif : être en capacité d'installer, de configurer et de déployer des services réseaux afin d'optimiser le système informatique de structures ou d'organisation.",
+                "Etapes : connaissance du fonctionnement des protocoles de base, prise de recul sur les besoins du client pour estimer la taille du réseau à déployer, le choix des structures, ainsi que leur maintenabilité."
             ],
             "levels": [
                 {
@@ -81,8 +79,9 @@
         },
         {
             "title": "Gérer",
+            "icon": "fa-database",
             "description": [
-                "Pour maîtriser la compétence Gérer, il faut savoir analyser et exploiter les données d'une structure.",
+                "Objectif : savoir analyser et exploiter les données d'une structure.",
                 "Il est possible de les entretenir et de concevoir une base ou un agencement optimal comme il est possible de les analyser pour en tirer une conclusion, souvent stratégique.",
                 "Assurer la sécurité, la cohérence et l'intégrité des données est indispensable."
             ],
@@ -104,8 +103,9 @@
         },
         {
             "title": "Conduire",
+            "icon": "fa-person-chalkboard",
             "description": [
-                "Pour maîtriser la compétence Conduire, il est nécessaire de savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
+                "Objectif : savoir utiliser les outils de gestion de projet informatique (méthodes classiques, agiles, tableaux de bord...) pour satisfaire au mieux les besoins des utilisateurs.",
                 "Savoir adopter les bonnes démarches, une bonne politique de communication, et respecter les règles juridiques et éthique est crucial."
             ],
             "levels": [
@@ -118,7 +118,7 @@
                     "info": "Analyser les processus d'une organisation pour améliorer son système d'information, et être capable de suivre des projets"
                 }
             ],
-            "professional_situations": ["lancer un nouveau projet", "Piloter le maintien d'un projet en condition opérationnelle", "Faire évoluer un système d'information"],
+            "professional_situations": ["Lancer un nouveau projet", "Piloter le maintien d'un projet en condition opérationnelle", "Faire évoluer un système d'information"],
             "personal_review": {
                 "level": 2,
                 "explanation": "Je peux planifier (Gantt, RACI, PERT méthodes de découpage) et suivre (tableau de bord) un projet à toutes ses phases, en utilisant les méthodes agiles ou non."
@@ -126,10 +126,10 @@
         },
         {
             "title": "Collaborer",
+            "icon": "fa-user-group",
             "description": [
-                "Pour maîtriser la compétence Collaborer, il est nécessaire d'apprendre à travailler de manière efficace dans une équipe informatique.",
-                "À ces fins, la communication est un facteur clé. Les informations doivent être partagées et accessibles.",
-                "Les projets lancés suivent les évolutions numériques et juridiques."
+                "Objectif : apprendre à travailler de manière efficace dans une équipe informatique.",
+                "La communication est un facteur clé. Les informations doivent être partagées et accessibles."
             ],
             "levels": [
                 {
@@ -148,7 +148,7 @@
             "professional_situations": ["Lancer un nouveau projet", "Organiser son travail en relation avec celui de son équipe", "Elaborer, gérer et transmettre de l'information"],
             "personal_review": {
                 "level": 3,
-                "explanation": "Je sais gérer une petite équipe pour un projet donné et comprends les objectifs à atteindre. J'utilise mes soft skills pour communiquer et j'intègre rapidement divers milieux."
+                "explanation": "Je sais gérer une équipe pour un projet donné et comprends les objectifs à atteindre. J'utilise mes soft skills pour communiquer et j'intègre rapidement divers milieux."
             }
         }
     ]
