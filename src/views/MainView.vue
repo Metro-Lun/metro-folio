@@ -37,45 +37,23 @@ import ContactComponent from '@/components/ContactComponent.vue';
                 </transition>
 
                 <transition name="slide-fade">
-                    <section id="main-buttons" v-if="show" class="delay-2">
-                        <nav>
-                            <button class="main-button-style">
-                                <a href="projects">Projets</a>
-                            </button>
-                        </nav>
-                    </section>
-                </transition>
-
-                <transition name="slide-fade">
-                    <section id="main-contact" v-if="show" class="delay-3">
-                        <h2>Me contacter :</h2>
-                        <nav>
-                            <a href="https://github.com/Metro-Lun">
-                                <i class="fa-brands fa-github" />
-                                <p>Metro-Lun</p>
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/">
-                                <i class="fa-brands fa-linkedin-in" />
-                                <p>Mehdi Bourbon</p>
-                            </a>
-
-                            <a href="mailto:mehdi.bourbon@outlook.fr">
-                                <i class="fa-solid fa-envelope" />
-                                <p>mehdi.bourbon@outlook.fr</p>
-                            </a>
-                        </nav>
-                    </section>
-                </transition>
-
-                <transition name="slide-fade">
-                    <div class="delay-4" v-if="show">
+                    <div class="delay-2 header-buttons" v-if="show">
                         <button class="main-button-style">
                             <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
                                 <i class="fas fa-download"></i>
                                 <p>Mon super CV</p>
                             </a>
                         </button>
+
+                        <nav>
+                            <button class="main-button-style">
+                                <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Mes projets</p></RouterLink>
+                            </button>
+
+                            <button class="main-button-style">
+                                <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Me contacter</p></RouterLink>
+                            </button>
+                        </nav>
                     </div>
                 </transition>
             </div>
@@ -87,8 +65,18 @@ import ContactComponent from '@/components/ContactComponent.vue';
                     </div>
                 </div>
             </transition>
-            
         </section>
+
+        <transition name="slide-fade">
+            <div v-if="show" class="delay-4">
+                <p id="arrow-p">(c'est par ici que ça se passe)</p>
+                <section class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+            </div>
+        </transition>
     </section>
 
     <section id="technologies">
@@ -247,9 +235,8 @@ import ContactComponent from '@/components/ContactComponent.vue';
     #inner-presentation {
         display: flex;
         justify-content: space-around;
-        padding: 5em 0;
         max-width: 110em;
-        margin: auto;
+        margin: 10em auto auto auto;
     }
 
     #home h1 {
@@ -266,6 +253,24 @@ import ContactComponent from '@/components/ContactComponent.vue';
     #home img {
         max-height: 35em;
         border-radius: 50%;
+    }
+
+    .header-buttons {
+        display: flex;
+        gap: 3em;
+    }
+
+    .header-buttons button p {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        gap: 3em;
+    }
+
+    nav a {
+        margin-right: 0;
     }
 
     @media (max-width: 900px) {
@@ -309,32 +314,6 @@ import ContactComponent from '@/components/ContactComponent.vue';
         }
     }
 
-    /* CONTACT */
-
-    #main-contact {
-        margin-top: 1em;
-    }
-
-    #main-contact nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #main-contact a {
-        color: white;
-        opacity: 1;
-    }
-
-    #main-contact i {
-        font-size: 28px;
-    }
-
-    #main-contact p {
-        font-size: 24px;
-        opacity: 1;
-        margin-left: 12px;
-    }
-
     #title h2 {
         font-size: 26px;
     }
@@ -356,5 +335,53 @@ import ContactComponent from '@/components/ContactComponent.vue';
 
     #job-title {
         margin-bottom: 2em;
+    }
+
+    /* ARROW */
+
+    #arrow-p {
+        margin-top: 6em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrow span {
+        display: block;
+        width: 1.5vw;
+        height: 1.5vw;
+        border-bottom: 5px solid white;
+        border-right: 5px solid white;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate-arrow 2s infinite;
+    }
+
+    .arrow span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+
+    .arrow span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+
+    @keyframes animate-arrow {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+        }
     }
 </style>

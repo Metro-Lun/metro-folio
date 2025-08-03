@@ -15,14 +15,6 @@
         <p>
             © Mehdi BOURBON - {{ getMonthAndYear() }}
         </p>
-
-        <nav>
-            <div>
-                <a href="https://github.com/Metro-Lun"><i class="fa-brands fa-github" /></a>
-                <a href="https://www.linkedin.com/in/mehdi-bourbon-7266a2224/"><i class="fa-brands fa-linkedin-in" /></a>
-                <a href="mailto:mehdi.bourbon@outlook.fr"><i class="fa-solid fa-envelope" /></a>
-            </div>
-        </nav>
     </footer>
 </template>
 
@@ -35,31 +27,16 @@
         height: 6em;
         backdrop-filter: blur(10px);
         color: white;
-    }
-
-    footer nav {
-        display: flex;
-        margin: auto 0;
+        background-color: rgba(255,255,255,0.2);
     }
 
     footer div {
         justify-content: flex-end;
     }
 
-    i {
-        width: 46px;
-        color: white;
-        font-size: 40px;
-    }
-
     @media (max-width: 900px) {
         footer {
             gap: 1em;
-        }
-
-        i {
-            font-size: 20px;
-            width: 20px;
         }
 
         p {

@@ -51,6 +51,10 @@
 </template>
 
 <style scoped>
+    p {
+        font-size: 16px;
+    }
+    
     .skill-div {
         padding: 2em;
         border-radius: 24px;
@@ -75,14 +79,14 @@
     }
 
     .skill-div div h3 {
-        font-size: 30px;
+        font-size: 22px;
         margin-bottom: 20px;
     }
 
     /* SITUATIONS */
 
     .skill-situations {
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
 
     .skill-situations ul {
@@ -91,6 +95,10 @@
 
     .skill-situations li {
         margin: 5px 0;
+    }
+
+    li p {
+        font-size: 16px;
     }
 
     /* LEVELS */
@@ -109,7 +117,7 @@
     .skill-review > div > p {
         border-radius: 50%;
         color: white;
-        font-size: 20px;
+        font-size: 14px;
         border: none;
         font-weight: bold;
         margin-right: 10px;
@@ -139,7 +147,7 @@
 
     .level-info {
         margin : 0.5em 0;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* REVIEW */
@@ -149,7 +157,7 @@
     }
 
     .skill-review > div > p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .skill-review-explained {

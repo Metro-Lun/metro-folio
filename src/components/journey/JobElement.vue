@@ -63,7 +63,7 @@
 
     .job-dot > p {
         font-size: 30px;
-        margin-top: 1.2em;
+        margin-top: 1em;
     }
 
     .job-title-logo {
@@ -71,7 +71,6 @@
         align-items: center;
         gap: 2em;
         font-weight: bold;
-
     }
 
     .job-card {
