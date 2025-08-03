@@ -38,21 +38,25 @@ import ContactComponent from '@/components/ContactComponent.vue';
 
                 <transition name="slide-fade">
                     <div class="delay-2 header-buttons" v-if="show">
-                        <button class="main-button-style">
-                            <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
-                                <i class="fas fa-download"></i>
-                                <p>Mon super CV</p>
-                            </a>
-                        </button>
-
                         <nav>
-                            <button class="main-button-style">
-                                <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Mes projets</p></RouterLink>
-                            </button>
+                            <a href="/assets/files/CV_Mehdi_Bourbon.pdf" download>
+                                <button class="main-button-style">
+                                    <i class="fas fa-download" />
+                                    <p>Mon super CV</p>
+                                </button>
+                            </a>
 
-                            <button class="main-button-style">
-                                <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Me contacter</p></RouterLink>
-                            </button>
+                            <RouterLink :to="{ name: 'home', hash: '#projects' }">
+                                <button class="main-button-style">
+                                    <p>Mes projets</p>
+                                </button>
+                            </RouterLink>
+                            
+                            <RouterLink :to="{ name: 'home', hash: '#contact' }">
+                                <button class="main-button-style">
+                                    <p>Me contacter</p>
+                                </button>
+                            </RouterLink>
                         </nav>
                     </div>
                 </transition>
