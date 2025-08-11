@@ -13,6 +13,7 @@
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "pinia": "^2.1.7",
+    "v-click-outside": "^3.2.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

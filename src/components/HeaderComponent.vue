@@ -4,8 +4,9 @@
 
     const opened = ref(false);
 
-    const openHeader = () => {
-        opened.value = !opened.value;
+    const openHeader = (value) => {
+        if(value !== undefined && value !== null) opened.value = value;
+        else opened.value = !opened.value;
     }
 </script>
 
@@ -20,11 +21,11 @@
             <p>Mehdi BOURBON</p>
         </div>
 
-        <div id="burger" v-on:click="openHeader">
+        <div id="burger" v-on:click="() => openHeader(null)">
             <i class="fa-solid fa-bars" />
         </div>
 
-        <nav id="links" :class="`${opened ? 'opened': ''}`">
+        <nav id="links" :class="`${opened ? 'opened': ''}`" v-click-outside="() => openHeader(false)">
             <RouterLink :to="{ name: 'home' }"><p>Accueil</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#technologies' }"><p>Technologies</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projets</p></RouterLink>
@@ -51,19 +52,14 @@
         background-color: rgba(255,255,255,0.2);
     }
 
-    /* header :is(.router-link-active, .router-link-exact-active, .active) {
-        opacity: 1;
-    } */
-
     a:hover {
         opacity: 0.4;
     }
 
     nav p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
-    /* LIGHT SWITCH */
     #links {
         display: flex;
         gap: 1em;
@@ -100,7 +96,7 @@
         display: none;
     }
 
-    @media (max-height: 800px) {
+    @media (max-height: 600px) {
         #burger {
             display: flex;
             align-items: center;
@@ -111,18 +107,30 @@
 
         #links {
             opacity: 0;
-            top: 4em;
+            top: 3.5em;
             right: 0;
             position: absolute;
             z-index: 1212;
             display: flex;
             flex-direction: column;
             align-items: end;
-            background-color: white;
+            background-color: rgba(0,0,0,0.4);
             border-radius: 16px;
             transition: all .5s ease-in-out;
             user-select: none;
             pointer-events: none;
+            gap: 0.2em;
+            padding: 0.2em 0;
+        }
+
+        #links a {
+            margin-left: 20px;
+        }
+
+        #links.opened {
+            opacity: 1;
+            user-select: auto;
+            pointer-events: auto;
         }
 
         #profile-container p {
