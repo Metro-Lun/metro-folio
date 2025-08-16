@@ -94,7 +94,9 @@
     @media (max-height: 800px) {
         #saes {
             display: grid;
-            grid-template : auto / 1fr;
+            grid-template : auto / 1fr 1fr;
+            margin: 2em 0;
+            gap: 0.8em;
         }
     }
 </style>

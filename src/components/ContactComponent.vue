@@ -63,4 +63,39 @@
         opacity: 1;
         margin-left: 12px;
     }
+
+    @media (max-width: 700px) {
+        h2 {
+            padding-bottom: 0.4em;
+            border-bottom: 1px solid white;
+            margin-bottom: 1em;
+            font-size: 12px;
+        }
+
+        #main-contact nav {
+            display: flex;
+            gap: 0.2em;
+        }
+
+        #main-contact i {
+            font-size: 10px;
+        }
+
+        #main-contact p {
+            font-size: 10px;
+            opacity: 1;
+            margin-left: 8px;
+        }
+
+        #main-contact {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 4em;
+        }
+
+
+    }
 </style>

@@ -76,7 +76,6 @@
     .job-card {
         color: white;
         padding: 0.5em;
-        border-radius: 16px;
         width: 45em;
         transform: all 0.3s ease;
         margin: 0.5em 0;
@@ -129,66 +128,68 @@
         margin-top: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
         .job-element {
             display: grid;
-            grid-template: auto / 1fr 4fr;
+            grid-template: auto / 1fr 6fr;
             width: 100%;
         }
 
         .job-card {
             width: 90%;
-            padding: 2em;
+            padding: 0em;
             grid-template: 1fr 1fr / 5fr 1fr;
-            height: 14em;
             margin: 1em 0;
-            overflow-y: scroll;
         }
 
         .job-card h1 {
-            font-size: 15px;
+            font-size: 10px;
             margin-bottom: 0;
         }
 
         .job-dot > p {
-            font-size: 30px;
+            font-size: 10px;
+            margin-top: 3.8em;
         }
 
         .job-dot::before {
-            width: 4px;
-            height: 45%;
-        }
-
-        .job-dot::after {
-            top: 55%;
-            width: 4px;
-            height: 45%;
+            width: 1px;
+            height: 100%;
         }
 
         .job-img img {
-            height: 25px;
+            height: 20px;
             margin-right: 1em;
         }
 
         .job-card h2 {
-            font-size: 12px;
+            font-size: 8px;
         }
 
         .job-expl {
             margin-top: 1em;
+            margin-left: 12px;
         }
 
         .job-expl li {
-            font-size: 11px;
+            font-size: 7px;
             margin-bottom: 1em;
         }
 
         .job-title {
-            gap: 1em;
+            gap: 0.5em;
         }
 
         .job-title i {
-            font-size: 20px;
+            font-size: 14px;
+        }
+
+        .job-title-logo {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 0em;
+            font-weight: bold;
         }
     }
 </style>

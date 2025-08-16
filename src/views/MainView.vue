@@ -21,10 +21,10 @@ import ContactComponent from '@/components/ContactComponent.vue';
         <section id="inner-presentation">
             <div id="title">
                 <transition name="slide-fade">
-                    <section v-if="show">
+                    <section v-if="show" class="title-section">
                         <div class="big-title">
-                            <h2>Mehdi BOURBON</h2>
-                            <h2>Mehdi BOURBON</h2>
+                            <h2 class="name-title">Mehdi BOURBON</h2>
+                            <h2 class="name-title">Mehdi BOURBON</h2>
                         </div>
                     </section>
                 </transition>
@@ -106,7 +106,7 @@ import ContactComponent from '@/components/ContactComponent.vue';
         font-family: "Poppins", "Consolas", Arial, Helvetica, sans-serif;
     }
 
-    .big-title h2 {
+    .name-title {
         color: #fff;
         font-size: 120px !important;
         position: absolute;
@@ -277,44 +277,30 @@ import ContactComponent from '@/components/ContactComponent.vue';
         margin-right: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
+        .big-title {
+            margin-bottom: 6em;
+        }
+
+        .big-title h2:nth-child(1) {
+            -webkit-text-stroke: 1px #fff;
+        }
+
         #inner-presentation {
-            display: flex;
-            flex-direction: column-reverse;
-            padding-top: 0.4em;
+            margin-top: 0;
         }
 
-        .floating {
-            height: 20px;
+        #home img {
+            max-height: 16em;
         }
 
-        #title > h1 {
+        .name-title {
+            font-size: 50px !important;
+        }
+
+        .title-section {
             display: flex;
             justify-content: center;
-        }
-
-        #title div *, #cv-link {
-            margin-left: 15vw;
-        }
-
-        #title div h2 {
-            font-size: 10px;
-        }
-
-        #cv-link {
-            font-size: 12px;
-        }
-
-        #cv-link * {
-            font-size: 8px;
-        }
-
-        #choose h2 i {
-            font-size: 18px;
-        }
-
-        #choose h2 p {
-            font-size: 10px;
         }
     }
 

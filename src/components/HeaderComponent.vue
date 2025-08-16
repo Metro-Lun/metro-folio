@@ -96,7 +96,7 @@
         display: none;
     }
 
-    @media (max-height: 600px) {
+    @media (max-height: 700px) {
         #burger {
             display: flex;
             align-items: center;
