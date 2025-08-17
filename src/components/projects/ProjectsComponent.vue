@@ -91,12 +91,16 @@
         backdrop-filter: blur(3px);
     }
 
-    @media (max-height: 800px) {
+    @media (max-width: 800px) {
         #saes {
             display: grid;
             grid-template : auto / 1fr 1fr;
             margin: 2em 0;
             gap: 0.8em;
+        }
+
+        .wrapper {
+            border-radius: 14px;
         }
     }
 </style>

@@ -70,22 +70,21 @@
         gap: 10px;
     }
 
-    @media (max-height: 800px) {
+    @media (max-width: 800px) {
+        h3, .sae-title i {
+            font-size: 12px;
+        }
+
         h3 {
-            font-size: 10px;
+            margin-top: 0;
         }
 
         .sae-title {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin: 0.3em 0 0.3em 0;
+            gap: 8px;
+            margin: 0.5em 0 0.3em 0;
         }
-
-        .sae-title i {
-            font-size: 14px;
-        }
-
         .project-techno {
             height: 15px;
             margin: 0 0.2em 0 0.2em;
@@ -100,7 +99,6 @@
 
         .sae-img {
             width: 60%;
-            height: auto;
             border-radius: 3px;
             margin-top: 0.4em;
         }
@@ -108,6 +106,5 @@
         #saes {
             gap: 0.5em;
         }
-
     }
 </style>

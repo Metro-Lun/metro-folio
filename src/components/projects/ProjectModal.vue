@@ -49,8 +49,8 @@
                         
                         <h3>Situations professionnelles</h3>
                         <ul>
-                            <li v-for="s in saeToDisplay.skills" :key="s.id">
-                                <p>{{ s }}</p>
+                            <li v-for="skill in saeToDisplay.skills" :key="skill.id">
+                                <p>{{ skill }}</p>
                             </li>
                         </ul>
                     </div>
@@ -207,7 +207,14 @@
 
     /* RESPONSIVE */
 
-    @media (max-height: 800px) {
+    @media (max-width: 800px) {
+
+        #card-content {
+            display: flex;
+            flex-direction: column;
+            margin: 0 2em;
+        }
+
         #card-desc {
             margin: auto 2em;
             display: flex;
@@ -229,6 +236,15 @@
         #tech-name {
             font-size: 12px !important;
         }
+
+        #project-images img {
+            width: 10em;
+        }
+
+        li {
+        margin-left: 0.5em;
+    }
+
     }
 
     
