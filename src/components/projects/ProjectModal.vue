@@ -224,6 +224,10 @@
 
         #card h3 { font-size: 18px; }
 
+        #card p {
+            font-size: 10px;
+        }
+
         #ok-button {
             margin-bottom: 2em;
         }
@@ -237,13 +241,25 @@
             font-size: 12px !important;
         }
 
+        #project-images {
+            margin-top: 1em;
+        }
+
         #project-images img {
             width: 10em;
         }
 
         li {
-        margin-left: 0.5em;
-    }
+            margin-left: 0.5em;
+        }
+
+        #card-titles {
+            align-items: center;
+        }
+
+        #card-titles h2 {
+            font-size: 32px;
+        }
 
     }
 
