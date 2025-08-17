@@ -243,6 +243,8 @@
 
         #project-images {
             margin-top: 1em;
+            display: flex;
+            justify-content: center;
         }
 
         #project-images img {
