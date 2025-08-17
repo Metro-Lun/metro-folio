@@ -242,13 +242,13 @@
         }
 
         #project-images {
-            margin-top: 1em;
+            margin-top: 2em;
             display: flex;
             justify-content: center;
         }
 
         #project-images img {
-            width: 10em;
+            width: 16em;
         }
 
         li {
