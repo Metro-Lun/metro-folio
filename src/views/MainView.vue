@@ -9,7 +9,9 @@ import ContactComponent from '@/components/ContactComponent.vue';
 
     onMounted(() => {
         show.value = true;
-    })
+    });
+
+    const w = window.innerWidth;
 </script>
 
 <template>
@@ -31,7 +33,7 @@ import ContactComponent from '@/components/ContactComponent.vue';
 
                 <transition name="slide-fade">
                     <div v-if="show" class="delay-1">
-                        <h2 id="job-title">Développeur junior</h2>
+                        <h2 id="job-title">Développeur junior {{ w }}</h2>
                         <h2>Toujours en quête de nouvelles connaissances, je tourne principalement au web, mais je touche à tout !</h2>
                     </div>
                 </transition>
