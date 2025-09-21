@@ -83,6 +83,23 @@
             "type": "academic"
         },
         {
+            "code": "La Quête du Trône",
+            "title": "Application web : jeu de rôle",
+            "image": "quete.png",
+            "size": "medium",
+            "description": [
+                "La Quête du Trône se joue comme le jeu mobile Reigns.",
+                "Cependant, au lieu de prendre des décisions en tant que roi ou reine, ce jeu approche les problématiques modernes et vous fait incarner un président de la République."
+            ],
+            "technos": ["Python", "Django", "MySQL", "Docker"],
+            "skills": [
+                "Développement fullstack",
+                "Travail en équipe"
+            ],
+            "links": [3, 3, 3, 2, 1, 2],
+            "type": "academic"
+        },
+        {
             "code": "GraphMap Analysis",
             "title": "Logiciel de gestion logistique d'hôpitaux",
             "image": "sae_java.png",
