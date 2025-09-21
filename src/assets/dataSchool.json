@@ -1,0 +1,31 @@
+{
+    "schools": [
+        {
+            "name": "Diplôme d'ingénieur (Informatique & Réseaux)",
+            "entreprise": "CPE Lyon",
+            "date": "sept. 2025 - sept. 2028",
+            "explanation": [
+                "Formation Informatique et Réseaux de Communication (IRC)"
+            ]
+        },
+        {
+            "name": "BUT Informatique",
+            "entreprise": "IUT Lyon 1",
+            "date": "sept. 2022 - sept. 2025",
+            "explanation": [
+                "Parcours Réalisation d'Applications : Conception, Développement, Validation"
+            ]
+        },
+        {
+            "name": "Baccalauréat général",
+            "entreprise": "Lycée La Martinière Diderot",
+            "date": "juillet 2022",
+            "explanation": [
+                "Mention Bien",
+                "Spécialités Mathématiques et Numérique & Sciences de l'Informatique",
+                "Section européenne anglais",
+                "Option Maths Expertes"
+            ]
+        }
+    ]
+}

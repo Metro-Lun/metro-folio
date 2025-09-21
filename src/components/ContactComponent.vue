@@ -7,7 +7,7 @@
         <h1>Contact</h1>
 
         <section id="main-contact">
-            <h2>Me contacter :</h2>
+            <h2>Si vous souhaitez me contacter (je suis super sympa) :</h2>
             <nav>
                 <a href="https://github.com/Metro-Lun">
                     <i class="fa-brands fa-github" />

@@ -4,6 +4,7 @@
     import JourneyComponent from '@/components/journey/JourneyComponent.vue';
     import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
 import ContactComponent from '@/components/ContactComponent.vue';
+import HobbiesComponent from '@/components/HobbiesComponent.vue';
 
     const show = ref(false);
 
@@ -93,6 +94,10 @@ import ContactComponent from '@/components/ContactComponent.vue';
 
     <section id="journey">
         <JourneyComponent />
+    </section>
+
+    <section id="hobbies">
+        <HobbiesComponent />
     </section>
 
     <section id="contact">

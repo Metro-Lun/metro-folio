@@ -3,8 +3,8 @@
     import j from '@/assets/dataPro.json';
     const jobs = j.experiences;
 
-    import j2 from "@/assets/dataPerso.json";
-    const hobbies = j2.interests;
+    import j2 from "@/assets/dataSchool.json";
+    const schools = j2.schools;
 </script>
 
 <template>
@@ -18,9 +18,9 @@
             </div>
 
             <div>
-                <h1>Centres d'intérêt</h1>
+                <h1>Formation</h1>
                 <section id="jobs-section">
-                    <JobElement v-for="hobby in hobbies" :key="hobby.id" :job="hobby" :serious="false"/>
+                    <JobElement v-for="school in schools" :key="school.id" :job="school" :serious="true"/>
                 </section>
             </div>
         </section>

@@ -30,6 +30,7 @@
             <RouterLink :to="{ name: 'home', hash: '#technologies' }"><p>Technologies</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projets</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro et perso</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#hobbies'}"><p>Centres d'intérêt</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Contact</p></RouterLink>
             <RouterLink :to="{ name: 'skills' }"><p>Compétences à l'IUT</p></RouterLink>
         </nav>
@@ -43,7 +44,7 @@
         top: 0;
         position: fixed;
         display: grid;
-        grid-template: auto / 1fr 1fr;
+        grid-template: auto / 1fr 2fr;
         width: 100%;
         z-index: 2000;
         height: 4em;
