@@ -55,15 +55,15 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 4px;
+        width: 2px;
         height: 100%;
         background-color: white;
         transform: translateX(-50%);
     }
 
     .job-dot > p {
-        font-size: 30px;
-        margin-top: 1em;
+        font-size: 20px;
+        margin-top: 1.4em;
     }
 
     .job-title-logo {

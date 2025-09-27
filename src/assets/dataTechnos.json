@@ -6,19 +6,23 @@
         },
         {
             "title": "Développement logiciel",
-            "names": ["Python", "C2", "Java", "C"]
+            "names": ["Python", "C2", ".NET", "Java"]
         },
         {
             "title": "Gestion de projet",
-            "names": ["GitLab", "GitHub", "UML", "Scrum", "Trello"]
-        },
-        {
-            "title": "Systèmes d'exploitation",
-            "names": ["Windows", "Linux", "Docker"]
+            "names": ["GitLab", "GitHub", "UML", "Agile"]
         },
         {
             "title": "Bases de données",
             "names": ["MongoDB", "PostgreSQL", "Oracle", "MySQL", "Neo4J"]
+        },
+        {
+            "title": "Systèmes d'exploitation",
+            "names": ["Windows", "Linux", "Debian", "Bash"]
+        },
+        {
+            "title": "Outils et utilitaires",
+            "names": ["Docker", "Trello", "LaTeX"]
         }
     ]
 }

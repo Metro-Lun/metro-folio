@@ -20,26 +20,6 @@
             "type": "professional"
         },
         {
-            "code": "Conducteurs professionnels en tunnel",
-            "title": "Développement d'un volet web sur le site du CETU",
-            "image": "cetu.png",
-            "size": "medium",
-            "description": [
-                "Le volet Conduite en tunnel pour les conducteurs professionnels consiste en un quiz web destiné à tester ses compétences de conduite de poids lourds en tunnels routiers.",
-                "Ce quiz interactif contient différents types de questions qui requièrent des actions comme le glisser-déposer, le clic...",
-                "Pour établir une liste de questions cohérente, il était nécessaire de se documenter auprès des experts du CETU."
-            ],
-            "technos": ["React", "NodeJS", "Trello"],
-            "skills": [
-                "Analyse des besoins",
-                "Rédaction d'une documentation technique (cahier des charges, rapport, notice d'utilisation...)",
-                "Travail en équipe",
-                "Développement front-end"
-            ],
-            "links": [3, 3, 1, 0, 2, 3],
-            "type": "professional"
-        },
-        {
             "code": "PLATINE",
             "title": "ERP de gestion du département informatique",
             "image": "sae_platine.png",
@@ -83,6 +63,44 @@
             "type": "academic"
         },
         {
+            "code": "Portfolio",
+            "title": "(vous êtes dessus)",
+            "image": "portfolio.png",
+            "size": "medium",
+            "description": [
+                "Ce site permet de me présenter, ainsi que mes projets et mes compétences."
+            ],
+            "technos": ["VueJS", "NodeJS", "CSS", "Git", "GitHub"],
+            "skills": [
+                "Programmation web",
+                "Programmation orientée composants",
+                "Travail sur soi",
+                "Présentation des acquis liés à mes études et à mes expériences"
+            ],
+            "links": [3, 3, 1, 0, 0, 0],
+            "type": "personal"
+        },
+        {
+            "code": "Conducteurs pro. en tunnel",
+            "title": "Développement d'un volet web sur le site du CETU",
+            "image": "cetu.png",
+            "size": "medium",
+            "description": [
+                "Le volet Conduite en tunnel pour les conducteurs professionnels consiste en un quiz web destiné à tester ses compétences de conduite de poids lourds en tunnels routiers.",
+                "Ce quiz interactif contient différents types de questions qui requièrent des actions comme le glisser-déposer, le clic...",
+                "Pour établir une liste de questions cohérente, il était nécessaire de se documenter auprès des experts du CETU."
+            ],
+            "technos": ["React", "NodeJS", "Trello"],
+            "skills": [
+                "Analyse des besoins",
+                "Rédaction d'une documentation technique (cahier des charges, rapport, notice d'utilisation...)",
+                "Travail en équipe",
+                "Développement front-end"
+            ],
+            "links": [3, 3, 1, 0, 2, 3],
+            "type": "professional"
+        },
+        {
             "code": "La Quête du Trône",
             "title": "Application web : jeu de rôle",
             "image": "quete.png",
@@ -117,24 +135,6 @@
                 "Gestion de projet"
             ],
             "links": [3, 3, 0, 0, 3, 3],
-            "type": "academic"
-        },
-        {
-            "code": "Portfolio",
-            "title": "(vous êtes dessus)",
-            "image": "portfolio.png",
-            "size": "medium",
-            "description": [
-                "Ce site permet de me présenter, ainsi que mes projets et mes compétences."
-            ],
-            "technos": ["VueJS", "NodeJS", "HTML", "CSS", "Git", "GitHub"],
-            "skills": [
-                "Programmation web",
-                "Programmation orientée composants",
-                "Travail sur soi",
-                "Présentation des acquis liés à mes études et à mes expériences"
-            ],
-            "links": [3, 3, 1, 0, 0, 0],
             "type": "academic"
         },
         {

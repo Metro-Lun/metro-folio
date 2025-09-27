@@ -24,35 +24,37 @@
 
 <style scoped>
     h2 {
-        padding-bottom: 0.4em;
-        border-bottom: 2px solid white;
+        font-size: 22px;
+        font-weight: normal;
+        padding-right: 1em;
+        border-right: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 
     #technos {
-        display: grid;
-        grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .div-techs {
-        display: grid;
-        grid-template: auto / 1fr 1fr;
-        margin-top: 2em;
+        display: flex;
     }
 
     .div-tech {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90px;
+        width: 64px;
         color: white;
         margin: 0.4em 1em;
     }
 
     .tech-section {
-        margin-bottom: 2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template: auto / 1fr 4fr;
     }
 
     #technos :last-child {
@@ -60,9 +62,13 @@
     }
 
     img {
-        max-height: 60px;
+        max-height: 50px;
         margin-bottom: 5px;
         transition: all 0.1s ease;
+    }
+
+    .tech-name {
+        font-size: 16px;
     }
 
     @media (max-width: 700px) {

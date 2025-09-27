@@ -42,20 +42,19 @@
     }
 
     .project-techno {
-        height: 26px;
-        margin: auto 0.5em;
+        height: 22px;
+        margin: auto 0.2em;
     }
 
     .sae-img {
-        width: 60%;
+        width: 80%;
         height: auto;
         border-radius: 6px;
         margin-bottom: 0.6em;
     }
 
     h3 {
-        margin-top: 0.5em;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .technos {
@@ -65,8 +64,10 @@
     }
 
     .sae-title {
+        margin-top: 0.5em;
         display: flex;
         align-items: center;
+        justify-content: start;
         gap: 10px;
     }
 
