@@ -13,14 +13,14 @@
             <div>
                 <h1>Parcours professionnel</h1>
                 <section id="jobs-section">
-                    <JobElement v-for="job in jobs" :key="job.id" :job="job" :serious="true"/>
+                    <JobElement v-for="job in jobs" :key="job.id" :job="job" />
                 </section>
             </div>
 
             <div>
                 <h1>Formation</h1>
                 <section id="jobs-section">
-                    <JobElement v-for="school in schools" :key="school.id" :job="school" :serious="true"/>
+                    <JobElement v-for="school in schools" :key="school.id" :job="school" />
                 </section>
             </div>
         </section>

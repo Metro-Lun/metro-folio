@@ -32,7 +32,6 @@
             <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro et perso</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#hobbies'}"><p>Centres d'intérêt</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Contact</p></RouterLink>
-            <RouterLink :to="{ name: 'skills' }"><p>Compétences à l'IUT</p></RouterLink>
         </nav>
 
         <!-- <LightSwitch /> -->

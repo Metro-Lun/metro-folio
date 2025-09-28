@@ -1,9 +1,17 @@
 {
     "experiences": [
         {
+            "name": "Alternant développeur fullstack",
+            "entreprise": "Sogedo",
+            "date": "2025 - 2028",
+            "explanation": [
+                "Développement d'outils internes de l'entreprise"
+            ]
+        },
+        {
             "name": "Alternant développeur C# / .NET",
             "entreprise": "Arx One",
-            "date": "2024-2025",
+            "date": "2024 - 2025",
             "explanation": [
                 "Développement d'une solution de restauration granulaire de disques virtuels",
                 "Amélioration de la solution de sauvegarde existante",
@@ -31,24 +39,16 @@
             ]
         },
         {
-            "name": "Président",
-            "entreprise": "Student Club",
-            "date": "2024 - 2025",
+            "name": "Associatif étudiant",
+            "entreprise": "Student Club, BDE Info",
+            "date": "2023 - 2025",
             "explanation": [
-                "Maintien de la cohésion entre les différents BDE de l'IUT Lyon 1 site Doua",
-                "Mise à disposition de services en collaboration avec l'IUT Lyon 1 (prévention, formation...)",
-                "Organisation d'événements divers et variés",
-                "Entretien de l'image de la fédération et de l'IUT"
-            ]
-        },
-        {
-            "name": "Chargé de communication",
-            "entreprise": "BDE Info",
-            "date": "2023 - 2024",
-            "explanation": [
-                "Mise en avant des activités de l'association",
-                "Développement de sa notoriété",
-                "Entretien et renforcement du réseau associatif"
+                "Entretien des liens associations - administration - étudiants",
+                "Organisation d'événements, gestion de projets",
+                "Gestion d'équipe",
+                "Aide et services aux associations",
+                "Entretien et renforcement du réseau associatif",
+                "Communication externe"
             ]
         }
     ]

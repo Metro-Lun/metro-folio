@@ -31,7 +31,6 @@
 <style scoped>
     h2 {
         padding-bottom: 0.4em;
-        border-bottom: 2px solid white;
         margin-bottom: 1em;
     }
 
@@ -62,6 +61,7 @@
         font-size: 24px;
         opacity: 1;
         margin-left: 12px;
+        font-weight: normal !important;
     }
 
     @media (max-width: 700px) {

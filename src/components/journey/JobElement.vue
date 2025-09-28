@@ -1,5 +1,6 @@
 <script setup>
-    defineProps(["job", "serious"])
+    defineProps(["job"]);
+    import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -14,16 +15,18 @@
         <section class="job-card">
             <section class="job-title-logo">
                 <div>
-                    <div v-if="!serious" class="job-title">
+                    <div class="job-title">
                         <i :class="job.icon" />
-                        <h1>{{ job.name }}</h1>
+                        <h1 v-if="job.name !== 'BUT Informatique'">{{ job.name }}</h1>
+                        <RouterLink v-else :to="{ name: 'skills' }" class="job-link">
+                            <h1>{{ job.name }}</h1>
+                        </RouterLink>
                     </div>
-                    <h1 v-else>{{ job.name }}</h1>
-                    <h2 v-if="serious">{{ job.entreprise }} | {{ job.date }}</h2>
+                    <h2>{{ job.entreprise }} | {{ job.date }}</h2>
                 </div>
                 
                 <div class="job-img">
-                    <img draggable="false" v-show="serious" :src="`/assets/images/logos/${job.entreprise}.png`" />
+                    <img draggable="false" :src="`/assets/images/logos/${job.entreprise}.png`" />
                 </div>
             </section>
                 
@@ -63,7 +66,7 @@
 
     .job-dot > p {
         font-size: 20px;
-        margin-top: 1.4em;
+        margin-top: 1.9em;
     }
 
     .job-title-logo {
@@ -76,7 +79,7 @@
     .job-card {
         color: white;
         padding: 0.5em;
-        width: 45em;
+        width: 38em;
         transform: all 0.3s ease;
         margin: 0.5em 0;
     }
@@ -116,7 +119,6 @@
     .job-title {
         display: flex;
         align-items: center;
-        gap: 1em;
         margin-top: 1em;
     }
 
@@ -126,6 +128,10 @@
 
     .job-title h1 {
         margin-top: 0;
+    }
+
+    .job-link {
+        text-decoration: none;
     }
 
     @media (max-width: 700px) {

@@ -68,5 +68,6 @@
 
     .line {
         margin-bottom: 0.5em;
+        font-size: 16px;
     }
 </style>
