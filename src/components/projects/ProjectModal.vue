@@ -19,8 +19,14 @@
 </script>
 
 <template>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+
     <section id="card">
-        <div id="close-button"><button @click="clickHandler">X</button></div>
+        <div id="close-button">
+            <button @click="clickHandler"><i class="fas fa-x" /></button>
+        </div>
 
         <section id="card-content">
             <div id="project-images">
@@ -90,28 +96,30 @@
     #ok-button {
         margin: 2em 0 2em 1em;
     }
-    
-    #close-button button {
-        font-weight: bold;
-        margin-top: 1em;
-        margin-right: 2em;
-        padding: 0.2em 0.5em;
-        border: 2px solid black;
-        background-color: transparent;
-        border-radius: 50%;
-        font-size: 25px;
-    }
 
-    #ok-button button {
+
+    #ok-button button, #close-button button {
         color: rgb(255, 255, 255);
         box-shadow: 10px 5px 5px rgb(118, 7, 155);
         font-size: 25px;
         background-image: linear-gradient(-20deg, #cb54ec 0%, #840c96 100%);
         border: none;
-        padding: 2px 1em;
-        border-radius: 16px;
         box-shadow: rgba(118, 0, 186, 0.6) 0px 7px 29px 0px;
     }
+
+    #ok-button button {
+        border-radius: 16px;
+        padding: 2px 1em;
+    }
+
+    #close-button button {
+        border-radius: 50%;
+        padding: 0.5em 0.7em;
+        margin-top: 1em;
+        margin-right: 2em;
+        font-weight: bold;
+    }
+
 
     #card-content {
         display: grid;

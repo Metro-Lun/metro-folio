@@ -67,7 +67,6 @@
     @media (max-width: 700px) {
         h2 {
             padding-bottom: 0.4em;
-            border-bottom: 1px solid white;
             margin-bottom: 1em;
             font-size: 12px;
         }
@@ -75,6 +74,10 @@
         #main-contact nav {
             display: flex;
             gap: 0.2em;
+        }
+
+        #main-contact nav a:last-child {
+            margin-right: 0;
         }
 
         #main-contact i {

@@ -29,7 +29,7 @@
             <RouterLink :to="{ name: 'home' }"><p>Accueil</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#technologies' }"><p>Technologies</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#projects' }"><p>Projets</p></RouterLink>
-            <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro et perso</p></RouterLink>
+            <RouterLink :to="{ name: 'home', hash: '#journey' }"><p>Parcours pro & formation</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#hobbies'}"><p>Centres d'intérêt</p></RouterLink>
             <RouterLink :to="{ name: 'home', hash: '#contact' }"><p>Contact</p></RouterLink>
         </nav>
