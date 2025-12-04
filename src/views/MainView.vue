@@ -282,9 +282,9 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         margin-right: 0;
     }
 
-    @media (min-width: 600px) and (max-width: 1200px) {
+    @media (max-width: 600px) {
         .big-title {
-            margin-bottom: 6em;
+            margin-bottom: 5em;
         }
 
         .big-title h2:nth-child(1) {
@@ -292,25 +292,35 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         }
 
         #inner-presentation {
-            margin-top: 0;
+            margin-top: 8em;
+            flex-direction: column-reverse;
         }
 
+        /* #inner-presentation {
+        display: flex;
+        justify-content: space-around;
+        max-width: 110em;
+        margin: 10em auto auto auto;
+        } */
+
         #home img {
-            max-height: 16em;
+            max-height: 10em;
         }
 
         .name-title {
             font-size: 50px !important;
         }
 
+
+
         .title-section {
             display: flex;
             justify-content: center;
         }
-    }
 
-    @media (max-width: 600px) {
-
+        .delay-1 h2 {
+            font-size: 14px !important;
+        }
     }
 
     #title h2 {

@@ -84,9 +84,6 @@
         font-family: 'Quicksand', 'Cascadia', 'Consolas', 'Proxima Nova', Arial, Helvetica, sans-serif;
         font-size: 32px;
         font-weight: bold;
-    }
-
-    header #profile-container p {
         color: white;
     }
 
@@ -96,7 +93,7 @@
         display: none;
     }
 
-    @media (max-height: 700px) {
+    @media (max-width: 600px) {
         #burger {
             display: flex;
             align-items: center;
@@ -134,11 +131,15 @@
         }
 
         #profile-container p {
-            font-size: 15px;
+            font-size: 20px;
         }
 
         header img {
             height: 60%;
+        }
+
+        #title h2 {
+            font-size: 10px !important;
         }
     }
 </style>
