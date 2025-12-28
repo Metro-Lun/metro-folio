@@ -296,10 +296,7 @@ import HobbiesComp from '@/components/HobbiesComp.vue';
         }
 
         #home {
-            padding-top: 4em;
             height: auto;
-            color: white;
-            background-color: rgba(0,0,0,0.6);
         }
 
         #home img {
@@ -359,11 +356,22 @@ import HobbiesComp from '@/components/HobbiesComp.vue';
         #arrow-p {
             margin-top: 4em !important;
             font-size: 12px;
+            margin-bottom: 6em;
         }
 
         .arrow span {
             width: 5vw !important;
             height: 5vw !important;
+        }
+
+        .delay-4 {
+            padding-bottom: 3em;
+        }
+
+        .arrow {
+            position: relative !important;
+            top: auto !important;
+            left: 100% !important;
         }
     }
 
