@@ -295,6 +295,13 @@ import HobbiesComp from '@/components/HobbiesComp.vue';
             margin-bottom: 1em;
         }
 
+        #home {
+            padding-top: 4em;
+            height: auto;
+            color: white;
+            background-color: rgba(0,0,0,0.6);
+        }
+
         #home img {
             max-height: 10em;
         }
