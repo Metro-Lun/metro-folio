@@ -71,45 +71,35 @@
         font-size: 16px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 600px) {
         h2 {
-            padding-bottom: 0.4em;
-            border-bottom: none;
-            border-right: 2px solid white;
-            font-size: 10px;
-            width: 10em;
+            font-size: 18px;
+            padding-right: 0;
+            border-right: none;
+            margin-bottom: 0.4em;
         }
 
-        #technos {
+        .tech-section {
             display: flex;
             flex-direction: column;
         }
 
-        .div-techs {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .div-tech {
-            width: 46px;
-            margin: 0.4em 0.2em;
-        }
-
         .tech-name {
-            font-size: 10px;
-        }
-
-
-        .tech-section {
-            margin-bottom: 2em;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            font-size: 12px;
         }
 
         img {
             max-height: 30px;
+        }
+
+        .div-techs {
+            flex-wrap: wrap;
+            justify-content: left;
+            margin-bottom: 0.6em !important;
+        }
+
+        .div-tech {
+            margin: 0.4em 0.2em;
         }
     }
 </style>

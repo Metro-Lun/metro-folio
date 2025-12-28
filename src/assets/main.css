@@ -163,20 +163,6 @@ button {
     opacity: 1;
 }
 
-@media (max-height: 800px) {
-    h1 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-}
-
 .main-button-style {
     margin-top: 0.8em;
     box-shadow: 10px 5px 5px rgb(118, 7, 155);
@@ -208,4 +194,18 @@ button {
     font-size: 30px;
     color: #372FF9;
     margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .big-section {
+        width: 80%;
+    }
 }
