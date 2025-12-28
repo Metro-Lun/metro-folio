@@ -63,13 +63,13 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
                 </transition>
             </div>
 
-            <transition name="fade">
+            <!-- <transition name="fade"> -->
                 <div v-if="show" id="profile-div">
                     <div id="profile-sub-div">
-                        <img draggable="false" src="/assets/images/testphoto.png" alt="A photo of me." class="floating"/>
+                        <img draggable="false" src="/assets/images/pfp.png" alt="A photo of me." class="floating"/>
                     </div>
                 </div>
-            </transition>
+            <!-- </transition> -->
         </section>
 
         <transition name="slide-fade">
@@ -84,25 +84,11 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         </transition>
     </section>
 
-    <section id="technologies">
-        <TechComponent />
-    </section>
-
-    <section id="projects">
-        <ProjectsComponent />
-    </section>
-
-    <section id="journey">
-        <JourneyComponent />
-    </section>
-
-    <section id="hobbies">
-        <HobbiesComponent />
-    </section>
-
-    <section id="contact">
-        <ContactComponent />
-    </section>
+    <section id="technologies"><TechComponent /></section>
+    <section id="projects"><ProjectsComponent /></section>
+    <section id="journey"><JourneyComponent /></section>
+    <section id="hobbies"><HobbiesComponent /></section>
+    <section id="contact"><ContactComponent /></section>
 </template>
 
 <style scoped>
@@ -159,11 +145,11 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         }
     }
 
-    .floating {
+    /* .floating {
         position: relative;
         animation: float2d 25s ease-in-out infinite;
         will-change: transform;
-    }
+    } */
 
     @keyframes float2d {
         0%   { transform: translate(0px, 0px) rotate(0deg); }
@@ -183,8 +169,8 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         display: flex;
         align-items: center;
         justify-content: center;
-        animation: up-n-down 20s ease-in-out infinite;
-        will-change: transform;
+        /* animation: up-n-down 20s ease-in-out infinite;
+        will-change: transform; */
     }
 
     @keyframes up-n-down {
@@ -193,10 +179,10 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         100% { transform: translateY(-20px); }
     }
 
-    #profile-sub-div {
+    /* #profile-sub-div {
         animation: left-n-right 25s ease-in-out infinite;
         will-change: transform;
-    }
+    } */
 
     @keyframes left-n-right {
         0% { transform: translateX(-50px); }
@@ -283,10 +269,8 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         margin-right: 0;
     }
 
-    @media (min-width: 601px) {
-        .name-title {
-            transform: translateY(-100%);
-        }
+    .name-title {
+        transform: translateY(-100%);
     }
 
     @media (max-width: 600px) {
@@ -307,12 +291,9 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
             flex-direction: column-reverse;
         }
 
-        /* #inner-presentation {
-        display: flex;
-        justify-content: space-around;
-        max-width: 110em;
-        margin: 10em auto auto auto;
-        } */
+        #profile-div {
+            margin-bottom: 1em;
+        }
 
         #home img {
             max-height: 10em;
@@ -320,16 +301,62 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
 
         .name-title {
             font-size: 30px !important;
-            /* transform: translate(-100%); */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8.5em !important;
         }
 
         .title-section {
             display: flex;
-            /* justify-content: center; */
+            height: 4em;
+        }
+
+        .delay-1 {
+            margin-bottom: 1em;
         }
 
         .delay-1 h2 {
-            font-size: 14px !important;
+            font-size: 16px !important;
+            text-align: center;
+            margin: 0 1em;
+        }
+
+        nav {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+        }
+
+        .header-buttons a {
+            width: 70%;
+        }
+
+        .header-buttons button {
+            width: 100%;
+        }
+
+        .main-button-style {
+            justify-content: center !important;
+        }
+
+        .header-buttons button p {
+            font-size: 16px;
+        }
+
+        .main-button-style i {
+            font-size: 20px;
+        }
+
+        #arrow-p {
+            margin-top: 4em !important;
+            font-size: 12px;
+        }
+
+        .arrow span {
+            width: 5vw !important;
+            height: 5vw !important;
         }
     }
 
