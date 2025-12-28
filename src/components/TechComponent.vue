@@ -77,6 +77,7 @@
             padding-right: 0;
             border-right: none;
             margin-bottom: 0.4em;
+            justify-content: start;
         }
 
         .tech-section {
