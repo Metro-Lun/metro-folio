@@ -94,6 +94,16 @@
     }
 
     @media (max-width: 600px) {
+        header {
+            grid-template: auto / 1fr 1fr;
+            width: 100%;
+            z-index: 2000;
+            height: 4em;
+            backdrop-filter: blur(10px);
+            color: white;
+            background-color: rgba(255,255,255,0.2);
+        }
+
         #burger {
             display: flex;
             align-items: center;
