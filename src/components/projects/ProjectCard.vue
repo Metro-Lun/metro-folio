@@ -86,6 +86,7 @@
             gap: 8px;
             margin: 0.5em 0 0.3em 0;
         }
+
         .project-techno {
             height: 15px;
             margin: 0 0.2em 0 0.2em;
@@ -94,8 +95,10 @@
         .technos {
             margin: 0.2em 0.4em;
             display: flex;
-            gap: 0em;
+            gap: 4px;
             max-width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .sae-img {
