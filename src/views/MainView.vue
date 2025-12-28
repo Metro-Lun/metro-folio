@@ -63,13 +63,13 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
                 </transition>
             </div>
 
-            <!-- <transition name="fade"> -->
+            <transition name="fade">
                 <div v-if="show" id="profile-div">
                     <div id="profile-sub-div">
-                        <img draggable="false" src="/assets/images/pfp.png" alt="A photo of me." class="floating"/>
+                        <img draggable="false" src="/assets/images/testphoto.png" alt="A photo of me." class="floating"/>
                     </div>
                 </div>
-            <!-- </transition> -->
+            </transition>
         </section>
 
         <transition name="slide-fade">
@@ -145,11 +145,11 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         }
     }
 
-    /* .floating {
+    .floating {
         position: relative;
         animation: float2d 25s ease-in-out infinite;
         will-change: transform;
-    } */
+    }
 
     @keyframes float2d {
         0%   { transform: translate(0px, 0px) rotate(0deg); }
@@ -169,8 +169,8 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         display: flex;
         align-items: center;
         justify-content: center;
-        /* animation: up-n-down 20s ease-in-out infinite;
-        will-change: transform; */
+        animation: up-n-down 20s ease-in-out infinite;
+        will-change: transform;
     }
 
     @keyframes up-n-down {
@@ -179,10 +179,10 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         100% { transform: translateY(-20px); }
     }
 
-    /* #profile-sub-div {
+    #profile-sub-div {
         animation: left-n-right 25s ease-in-out infinite;
         will-change: transform;
-    } */
+    }
 
     @keyframes left-n-right {
         0% { transform: translateX(-50px); }
