@@ -1,10 +1,10 @@
 <script setup>
     import { ref, onMounted } from 'vue';
-    import TechComponent from '@/components/TechComponent.vue';
-    import JourneyComponent from '@/components/journey/JourneyComponent.vue';
-    import ProjectsComponent from '@/components/projects/ProjectsComponent.vue';
-import ContactComponent from '@/components/ContactComponent.vue';
-import HobbiesComponent from '@/components/HobbiesComponent.vue';
+    import TechComp from '@/components/TechComp.vue';
+    import JourneyComp from '@/components/journey/JourneyComp.vue';
+    import ProjectsComp from '@/components/projects/ProjectsComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
+import HobbiesComp from '@/components/HobbiesComp.vue';
 
     const show = ref(false);
 
@@ -84,11 +84,11 @@ import HobbiesComponent from '@/components/HobbiesComponent.vue';
         </transition>
     </section>
 
-    <section id="technologies"><TechComponent /></section>
-    <section id="projects"><ProjectsComponent /></section>
-    <section id="journey"><JourneyComponent /></section>
-    <section id="hobbies"><HobbiesComponent /></section>
-    <section id="contact"><ContactComponent /></section>
+    <section id="technologies"><TechComp /></section>
+    <section id="projects"><ProjectsComp /></section>
+    <section id="journey"><JourneyComp /></section>
+    <section id="hobbies"><HobbiesComp /></section>
+    <section id="contact"><ContactComp /></section>
 </template>
 
 <style scoped>

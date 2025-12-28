@@ -131,7 +131,7 @@
         }
 
         #profile-container p {
-            font-size: 20px;
+            font-size: 16px;
         }
 
         header img {
